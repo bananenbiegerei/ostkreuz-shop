@@ -1,0 +1,77 @@
+#cc-window {
+	display: none;
+}
+#cc-window.custom-cc-window {
+	display: block;
+}
+.cc-message{
+	background: red;
+}
+ /* styles for the message box */
+.cc-dismiss{}
+ /* styles for the dismiss button */
+.cc-btn{}
+ /* styles for buttons */
+.cc-allow{}
+/* styles for the accept button */
+.cc-accept-all{}
+/* styles for the accept all button */
+.cc-window{
+}
+/* styles for the popup banner */
+.cc-window .cc-category{}
+/* styles for categories*/
+.cc-window .cc-check{}
+/* styles for the checkboxes with categories */
+.cc-revoke{}
+/* styles for the revoke / settings popup */
+.cmplz-slider-checkbox{}
+/* styles for the checkboxes */
+.cmplz-soft-cookiewall{}
+/* styles for the soft cookie wall */
+
+/* styles for the AMP notice */
+#cmplz-consent-ui, #cmplz-post-consent-ui {}
+/* styles for entire banner */
+#cmplz-consent-ui .cmplz-consent-message {}
+/* styles for the message area */
+#cmplz-consent-ui button, #cmplz-post-consent-ui button {}
+/* styles for the buttons */
+
+/* Overview on Cookie Consent Page */
+#cmplz-cookies-overview {
+	background: transparent;
+	.cmplz-service-header {
+		font-size: $accordion-title-font-size;
+		border: $accordion-content-border;
+		padding: $accordion-item-padding;
+		border-radius: $global-radius;
+	}
+	.cmplz-dropdown {
+		margin-bottom: $space-medium;
+		.cmplz-service-description,
+		.cmplz-sharing-data,
+		.cmplz-service-description,
+		.cmplz-sharing-data,
+		.cookies-per-purpose {
+			display: block;
+			width: calc(100% - 2 * 1.25em);/* according to $accordion-item-padding */
+			//background: $light-gray;
+			vertical-align: unset;
+			padding-left: 1.25em; /* according to $accordion-item-padding */
+			padding-right: 1.25em;
+		}
+		.cmplz-service-description {
+			margin-top: $space-medium;
+		}
+	}
+
+
+	.cmplz-dropdown summary div {
+		display: block;
+		p {
+			margin-bottom: 0;
+		}
+	}
+}
+

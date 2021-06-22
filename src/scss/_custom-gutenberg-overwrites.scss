@@ -1,0 +1,35 @@
+$column-gutter: map-get($grid-column-gutter, 'small');
+.page-content {
+  // Buttons
+  .wp-block-button,
+  .wp-block-buttons > .wp-block-button {
+      margin-bottom: $space-small;
+      .wp-block-button__link {
+        @include button(false, $black, $black, $white, hollow);
+      }
+  }
+  // Groups
+  .wp-block-group {
+    &.has-background:not(.fullwidth) {
+      border-radius: $global-radius;
+      @include card-section;
+    }
+    .grid-container {
+      padding: 0;
+    }
+  }
+  // File download block
+  .wp-block-file {
+    border-radius: $global-radius;
+    @include card-section;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $light-gray;
+    // File Block
+    a:not(.wp-block-file__button) {
+      @include font-size-h4;
+      //font-family: $header-font-family-medium;
+    }
+  }
+}

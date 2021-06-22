@@ -1,0 +1,72 @@
+/* Mixins */
+@mixin white-color {
+  color: $white;
+  a,
+  label {
+    color: $white;
+  }
+  .button {
+    @include button-fill-style($button-fill, $white, $light-gray, $black);
+  }
+}
+@mixin medium-gray-color {
+  color: $medium-gray;
+  a {
+    color: $medium-gray;
+  }
+}
+@mixin default-color-scheme {
+  .has-scheme-background-color {
+    background: $medium-gray;
+  }
+  .has-light-scheme-background-color {
+    background: $light-gray;
+  }
+}
+@mixin primary-color-scheme {
+  .has-scheme-background-color {
+    background: $primary-color;
+  }
+}
+@mixin secondary-color-scheme {
+  .has-scheme-background-color {
+    background: $secondary-color;
+  }
+}
+/* Color Schemes */
+$colors: (
+  "primary-color": $primary-color,
+  "secondary-color": $secondary-color,
+  "success-color": $success-color,
+  "warning-color": $warning-color,
+  "alert-color": $alert-color,
+  "light-gray": $light-gray,
+  "medium-gray": $medium-gray,
+  "dark-gray": $dark-gray,
+  "white": $white,
+);
+
+@each $color, $hex in $colors {
+  .has-#{$color}-scheme {
+    .has-scheme-background-color {
+          background: $hex;
+        }
+        .has-light-scheme-background-color {
+          background: light-#{$hex};
+        }
+  }
+
+  .card.has-#{$color}-scheme {
+    background-color: $hex;
+  }
+
+  .has-#{$color}-background-color {
+    background-color: $hex;
+    .card {
+      background-color: $white;
+    }
+    .label {
+      color: $hex;
+    }
+  }
+}
