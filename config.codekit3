@@ -25,6 +25,14 @@
       "oO" : 0,
       "oS" : 1
     },
+    "\/.nova\/Publishing\/OSTKREUZ.json" : {
+      "ft" : 524288,
+      "oA" : 0,
+      "oAP" : "\/dist\/.nova\/Publishing\/OSTKREUZ.json",
+      "oF" : 0,
+      "oO" : 0,
+      "oS" : 1
+    },
     "\/404.php" : {
       "cB" : 0,
       "ft" : 8192,
@@ -143,6 +151,14 @@
       "oAP" : "\/dist\/functions\/tinymce.php",
       "oF" : 1
     },
+    "\/functions\/woocommerce.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dist\/functions\/woocommerce.php",
+      "oF" : 0
+    },
     "\/head.php" : {
       "cB" : 0,
       "ft" : 8192,
@@ -166,6 +182,12 @@
       "oA" : 1,
       "oAP" : "\/dist\/index.php",
       "oF" : 1
+    },
+    "\/node_modules" : {
+      "ft" : 65536,
+      "oA" : 2,
+      "oAP" : "\/dist\/node_modules",
+      "oF" : 0
     },
     "\/node_modules\/foundation-sites\/dist\/js\/foundation.esm.js" : {
       "bF" : 0,
@@ -269,51 +291,12 @@
       "oAP" : "\/dist\/single.php",
       "oF" : 1
     },
-    "\/src\/img\/Bananenbiegerei-Logo-White.png" : {
-      "ft" : 32768,
-      "iS" : 9792,
-      "oA" : 0,
-      "oAP" : "\/dist\/img\/Bananenbiegerei-Logo-White.png",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 1,
-      "oT" : 1,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
-    "\/src\/img\/Bananenbiegerei-Logo.png" : {
-      "ft" : 32768,
-      "iS" : 16453,
-      "oA" : 0,
-      "oAP" : "\/dist\/img\/Bananenbiegerei-Logo.png",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 1,
-      "oT" : 1,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
-    "\/src\/img\/Bananenbiegerei-Logo@2x.png" : {
-      "ft" : 32768,
-      "iS" : 36694,
-      "oA" : 0,
-      "oAP" : "\/dist\/img\/Bananenbiegerei-Logo@2x.png",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 1,
-      "oT" : 1,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
     "\/src\/img\/favicons\/android-chrome-192x192.png" : {
       "ft" : 32768,
       "iS" : 3725,
       "oA" : 0,
       "oAP" : "\/dist\/img\/favicons\/android-chrome-192x192.png",
-      "oF" : 0,
+      "oF" : 1,
       "oIPL" : 0,
       "opt" : 1,
       "oT" : 1,
@@ -326,7 +309,7 @@
       "iS" : 4785,
       "oA" : 0,
       "oAP" : "\/dist\/img\/favicons\/android-chrome-256x256.png",
-      "oF" : 0,
+      "oF" : 1,
       "oIPL" : 0,
       "opt" : 1,
       "oT" : 1,
@@ -339,7 +322,7 @@
       "iS" : 3613,
       "oA" : 0,
       "oAP" : "\/dist\/img\/favicons\/apple-touch-icon.png",
-      "oF" : 0,
+      "oF" : 1,
       "oIPL" : 0,
       "opt" : 1,
       "oT" : 1,
@@ -353,14 +336,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/dist\/img\/favicons\/browserconfig.xml",
-      "oF" : 0
+      "oF" : 1
     },
     "\/src\/img\/favicons\/favicon-16x16.png" : {
       "ft" : 32768,
       "iS" : 918,
       "oA" : 0,
       "oAP" : "\/dist\/img\/favicons\/favicon-16x16.png",
-      "oF" : 0,
+      "oF" : 1,
       "oIPL" : 0,
       "opt" : 1,
       "oT" : 1,
@@ -373,7 +356,7 @@
       "iS" : 1453,
       "oA" : 0,
       "oAP" : "\/dist\/img\/favicons\/favicon-32x32.png",
-      "oF" : 0,
+      "oF" : 1,
       "oIPL" : 0,
       "opt" : 1,
       "oT" : 1,
@@ -387,14 +370,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/dist\/img\/favicons\/favicon.ico",
-      "oF" : 0
+      "oF" : 1
     },
     "\/src\/img\/favicons\/mstile-150x150.png" : {
       "ft" : 32768,
       "iS" : 3094,
       "oA" : 0,
       "oAP" : "\/dist\/img\/favicons\/mstile-150x150.png",
-      "oF" : 0,
+      "oF" : 1,
       "oIPL" : 0,
       "opt" : 1,
       "oT" : 1,
@@ -407,7 +390,7 @@
       "miP" : 0,
       "oA" : 0,
       "oAP" : "\/dist\/img\/favicons\/safari-pinned-tab.svg",
-      "oF" : 0,
+      "oF" : 1,
       "opt" : 1,
       "plM" : 52780316221407,
       "prP" : 0
@@ -418,7 +401,30 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/dist\/img\/favicons\/site.webmanifest",
-      "oF" : 0
+      "oF" : 1
+    },
+    "\/src\/img\/ostkreuz-logo-small.png" : {
+      "ft" : 32768,
+      "iS" : 2403,
+      "oA" : 0,
+      "oAP" : "\/dist\/img\/ostkreuz-logo-small.png",
+      "oF" : 1,
+      "oIPL" : 0,
+      "opt" : 1,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/src\/img\/sales-bg.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 0,
+      "oAP" : "\/dist\/img\/sales-bg.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
     },
     "\/src\/js\/app.js" : {
       "bF" : 4,
@@ -427,7 +433,7 @@
       "mi" : 1,
       "oA" : 0,
       "oAP" : "\/dist\/assets\/js\/app.js",
-      "oF" : 2,
+      "oF" : 3,
       "sC" : 0,
       "tS" : 1
     },
@@ -557,6 +563,20 @@
       "pg" : 0,
       "sct" : 1
     },
+    "\/src\/scss\/_custom-woocommerce.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dist\/scss\/_custom-woocommerce.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 1
+    },
     "\/src\/scss\/_custom.scss" : {
       "aP" : 0,
       "bl" : 0,
@@ -606,9 +626,9 @@
       "ec" : 1,
       "ft" : 4,
       "ma" : 0,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/dist\/scss\/editor.css",
-      "oF" : 0,
+      "oF" : 1,
       "oS" : 0,
       "pg" : 0,
       "sct" : 1
@@ -657,6 +677,30 @@
       "oAP" : "\/dist\/template-parts\/post\/content.php",
       "oF" : 1
     },
+    "\/woocommerce\/archive-product.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dist\/woocommerce\/archive-product.php",
+      "oF" : 0
+    },
+    "\/woocommerce\/content-product.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dist\/woocommerce\/content-product.php",
+      "oF" : 0
+    },
+    "\/woocommerce\/loop\/loop-start.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dist\/woocommerce\/loop\/loop-start.php",
+      "oF" : 0
+    },
     "\/yarn.lock" : {
       "cB" : 0,
       "ft" : 8192,
@@ -678,7 +722,7 @@
     "displayValueWasSetByUser" : 0,
     "iconImageName" : "\/src\/img\/favicons\/apple-touch-icon.png",
     "iconImageWasSetByUser" : 0,
-    "lastBuiltDate" : 646024529.55756497
+    "lastBuiltDate" : 646025291.09621298
   },
   "projectSettings" : {
     "abortBuildOnError" : 1,

@@ -1,0 +1,12 @@
+.product {
+	span.onsale {
+		background: $black;
+		@include white-color;
+		position: absolute;
+		top: -$gutter;
+		right: -$gutter;
+		padding: $global-menu-padding;
+	}
+}
+
+

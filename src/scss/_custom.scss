@@ -2,6 +2,11 @@
 *:focus {
   outline: 1px dotted $anchor-color;
 }
+/* Links */
+// a:is(h1, h2, h3, h4, h5, h6) {
+//   text-decoration: none;
+// }
+
 /* Layout */
 .main-content {
   // Margin-top would be for fixed header
@@ -17,9 +22,11 @@
 
 /* Header */
 .site-header {
-  min-height: $mobile-header-height;
-  @include breakpoint(medium) {
-    min-height: $header-height;
+  .grid-x {
+    min-height: $mobile-header-height;
+    @include breakpoint(medium) {
+      min-height: $header-height;
+    }
   }
   img.logo {
     height: calc(1 * #{$mobile-header-height - $gutter * 2});
