@@ -19,7 +19,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 ?>
-<div class="filters grid-x grid-margin-x">
+<form class="filters grid-x grid-margin-x" action="" method="get" data-turbo-frame="products">
   <div class="cell">
     <select id="photographer" name="photographer">
       <?php $photographer = get_terms(array(
@@ -30,5 +30,9 @@ if ( ! defined( 'ABSPATH' ) ) {
       <?php endforeach; ?>
     </select>
   </div>
-</div>
+  <div class="cell">
+    <input type="submit" value="go">
+  </div>
+</form>
+<turbo-frame id="products">
 <ul class="products grid-x grid-margin-x block-grid small-up-1 medium-up-3 large-up-4">

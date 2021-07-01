@@ -1,3 +1,4 @@
+import * as Turbo from '@hotwired/turbo';
 import Foundation from 'foundation-sites';
 // core version + navigation, pagination modules:
 // import Swiper, { Navigation, Pagination } from 'swiper';
