@@ -19,4 +19,17 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 ?>
+<div class="filters grid-x grid-margin-x">
+  <div class="cell">
+    <select id="photographer" name="photographer">
+      <?php $photographer = get_terms(array(
+        'taxonomy' => 'photographer', 
+      ));
+      foreach ($photographer as $p) :?>
+        <option value="<?php echo $p->slug; ?>"><?php echo $p->name; ?></option>
+      <?php endforeach; ?>
+    </select>
+  </div>
+</div>
+<pre><?php // var_dump(get_taxonomies()); ?></pre>
 <ul class="products grid-x grid-margin-x block-grid small-up-1 medium-up-3 large-up-4">
