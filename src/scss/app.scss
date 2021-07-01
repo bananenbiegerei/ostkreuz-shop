@@ -4,8 +4,8 @@
 @import 'custom-variables';
 
 @import 'settings';
-@import 'foundation';
-@import 'motion-ui';
+@import '../../node_modules/foundation-sites/scss/foundation';
+@import '../../node_modules/motion-ui/motion-ui';
 
 // Global styles
 @include foundation-global-styles;

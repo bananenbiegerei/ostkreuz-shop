@@ -25,9 +25,6 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 }
 ?>
 <li <?php wc_product_class( 'cell position-relative', $product ); ?>>
-  <pre>
-    <?php //var_dump(get_post_meta($post->ID)); ?>
-  </pre>
 	<?php
 	/**
 	 * Hook: woocommerce_before_shop_loop_item.

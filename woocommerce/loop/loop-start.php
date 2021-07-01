@@ -31,5 +31,4 @@ if ( ! defined( 'ABSPATH' ) ) {
     </select>
   </div>
 </div>
-<pre><?php // var_dump(get_taxonomies()); ?></pre>
 <ul class="products grid-x grid-margin-x block-grid small-up-1 medium-up-3 large-up-4">
