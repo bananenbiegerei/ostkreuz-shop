@@ -19,9 +19,20 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 ?>
-<form class="filters grid-x grid-margin-x" action="" method="get" data-turbo-frame="products">
+<form
+  class="filters grid-x grid-margin-x"
+  action=""
+  method="get"
+  data-controller="form"
+  data-action="
+    input:change->form#submit"
+  data-turbo-frame="products">
   <div class="cell">
-    <select id="photographer" name="photographer">
+    <select
+      id="photographer"
+      name="photographer"
+      data-controller="select"
+      data-action="select#change">
       <?php $photographer = get_terms(array(
         'taxonomy' => 'photographer', 
       ));

@@ -1,4 +1,6 @@
 import * as Turbo from '@hotwired/turbo';
+import { Application } from 'stimulus';
+import { definitionsFromContext } from 'stimulus/webpack-helpers';
 import Foundation from 'foundation-sites';
 // core version + navigation, pagination modules:
 // import Swiper, { Navigation, Pagination } from 'swiper';
@@ -7,9 +9,15 @@ import $ from "jquery";
 // configure Swiper to use modules
 // Swiper.use([Navigation, Pagination]);
 
+const application = Application.start();
+const context = require.context('./controllers', true, /\.js$./);
+application.load(definitionsFromContext(context))
+
+
 $(document).foundation();
 
 $(document).ready(function($) {
+console.log(application, context);
 
   // Initialize new Swiper on each .swiper-container
   // $('.swiper-container').each(function() {

@@ -7,6 +7,30 @@
   "resolved" "https://registry.npmjs.org/@hotwired/turbo/-/turbo-7.0.0-beta.8.tgz"
   "version" "7.0.0-beta.8"
 
+"@stimulus/core@^2.0.0":
+  "integrity" "sha512-ff70GafKtzc8zQ1/cG+UvL06GcifPWovf2wBEdjLMh9xO2GOYURO3y2RYgzIGYUIBefQwyfX2CLfJdZFJrEPTw=="
+  "resolved" "https://registry.npmjs.org/@stimulus/core/-/core-2.0.0.tgz"
+  "version" "2.0.0"
+  dependencies:
+    "@stimulus/mutation-observers" "^2.0.0"
+
+"@stimulus/multimap@^2.0.0":
+  "integrity" "sha512-pMBCewkZCFVB3e5mEMoyO9+9aKzHDITmf3OnPun51YWxlcPdHcwbjqm1ylK63fsoduIE+RowBpFwFqd3poEz4w=="
+  "resolved" "https://registry.npmjs.org/@stimulus/multimap/-/multimap-2.0.0.tgz"
+  "version" "2.0.0"
+
+"@stimulus/mutation-observers@^2.0.0":
+  "integrity" "sha512-kx4VAJdPhIGBQKGIoUDC2tupEKorG3A+ckc2b1UiwInKTMAC1axOHU8ebcwhaJIxRqIrs8//4SJo9YAAOx6FEg=="
+  "resolved" "https://registry.npmjs.org/@stimulus/mutation-observers/-/mutation-observers-2.0.0.tgz"
+  "version" "2.0.0"
+  dependencies:
+    "@stimulus/multimap" "^2.0.0"
+
+"@stimulus/webpack-helpers@^2.0.0":
+  "integrity" "sha512-D6tJWsAC024MwGEIKlUVYU8Ln87mlrmiwHvYAjipg+s8H4eLxUMQ3PZkWyPevfipH+oR3leuHsjYsK1gN5ViQA=="
+  "resolved" "https://registry.npmjs.org/@stimulus/webpack-helpers/-/webpack-helpers-2.0.0.tgz"
+  "version" "2.0.0"
+
 "@types/color-name@^1.1.1":
   "integrity" "sha512-rr+OQyAjxze7GgWrSaJwydHStIhHq2lvY3BOC2Mj7KnzI7XK0Uw1TOOdI9lDoajEbSWLiYgoo4f1R51erQfhPQ=="
   "resolved" "https://registry.npmjs.org/@types/color-name/-/color-name-1.1.1.tgz"
@@ -3924,6 +3948,14 @@
   "version" "1.4.1"
   dependencies:
     "readable-stream" "^2.0.1"
+
+"stimulus@^2.0.0":
+  "integrity" "sha512-xipy7BS5TVpg4fX6S8LhrYZp7cmHGjmk09WSAiVx1gF5S5g43IWsuetfUhIk8HfHUG+4MQ9nY0FQz4dRFLs/8w=="
+  "resolved" "https://registry.npmjs.org/stimulus/-/stimulus-2.0.0.tgz"
+  "version" "2.0.0"
+  dependencies:
+    "@stimulus/core" "^2.0.0"
+    "@stimulus/webpack-helpers" "^2.0.0"
 
 "stream-exhaust@^1.0.1":
   "integrity" "sha512-b/qaq/GlBK5xaq1yrK9/zFcyRSTNxmcZwFLGSTG0mXgZl/4Z6GgiyYOXOvY7N3eEvFRAG1bkDRz5EPGSvPYQlw=="

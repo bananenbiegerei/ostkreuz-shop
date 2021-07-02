@@ -27,6 +27,7 @@
     "foundation-sites": "^6.6.3",
     "jquery": "^3.6.0",
     "motion-ui": "~2.0.0",
+    "stimulus": "^2.0.0",
     "swiper": "^6.7.0",
     "what-input": "^5.2.10"
   },
