@@ -1,7 +1,7 @@
 import * as Turbo from '@hotwired/turbo';
 import { Application } from 'stimulus';
 import { definitionsFromContext } from 'stimulus/webpack-helpers';
-import Foundation from 'foundation-sites';
+import Foundation, { Slider } from 'foundation-sites';
 // core version + navigation, pagination modules:
 // import Swiper, { Navigation, Pagination } from 'swiper';
 import $ from "jquery";
@@ -10,7 +10,7 @@ import $ from "jquery";
 // Swiper.use([Navigation, Pagination]);
 
 const application = Application.start();
-const context = require.context('./controllers', true, /\.js$./);
+const context = require.context('./controllers', true, /\.js$/);
 application.load(definitionsFromContext(context))
 
 

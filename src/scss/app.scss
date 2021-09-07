@@ -6,6 +6,7 @@
 @import 'settings';
 @import '../../node_modules/foundation-sites/scss/foundation';
 @import '../../node_modules/motion-ui/motion-ui';
+@import '../../node_modules/nouislider/dist/nouislider.css';
 
 // Global styles
 @include foundation-global-styles;
@@ -79,3 +80,8 @@
 @import 'custom-scaffolding';
 @import 'custom-woocommerce';
 @import 'custom';
+
+// Components
+@import 'components/inputs';
+@import 'components/products';
+

@@ -11,6 +11,8 @@ export default class extends Controller {
     useDebounce(this);
     this.activeInputs = [];
     console.log('form');
+
+    this.removeSubmitButton();
   }
 
   submit() {
@@ -31,5 +33,13 @@ export default class extends Controller {
     const delEl = this.activeInputs.find(item => item.id == e.detail.id);
     this.activeInputs = this.activeInputs.filter(item => item.id !== e.detail.id);
     delEl.el.remove();
+  }
+
+  removeSubmitButton() {
+    console.log('remove submit');
+    if (this.hasSubmitTarget) {
+      console.log('IF remove submit');
+      this.submitTarget.remove();
+    }
   }
 }

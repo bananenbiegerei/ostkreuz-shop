@@ -15,7 +15,8 @@ export default class extends Controller {
   }
 
   initialize() {
-    this.active = false;
+    //this.active = false;
+    console.log('rangeslider INIT', this);
   }
 
   connect() {
@@ -24,6 +25,7 @@ export default class extends Controller {
     this.slider = noUiSlider.create(this.sliderTarget, {
       start: this.startValue,
       step: this.stepValue,
+      connect: [false, true, false],
       range: {
         'min': this.rangeminValue,
         'max': this.rangemaxValue,
@@ -38,13 +40,15 @@ export default class extends Controller {
       }
     })
 
-    this.disabled = true;
+    //this.disabled = true;
 
     this.slider.on('update', (values, handle) => this.updateDisplay(values, handle));
     this.slider.on('update', (e) => this.sendChange(e));
     this.slider.on('start', (e) => this.enable(e), {
       once: true,
     });
+
+    console.log('rangeslider CONNECT', this);
   }
 
   updateDisplay(values, handle) {
@@ -56,6 +60,7 @@ export default class extends Controller {
   }
 
   enable(e) {
+    console.log('ENABLE');
     this.displayTargets.forEach(d => {d.removeAttribute('disabled')});
 
     // TODO: WTF

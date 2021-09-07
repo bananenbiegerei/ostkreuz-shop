@@ -1,7 +1,8 @@
 <?php
 add_filter( 'query_vars', function( $vars ) {
     $vars[] = 'phgr';
-    $vars[] = 'price';
+    $vars[] = 'price_upper';
+    $vars[] = 'price_lower';
     return $vars;
 });
 
@@ -38,6 +39,7 @@ add_filter( 'pre_get_posts', function( $query ) {
          * ?price[]=50&price[]=100
          * must be in ascending order
          */
+        /*
         $price = get_query_var('price');
         if (!empty($price) && is_array($price)) {
           $meta_query['price'] = array(
@@ -47,6 +49,19 @@ add_filter( 'pre_get_posts', function( $query ) {
             'type' => 'NUMERIC',
           );
         }
+        */
+
+        $price_lower = get_query_var( 'price_lower' );
+        $price_upper = get_query_var( 'price_upper' );
+        if ( !empty( $price_lower ) && !empty( $price_upper ) ) {
+          $meta_query['price'] = array(
+              'key' => '_price',
+              'value' => [$price_lower, $price_upper],
+              'compare' => 'BETWEEN',
+              'type' => 'NUMERIC',
+          );
+        }
+
 
         $query->set( 'tax_query', $tax_query);
         $query->set( 'meta_query', $meta_query);

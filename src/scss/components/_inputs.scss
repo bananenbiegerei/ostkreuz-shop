@@ -1,0 +1,70 @@
+select {
+	background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' width='32' height='24' viewBox='0 0 32 24'><polygon points='0,0 32,0 16,24' style='fill: rgb%280, 0, 0%29'></polygon></svg>");
+}
+
+/*
+ * Range Slider
+ */
+.noUi {
+  &-target {
+    background: $medium-gray;
+    border: none;
+    box-shadow: none;
+  }
+
+  &-horizontal {
+    height: 2px;
+
+    .noUi-handle {
+      height: 1.2em;
+      width: 1.2em;
+      right: -0.5em;
+      top: -0.5em;
+
+      &::before, &::after {
+        content: '';
+        display: none;
+        visibility: hidden;
+      }
+    }
+  }
+
+  &-connect {
+    background-color: $black;
+  }
+
+  &-handle {
+    background: $black;
+    border: none;
+    border-radius: 100%;
+    box-shadow: none;
+    cursor: grab;
+    transform: translateX(0px);
+  }
+}
+
+.rangeslider {
+  width: 100%;
+
+  &__slider {
+    margin: 0 auto;
+    width: calc(100% - 21px);
+
+    &[disabled="true"] {
+      opacity: .5;
+
+      .noUi-handle {
+        cursor: not-allowed;
+      }
+    }
+  }
+  
+  &__display {
+    display: inline;
+    width: fit-content;
+    border: none;
+    padding: 0;
+    box-shadow: none;
+    margin-bottom: 0;
+  }
+}
