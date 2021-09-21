@@ -41,12 +41,6 @@ function woocommerce_template_loop_product_title()
    echo '<h2 class="font-size-h3 space-top-small">' . get_the_title() . '</h2>';
 }
 
-// Single Product
-remove_action('woocommerce_single_product_summary','woocommerce_template_single_title',5);
-remove_action('woocommerce_single_product_summary','woocommerce_template_single_meta',40);
-remove_action('woocommerce_single_product_summary','woocommerce_template_single_excerpt',20);
-remove_action('woocommerce_before_single_product','woocommerce_output_all_notices',10);
-
 add_action('woocommerce_before_single_product','message_callout',10);
 function message_callout() {
     echo '<div class="woocommerce-notices-wrapper">';
@@ -89,3 +83,5 @@ function remove_shipping_phone_field($fields) {
     unset( $fields ['shipping_phone'] ); // Remove shipping phone field
     return $fields;
 }
+
+require_once(get_template_directory().'/functions/woocommerce/product.php');

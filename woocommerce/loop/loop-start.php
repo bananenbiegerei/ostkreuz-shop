@@ -25,9 +25,10 @@ if ( ! defined( 'ABSPATH' ) ) {
   method="get"
   data-controller="form"
   data-action="
-    input:change->form#submit
+    change->form#submit
+    //input:change->form#submit
     rangeslider:change->form#submit"
-  data-turbo-frame="products">
+>
   <div class="cell medium-3">
 
     <select
@@ -91,5 +92,5 @@ if ( ! defined( 'ABSPATH' ) ) {
     <input type="submit" value="go" data-form-target="submit">
   </div>
 </form>
-<turbo-frame id="products">
+<turbo-frame id="products" target="_top">
 <ul class="products grid-x grid-margin-x block-grid small-up-1 medium-up-3 large-up-4">

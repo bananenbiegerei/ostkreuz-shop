@@ -885,10 +885,10 @@
   "resolved" "https://registry.npmjs.org/@discoveryjs/json-ext/-/json-ext-0.5.3.tgz"
   "version" "0.5.3"
 
-"@hotwired/turbo@*":
-  "integrity" "sha512-3HfWoxtGGQOxaXo2bh2tvEBFAV4oSSIA/BFnMvIfY5D4HbEKYpPH2Q3Roa707/E9LtnIgyN/RibDY6dszCwPuw=="
-  "resolved" "https://registry.npmjs.org/@hotwired/turbo/-/turbo-7.0.0-beta.8.tgz"
-  "version" "7.0.0-beta.8"
+"@hotwired/turbo@^7.0.0-rc.4":
+  "integrity" "sha512-4qx+6O6mUN+cSN+ZLGCOGc+2MxNrs7cFbmnWD6LIfiHAQyuNiIuB87Y5IAtOo8xj16fOBd2CdU1WRJya4Wkw0A=="
+  "resolved" "https://registry.npmjs.org/@hotwired/turbo/-/turbo-7.0.0-rc.4.tgz"
+  "version" "7.0.0-rc.4"
 
 "@nodelib/fs.scandir@2.1.5":
   "integrity" "sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g=="
