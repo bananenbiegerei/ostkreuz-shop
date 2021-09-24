@@ -18,31 +18,16 @@ add_filter( 'block_categories', 'custom_block_category', 10, 2);
 // For Icons go to: https://developer.wordpress.org/resource/dashicons/ – But leafe the "dashicons-" Prefix
 
 function register_acf_block_types(){
-	acf_register_block_type(['name' => 'Accordion',
-	'title'				=> __('Accordion'),
-	'description'		=> __('An accordion'),
-	'render_template'	=> 'template-parts/blocks/accordion.php',
-	'category'			=> 'custom-blocks',
+	acf_register_block_type(['name' => 'products_slider',
+	'title'				=> __('Produkt Slider'),
+	'description'		=> __('Slider for Products'),
+	'render_template'	=> 'template-parts/blocks/products-slider.php',
+	'category'			=> 'ostkreuz',
 	'icon'				=> 'slides',
-	'keywords'			=> [ ],
+	'keywords'			=> ['products', 'slider', 'ostkreuz' ],
 ]);
-// acf_register_block_type(['name' => 'Gallery Swiper',
-// 	'title'				=> __('Gallery Swiper'),
-// 	'description'		=> __('An image gallery with swiper'),
-// 	'render_template'	=> 'template-parts/blocks/swiper-gallery.php',
-// 	'category'			=> 'widgets',
-// 	'icon'				=> 'slides',
-// 	'keywords'			=> [ ],
-// ]);
-// acf_register_block_type(['name' => 'Responsive Table',
-// 	'title'				=> __('Responsive Table'),
-// 	'description'		=> __('Table block optimized for mobile'),
-// 	'render_template'	=> 'template-parts/blocks/responsive-table.php',
-// 	'category'			=> 'widgets',
-// 	'icon'				=> 'excerpt-view',
-// 	'keywords'			=> [ ],
-// ]);
 }
+
 if (function_exists('acf_register_block_type')) {
 	add_action('acf/init', 'register_acf_block_types');
 }
