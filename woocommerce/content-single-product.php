@@ -44,9 +44,10 @@ if ( post_password_required() ) {
           },$photographers);
           $photographers = implode(', ', $photographers);
       ?>
-        Von <?php echo $photographers; ?>
+	  <h2 class="subheader">Von <?php echo $photographers; ?></h2>
       <?php endif; ?>
     </div>
+	<hr>
   </header>
 
 	<?php
