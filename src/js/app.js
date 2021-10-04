@@ -1,13 +1,13 @@
-import * as Turbo from '@hotwired/turbo';
+//import * as Turbo from '@hotwired/turbo';
 import { Application } from 'stimulus';
 import { definitionsFromContext } from 'stimulus/webpack-helpers';
-import Foundation, { Slider } from 'foundation-sites';
+import Foundation from 'foundation-sites';
 import Swiper, { Navigation } from 'swiper';
 import $ from "jquery";
 
-// const application = Application.start();
-// const context = require.context('./controllers', true, /\.js$/);
-// application.load(definitionsFromContext(context))
+const application = Application.start();
+const context = require.context('./controllers', true, /\.js$/);
+application.load(definitionsFromContext(context))
 
 
 $(document).foundation();

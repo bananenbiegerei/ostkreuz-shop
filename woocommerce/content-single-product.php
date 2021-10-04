@@ -63,7 +63,6 @@ if ( post_password_required() ) {
 		<!-- Additional required wrapper -->
 		<div class="swiper-wrapper">
 			<?php
-			  global $product;
 			  $attachment_ids = $product->get_gallery_image_ids(); ?>
 			<div class="swiper-slide">
 				<?php the_post_thumbnail('four-columns', array('class' => 'product-image')); ?>
@@ -108,12 +107,41 @@ if ( post_password_required() ) {
 		 * @hooked woocommerce_template_single_sharing - 50
 		 * @hooked WC_Structured_Data::generate_product_data() - 60
 		 */
-		//remove_action('woocommerce_single_product_summary','woocommerce_template_single_price',10);
+    remove_action('woocommerce_after_single_product_summary', 'woocommerce_output_product_data_tabs', 10);
 		do_action( 'woocommerce_single_product_summary' );
 		?>
 	</div>
 
-	<?php do_action('data_test'); ?>
+  <div class="grid-x grid-margin-x">
+    <div class="cell medium-7">
+      <?php the_content(); ?>
+    </div>
+
+    <div class="cell medium-5">
+      <ul class="tabs" data-tabs id="product-tabs">
+        <li class="tabs-title is-active"><a data-tabs-target="tab-product-info" aria-selected="true">Product Info</a></li>
+        <li class="tabs-title"><a data-tabs-target="tab-shipping-info" href="#tab-shipping-info">Shipping and Payment Info</a></li>
+      </ul>
+      
+      <div class="tabs-content" data-tabs-content="product-tabs">
+        <div class="tabs-panel is-active" id="tab-product-info">
+          <?php
+            $attributes = $product->get_attributes();
+
+            foreach ($attributes as $attr) {
+              if (!is_wp_error($attr)) {
+                $data = $attr->get_data();
+                $options = implode(',', $data['options']);
+
+                echo '<div>' . $attr->get_name() . ': ' . $options . '</div>';
+              }
+            }
+          ?>
+        </div>
+        <div class="tabs-panel" id="tab-shipping-info">Shipppping IIIIIIIINFOOOOO</div>
+      </div>
+    </div>
+  </div>
 
 	<?php
 	/**
@@ -123,6 +151,7 @@ if ( post_password_required() ) {
 	 * @hooked woocommerce_upsell_display - 15
 	 * @hooked woocommerce_output_related_products - 20
 	 */
+  remove_action('woocommerce_after_single_product_summary', 'woocommmerce_output_product_data_tabs', 10);
 	do_action( 'woocommerce_after_single_product_summary' );
 	?>
 </article>
