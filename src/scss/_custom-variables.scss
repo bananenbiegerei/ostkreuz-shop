@@ -15,6 +15,7 @@ $header-height-stuck: 100px;
 $mobile-header-height: 63px;
 $logo-height: 50px;
 $fullheight-header: calc(100vh - #{$header-height});
+$mobile-fullheight-header: calc(100vh - #{$mobile-header-height});
 $fullheight-header-footer: calc(100vh - #{$header-height + $footer-height});
 $mobile-fullheight-header-footer: calc(100vh - #{$mobile-header-height + $mobile-footer-height});
 $fullheight: calc(100vh);
@@ -26,3 +27,10 @@ $text-shadow: 0 2px 4px rgba(0,0,0,0.50);
 /* Animation */
 $global-transition: all 0.8s ease;
 $global-transition-quick: all 0.1s ease;
+
+@mixin fullheight-header {
+	height: $mobile-fullheight-header;
+	@include breakpoint(medium) {
+		height: $fullheight-header;
+	}
+}
