@@ -4029,6 +4029,14 @@
       "oAP" : "\/dist\/woocommerce\/single-product\/product-attributes.php",
       "oF" : 0
     },
+    "\/woocommerce\/single-product\/title.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dist\/woocommerce\/single-product\/title.php",
+      "oF" : 0
+    },
     "\/yarn.lock" : {
       "cB" : 0,
       "ft" : 8192,

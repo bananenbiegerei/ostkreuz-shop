@@ -24,7 +24,8 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 	return;
 }
 ?>
-<li <?php wc_product_class( 'cell position-relative', $product ); ?>>
+<li <?php wc_product_class( 'position-relative', $product ); ?>>
+	<div class="card text-center clickable">
 	<?php
 	/**
 	 * Hook: woocommerce_before_shop_loop_item.
@@ -39,8 +40,14 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 	 * @hooked woocommerce_show_product_loop_sale_flash - 10
 	 * @hooked woocommerce_template_loop_product_thumbnail - 10
 	 */
-	do_action( 'woocommerce_before_shop_loop_item_title' );
+	remove_action('woocommerce_before_shop_loop_item_title','woocommerce_template_loop_product_thumbnail',10);
+	do_action( 'woocommerce_before_shop_loop_item_title' ); ?>
 
+	<div class="product-image-container">
+		<?php the_post_thumbnail('three-columns', array('class' => 'product-image')); ?>
+	</div>
+	<div class="card-section">
+	<?php
 	/**
 	 * Hook: woocommerce_shop_loop_item_title.
 	 *
@@ -62,6 +69,9 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 	 * @hooked woocommerce_template_loop_product_link_close - 5
 	 * @hooked woocommerce_template_loop_add_to_cart - 10
 	 */
+	remove_action('woocommerce_after_shop_loop_item','woocommerce_template_loop_add_to_cart',10);
 	do_action( 'woocommerce_after_shop_loop_item' );
 	?>
+	</div>
+	</div>
 </li>

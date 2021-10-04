@@ -93,4 +93,8 @@ if ( ! defined( 'ABSPATH' ) ) {
   </div>
 </form>
 <turbo-frame id="products" target="_top">
-<ul class="products grid-x grid-margin-x block-grid small-up-1 medium-up-3 large-up-4">
+  <div class="grid-container">
+    <div class="grid-x grid-margin-x">
+      <div class="cell medium-12">
+        <ul class="products">
+

@@ -3,6 +3,16 @@ $swiper-button-size: 30px;
 $mobile-swiper-button-size: 30px;
 $max-image-height: 51vh;
 $max-image-height-viewport-header: calc(100vh - #{$mobile-header-height});
+$product-image-height: 600px;
+$mobile-product-image-height: auto;
+@mixin product-image-height {
+  height: $mobile-product-image-height;
+  width: auto;
+  @include breakpoint(medium) {
+    height: $product-image-height;
+    width: auto;
+  }
+}
 
 .swiper.single-product-swiper {
   padding-top: $space-medium;
@@ -13,6 +23,11 @@ $max-image-height-viewport-header: calc(100vh - #{$mobile-header-height});
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      .product-image {
+        background-color: $light-gray;
+        padding: $space-medium;
+        @include product-image-height;
+      }
     }
   }
 }

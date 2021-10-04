@@ -6,6 +6,15 @@
 // a:is(h1, h2, h3, h4, h5, h6) {
 //   text-decoration: none;
 // }
+.card {
+  transition: $global-transition;
+  &.clickable:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+    transition: $global-transition;
+  }
+}
+
 
 /* Layout */
 .main-content {

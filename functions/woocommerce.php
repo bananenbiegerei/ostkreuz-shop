@@ -38,7 +38,7 @@ remove_action('woocommerce_shop_loop_item_title','woocommerce_template_loop_prod
 add_action('woocommerce_shop_loop_item_title','woocommerce_template_loop_product_title',10);
 function woocommerce_template_loop_product_title()
 {
-   echo '<h2 class="font-size-h3 space-top-small">' . get_the_title() . '</h2>';
+   echo '<h2 class="h5">' . get_the_title() . '</h2>';
 }
 
 add_action('woocommerce_before_single_product','message_callout',10);
