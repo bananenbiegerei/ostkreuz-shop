@@ -69,9 +69,10 @@
 
 // CUSTOM IMPORTS
 // from node_modules:
-// @import 'swiper/swiper';
-// @import 'swiper/components/pagination/pagination';
-// @import 'swiper/components/navigation/navigation';
+@import 'swiper/swiper';
+@import 'swiper/modules/pagination/pagination';
+@import 'swiper/modules/navigation/navigation';
+@import 'custom-swiper';
 
 // others
 @import 'custom-colors';

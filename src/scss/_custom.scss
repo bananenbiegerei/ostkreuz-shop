@@ -37,6 +37,26 @@
   }
 }
 /* Navigation */
+.menu {
+  li {
+    &.current-product-ancestor,
+    &.current-menu-parent,
+    &.current-product-parent,
+    &.current-menu-item {
+      position: relative;
+      &:before {
+        content: '';
+        width: 10px;
+        height: 10px;
+        background: $black;
+        border-radius: 100%;
+        position: absolute;
+        top: 14px;
+        left: 0;
+      }
+    }
+  }
+}
 /* Footer */
 .site-footer {
   overflow: hidden; // Foundation Menu

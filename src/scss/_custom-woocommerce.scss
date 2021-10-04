@@ -9,9 +9,33 @@
 	}
 }
 
-
+$product-image-height: 600px;
+$mobile-product-image-height: auto;
+@mixin product-image-height {
+	height: $mobile-product-image-height;
+	width: auto;
+	@include breakpoint(medium) {
+		height: $product-image-height;
+		width: auto;
+	}
+}
 .single-product {
-	.woocommerce-product-gallery {
-		background: red;
+	.product-image {
+		background-color: $light-gray;
+		padding: $space-medium;
+		@include product-image-height;
+	}
+	.entry-summary {
+		display: flex;
+		align-items: center;
+		border-bottom: $hr-border;
+		padding-top: $space-small;
+		form.cart {
+			display: flex;
+			.quantity {
+				padding: 0 $gutter;
+			}
+			
+		}
 	}
 }

@@ -13,7 +13,7 @@
 //   8. Accordion Menu
 //   9. Badge
 //  10. Breadcrumbs
-//  11. Button
+//  11. 
 //  12. Button Group
 //  13. Callout
 //  14. Card
@@ -75,7 +75,7 @@ $foundation-palette: (
   warning: #ffae00,
   alert: #cc4b37,
 );
-$light-gray: #e6e6e6;
+$light-gray: #F5F8F7;
 $medium-gray: #cacaca;
 $dark-gray: #8a8a8a;
 $black: #0a0a0a;
@@ -173,7 +173,7 @@ $anchor-color-hover: scale-color($anchor-color, $lightness: -14%);
 $anchor-text-decoration: none;
 $anchor-text-decoration-hover: none;
 $hr-width: $global-width;
-$hr-border: 1px solid $medium-gray;
+$hr-border: 2px solid $black;
 $hr-margin: rem-calc(20) auto;
 $list-lineheight: $paragraph-lineheight;
 $list-margin-bottom: $paragraph-margin-bottom;
@@ -203,7 +203,7 @@ $abbr-underline: 1px dotted $black;
 $lead-font-size: $global-font-size * 1.25;
 $lead-lineheight: 1.6;
 $subheader-lineheight: 1.4;
-$subheader-color: $dark-gray;
+$subheader-color: $black;
 $subheader-font-weight: $global-weight-normal;
 $subheader-margin-top: 0.2rem;
 $subheader-margin-bottom: 0.5rem;
@@ -288,7 +288,7 @@ $button-background-hover: scale-color($button-background, $lightness: -15%);
 $button-color: $white;
 $button-color-alt: $black;
 $button-radius: $global-radius;
-$button-hollow-border-width: 1px;
+$button-hollow-border-width: 2px;
 $button-sizes: (
   tiny: 0.6rem,
   small: 0.75rem,
@@ -414,7 +414,7 @@ $fieldset-border: 1px solid $medium-gray;
 $fieldset-padding: rem-calc(20);
 $fieldset-margin: rem-calc(18 0);
 $legend-padding: rem-calc(0 3);
-$form-spacing: rem-calc(16);
+$form-spacing: rem-calc(18);
 $helptext-color: $black;
 $helptext-font-size: rem-calc(13);
 $helptext-font-style: italic;
@@ -439,7 +439,7 @@ $input-background: $white;
 $input-background-focus: $white;
 $input-background-disabled: $light-gray;
 $input-border: 2px solid $black;
-$input-border-focus: 1px solid $dark-gray;
+$input-border-focus: 2px solid $dark-gray;
 $input-padding: $form-spacing / 2;
 $input-shadow: inset 0 1px 2px rgba($black, 0.1);
 $input-shadow-focus: 0 0 5px $medium-gray;
@@ -689,7 +689,7 @@ $prototype-sizes: (
 // ---------------------
 
 $prototype-spacing-breakpoints: $global-prototype-breakpoints;
-$prototype-spacers-count: 3;
+$prototype-spacers-count: 12;
 
 // 43. Prototype Text-Decoration
 // -----------------------------

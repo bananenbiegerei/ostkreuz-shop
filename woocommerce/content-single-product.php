@@ -32,23 +32,56 @@ if ( post_password_required() ) {
 }
 ?>
 <article id="product-<?php the_ID(); ?>" <?php wc_product_class( '', $product ); ?>>
-  
-  <header class="product-header text-center">
-    <h1 class="product-header__title"><?php the_title(); ?></h1>
-    <div class="product-header__photographers">
-      <?php
-        $photographers = get_the_terms(get_the_id(), 'photographer');
-        if (!empty($photographers)) :
-          $photographers = array_map(function($p) {
-            return $p->name;
-          },$photographers);
-          $photographers = implode(', ', $photographers);
-      ?>
-	  <h2 class="subheader">Von <?php echo $photographers; ?></h2>
-      <?php endif; ?>
-    </div>
+
+	<header class="product-header padding-top-3 padding-bottom-3 text-center">
+		<h1 class="product-header__title margin-bottom-0"><?php the_title(); ?></h1>
+		<div class="product-header__photographers">
+			<?php $photographers = get_the_terms(get_the_id(), 'photographer');
+			if (!empty($photographers)) :
+		    $photographers = array_map(function($p) {
+			return $p->name;
+		    },$photographers);
+		    $photographers = implode(', ', $photographers);
+	  		?>
+			<p class="lead margin-bottom-0"> von <?php echo $photographers; ?></p>
+			<?php endif; ?>
+		</div>
+		<div class="product-header__series">
+			<?php $series = get_the_terms(get_the_id(), 'serie');
+			if (!empty($series)) :
+			$series = array_map(function($p) {
+			return $p->name;
+			},$series);
+			$series = implode(', ', $series);
+			  ?>
+			<p class="lead margin-bottom-0"> aus der Serie <?php echo $series; ?></p>
+			<?php endif; ?>
+		</div>
+	</header>
 	<hr>
-  </header>
+	<div class="swiper single-product-swiper">
+		<!-- Additional required wrapper -->
+		<div class="swiper-wrapper">
+			<?php
+			  global $product;
+			  $attachment_ids = $product->get_gallery_image_ids(); ?>
+			<div class="swiper-slide">
+				<?php the_post_thumbnail('four-columns', array('class' => 'product-image')); ?>
+			</div>
+			<?php foreach( $attachment_ids as $attachment_id ) { ?>
+			<div class="swiper-slide">
+				<?php echo wp_get_attachment_image( $attachment_id, 'four-columns', false, ["class" => "product-image"] ); ?>
+			</div>
+			<?php }
+			  ?>
+			...
+		</div>
+
+		<!-- If we need navigation buttons -->
+		<div class="swiper-button-prev"></div>
+		<div class="swiper-button-next"></div>
+
+	</div>
 
 	<?php
 	/**
@@ -57,7 +90,8 @@ if ( post_password_required() ) {
 	 * @hooked woocommerce_show_product_sale_flash - 10
 	 * @hooked woocommerce_show_product_images - 20
 	 */
-	/* do_action( 'woocommerce_before_single_product_summary' ); */
+	remove_action('woocommerce_before_single_product_summary','woocommerce_show_product_images',20);
+	do_action( 'woocommerce_before_single_product_summary' );
 	?>
 
 	<div class="summary entry-summary">
@@ -74,11 +108,12 @@ if ( post_password_required() ) {
 		 * @hooked woocommerce_template_single_sharing - 50
 		 * @hooked WC_Structured_Data::generate_product_data() - 60
 		 */
+		//remove_action('woocommerce_single_product_summary','woocommerce_template_single_price',10);
 		do_action( 'woocommerce_single_product_summary' );
 		?>
 	</div>
 
-  <?php do_action('data_test'); ?>
+	<?php do_action('data_test'); ?>
 
 	<?php
 	/**
