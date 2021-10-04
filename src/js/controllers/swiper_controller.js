@@ -14,6 +14,7 @@ export default class extends Controller {
       autoplay: this.autoplay,
       loop: this.loop,
       speed: this.speed,
+      slidesPerView: 4,
     });
   }
 
