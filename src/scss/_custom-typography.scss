@@ -20,6 +20,13 @@ $small-font-size-h4: map-deep-get($header-styles, small, h4, font-size) * 1px;
 $small-font-size-h5: map-deep-get($header-styles, small, h5, font-size) * 1px;
 $small-font-size-h6: map-deep-get($header-styles, small, h6, font-size) * 1px;
 
+@mixin font-size-xlarge {
+  font-size: $small-font-size-h1 * 2;
+  @include breakpoint(medium) {
+    font-size: $medium-font-size-h1 * 2;
+  }
+}
+
 @mixin font-size-h1 {
   font-size: $small-font-size-h1;
   @include breakpoint(medium) {
@@ -57,6 +64,9 @@ $small-font-size-h6: map-deep-get($header-styles, small, h6, font-size) * 1px;
   }
 }
 
+.font-size-xlarge {
+  @include font-size-xlarge;
+}
 .font-size-h1 {
   @include font-size-h1;
 }

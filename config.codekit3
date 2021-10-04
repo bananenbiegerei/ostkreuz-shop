@@ -3865,6 +3865,21 @@
       "pg" : 0,
       "sct" : 1
     },
+    "\/src\/scss\/components\/_hero-teaser.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dist\/scss\/components\/_hero-teaser.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 1
+    },
     "\/src\/scss\/components\/_inputs.scss" : {
       "aP" : 0,
       "bl" : 0,
@@ -3929,6 +3944,14 @@
       "oA" : 1,
       "oAP" : "\/dist\/template-parts\/blocks\/accordion.php",
       "oF" : 1
+    },
+    "\/template-parts\/blocks\/hero-teaser.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dist\/template-parts\/blocks\/hero-teaser.php",
+      "oF" : 0
     },
     "\/template-parts\/blocks\/products-slider.php" : {
       "cB" : 0,
@@ -4027,14 +4050,6 @@
       "hM" : 0,
       "oA" : 1,
       "oAP" : "\/dist\/woocommerce\/single-product\/product-attributes.php",
-      "oF" : 0
-    },
-    "\/woocommerce\/single-product\/title.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 1,
-      "oAP" : "\/dist\/woocommerce\/single-product\/title.php",
       "oF" : 0
     },
     "\/yarn.lock" : {
