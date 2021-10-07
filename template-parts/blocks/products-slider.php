@@ -22,7 +22,7 @@ if ($cat) {
   <div class="grid-container">
     <p class="h1 text-center"><?php echo $cat->name; ?></p>
     <?php if (!empty($products) && $products->have_posts()) : ?>
-      <div class="swiper-container" data-controller="swiper">
+      <div class="product-swiper swiper-container">
         <div class="swiper-wrapper">
         <?php while ($products->have_posts()) : $products->the_post();?>
           <div class="swiper-slide">
@@ -32,5 +32,10 @@ if ($cat) {
         </div>
       </div>
     <?php endif; ?>
+
+    <div class="products-slider__after text-center">
+      <p><?php echo term_description($cat->term_id); ?></p>
+      <a class="button" href="<?php echo get_term_link($cat->term_id); ?>">Alle <?php echo $cat->name; ?></a>
+    </div>
   </div>
 </section>

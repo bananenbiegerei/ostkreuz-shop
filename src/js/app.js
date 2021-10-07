@@ -25,6 +25,10 @@ $(document).ready(function($) {
     },
     autoHeight: true
   });
+
+  const productSwiper = new Swiper('.product-swiper', {
+    slidesPerView: 4,
+  })
 });
 
 
