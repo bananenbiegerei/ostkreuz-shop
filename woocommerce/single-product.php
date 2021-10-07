@@ -53,10 +53,11 @@ get_header( 'shop' ); ?>
 		 *
 		 * @hooked woocommerce_get_sidebar - 10
 		 */
+		remove_action('woocommerce_sidebar','woocommerce_get_sidebar',10);
 		do_action( 'woocommerce_sidebar' );
 	?>
 
 <?php
-get_footer( 'shop' );
+get_footer();
 
 /* Omit closing PHP tag at the end of PHP files to avoid "headers already sent" issues. */
