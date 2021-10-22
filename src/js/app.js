@@ -1,4 +1,4 @@
-//import * as Turbo from '@hotwired/turbo';
+import * as Turbo from '@hotwired/turbo';
 import { Application } from 'stimulus';
 import { definitionsFromContext } from 'stimulus/webpack-helpers';
 import Foundation from 'foundation-sites';

@@ -15,6 +15,7 @@ export default class extends Controller {
       loop: this.loop,
       speed: this.speed,
     });
+    console.log('hallo test');
   }
 
   get autoplay() {

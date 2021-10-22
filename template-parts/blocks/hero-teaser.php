@@ -32,7 +32,7 @@ if ( ! empty( $block['align'] ) ) {
 	}
 </style>
 
-<div id="<?php echo esc_attr( $id ); ?>" class="<?php echo esc_attr( $classes ); ?>">
+<div id="<?php echo esc_attr( $id ); ?>" class="<?php echo esc_attr( $classes ); ?> fullwidth">
 	<div class="grid-container padding-top-2">
 		<div class="grid-x grid-margin-x">
 			<div class="cell medium-6">
@@ -50,7 +50,7 @@ if ( ! empty( $block['align'] ) ) {
 		</div>
 	</div>
 	<?php $background_image = get_field( 'background_image' ); ?>
-	<?php $size = 'full'; ?>
+	<?php $size = 'twelve-columns'; ?>
 	<?php if ( $background_image ) : ?>
 		<?php echo wp_get_attachment_image( $background_image, $size, false, ["class" => "hero-bg-image"] );?>
 	<?php endif; ?>

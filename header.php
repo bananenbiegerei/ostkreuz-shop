@@ -4,7 +4,7 @@
 
 <body <?php body_class(); ?>>
     <header id="site-header" class="site-header" role="banner">
-        <div class="grid-container">
+        <div class="grid-container" id="top">
             <div class="grid-x grid-margin-x align-middle">
                 <div class="cell medium-auto">
                     <nav>

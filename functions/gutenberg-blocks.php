@@ -22,7 +22,7 @@ function register_acf_block_types(){
 	'title'				=> __('Produkt Slider'),
 	'description'		=> __('Slider for Products'),
 	'render_template'	=> 'template-parts/blocks/products-slider.php',
-	'category'			=> 'ostkreuz',
+	'category'			=> 'custom-blocks',
 	'icon'				=> 'slides',
 	'keywords'			=> ['products', 'slider', 'ostkreuz' ],
 	]);
@@ -30,7 +30,7 @@ function register_acf_block_types(){
 	'title'				=> __('Hero Teaser'),
 	'description'		=> __('Slider for Products'),
 	'render_template'	=> 'template-parts/blocks/hero-teaser.php',
-	'category'			=> 'ostkreuz',
+	'category'			=> 'custom-blocks',
 	'icon'				=> 'star-filled',
 	'keywords'			=> ['product', 'hero', 'ostkreuz' ],
 	]);

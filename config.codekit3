@@ -3745,6 +3745,21 @@
       "pg" : 0,
       "sct" : 1
     },
+    "\/src\/scss\/_custom-layout.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dist\/scss\/_custom-layout.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 1
+    },
     "\/src\/scss\/_custom-scaffolding.scss" : {
       "aP" : 0,
       "bl" : 0,
@@ -3968,6 +3983,14 @@
       "oA" : 1,
       "oAP" : "\/dist\/template-parts\/page\/content-page.php",
       "oF" : 1
+    },
+    "\/template-parts\/partials\/scroll-top.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dist\/template-parts\/partials\/scroll-top.php",
+      "oF" : 0
     },
     "\/template-parts\/post\/content-none.php" : {
       "cB" : 0,
