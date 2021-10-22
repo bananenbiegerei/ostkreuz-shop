@@ -39,13 +39,14 @@ if ( ! empty( $block['align'] ) ) {
 				<h2 class="font-size-xlarge">
 					<?php the_field( 'description' ); ?>
 				</h2>
+				<!-- @LG oh man das alte Problem … -->
 				<?php $selected_product = get_field( 'selected_product' ); ?>
 				<?php if ( $selected_product ) : ?>
 					<?php $post = $selected_product; ?>
 					<?php setup_postdata( $post ); ?> 
 					<a class="button" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
 					<?php wp_reset_postdata(); ?>
-				<?php endif; ?>		
+				<?php endif; ?>	
 			</div>
 		</div>
 	</div>
