@@ -1,0 +1,11 @@
+.tabs-title {
+  border: 2px solid $black;
+}
+
+#tab-product-info {
+  > div {
+    padding-bottom: $space-xsmall;
+    padding-top: $space-xsmall;
+    border-bottom: 1px solid $medium-gray;
+  }
+}

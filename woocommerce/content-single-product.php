@@ -112,7 +112,7 @@ if ( post_password_required() ) {
 		?>
 	</div>
 
-  <div class="grid-x grid-margin-x">
+  <div class="grid-x grid-margin-x padding-vertical-1">
     <div class="cell medium-7">
       <?php the_content(); ?>
     </div>
@@ -127,13 +127,52 @@ if ( post_password_required() ) {
         <div class="tabs-panel is-active" id="tab-product-info">
           <?php
             $attributes = $product->get_attributes();
+						// var_dump($attributes);
 
-            foreach ($attributes as $attr) {
+						$filtered_attributes = array();
+
+						if (array_key_exists('pa_breite', $attributes) && array_key_exists('pa_hoehe', $attributes) ) {
+							$filtered_attributes['dimensions'] = get_term($attributes['pa_breite']['options'][0])->name . ' x ' . get_term($attributes['pa_hoehe']['options'][0])->name;
+							unset($attributes['pa_breite']);
+							unset($attributes['pa_hoehe']);
+						}
+
+						// if (array_key_exists('pa_signatur', $attributes)) {
+						// 	$terms = $attributes['pa_signatur']['options'];
+						// 	$terms = array_map(function($t) {
+						// 		return get_term($t)->name;
+						// 	}, $terms);
+						// 	$filtered_attributes['signed'] = implode(', ', $terms);
+						// 	unset($attributes['pa_signatur']);
+						// }
+
+						// if (array_key_exists('pa_papierformat', $attributes)) {
+						// 	$terms = $attributes['pa_papierformat']['options'];
+						// 	$terms = array_map(function($t) {
+						// 		return get_term($t)->name;
+						// 	}, $terms);
+						// 	$filtered_attributes['paper'] = implode(', ', $terms);
+						// 	unset($attributes['pa_papierformat']);
+						// }
+
+						foreach($filtered_attributes as $key => $attr) {
+							echo '<div>' . $attr . '</div>';
+						}
+
+            foreach ($attributes as $key => $attr) {
               if (!is_wp_error($attr)) {
                 $data = $attr->get_data();
-                $options = implode(',', $data['options']);
+                $options = $data['options'];
+								$options = array_map(function($t) {
+										if (is_int($t)) {
+											return get_term($t)->name;
+										} else if (is_string($t)) {
+											return $t;
+										}
+								}, $options);
+								$options = implode(', ', $options);
 
-                echo '<div>' . $attr->get_name() . ': ' . $options . '</div>';
+                echo '<div>' . $options . '</div>';
               }
             }
           ?>
