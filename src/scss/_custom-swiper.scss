@@ -32,6 +32,18 @@ $mobile-product-image-height: auto;
   }
 }
 
+.product-swiper {
+  .swiper-wrapper {
+    .swiper-slide {
+      width: auto;
+      height: auto;
+      display: flex;
+      align-items: center;
+      @include product-image-container-scaffolding;
+    }
+  }
+}
+
 // .swiper-button-next,
 // .swiper-button-prev {
 //   position: relative;

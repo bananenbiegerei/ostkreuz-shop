@@ -85,6 +85,12 @@ $small-font-size-h6: map-deep-get($header-styles, small, h6, font-size) * 1px;
 .font-size-h6 {
   @include font-size-h6;
 }
+
+.lead,
+.term-description {
+  font-size: $lead-font-size;
+}
+
 p.small,
 .small {
   font-size: $small-font-size;

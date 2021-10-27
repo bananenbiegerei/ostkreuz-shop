@@ -55,10 +55,14 @@ $column-gutter: map-get($grid-column-gutter, 'small');
 	margin-left: $gutter;
 	margin-right: $gutter;
 	max-width: calc(100% - 2 * #{$gutter});
-
+	
 	@include breakpoint(large) {
 	  max-width: calc(8 / 12 * #{$global-width} - #{$column-gutter} * 1);
 	  margin: 0 auto;
 	}
+  }
+  .wp-block-buttons.centered {
+	  display: flex;
+	  justify-content: center;
   }
 }

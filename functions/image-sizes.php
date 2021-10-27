@@ -63,3 +63,16 @@ add_image_size( 'two-columns-sixteen-nine', $two_columns, $two_columns_sixteen_n
 //     else
 //         return $file;
 // }
+
+function bwd_addclass_bd_on_size($attr) {
+	$image = wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), "full" );
+	$width_of_image = $image[1];
+	$height_of_image = $image[2];
+	if ( $width_of_image > $height_of_image ){
+		$attr['class'] .= ' landscape';
+	} else{
+		$attr['class'].= ' portrait';
+	}
+	  return $attr;
+	}
+	add_filter('wp_get_attachment_image_attributes','bwd_addclass_bd_on_size');

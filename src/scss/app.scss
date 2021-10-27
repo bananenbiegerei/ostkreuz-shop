@@ -68,9 +68,6 @@
 @include motion-ui-animations;
 
 // CUSTOM IMPORTS
-// from node_modules:
-@import 'swiper/swiper-bundle';
-@import 'custom-swiper';
 
 // Custom Blocks
 @import 'components/hero-teaser';
@@ -80,8 +77,14 @@
 @import 'custom-typography';
 
 @import 'custom-scaffolding';
+
+// from node_modules:
+@import 'swiper/swiper-bundle';
+@import 'custom-swiper';
+
 @import 'custom-woocommerce';
 @import 'custom-layout';
+@import 'custom-gutenberg-overwrites';
 @import 'custom';
 
 // Components

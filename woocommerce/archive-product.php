@@ -29,21 +29,26 @@ get_header( 'shop' );
 do_action( 'woocommerce_before_main_content' );
 
 ?>
-<header class="woocommerce-products-header">
-	<?php if ( apply_filters( 'woocommerce_show_page_title', true ) ) : ?>
-		<h1 class="woocommerce-products-header__title page-title"><?php woocommerce_page_title(); ?></h1>
-	<?php endif; ?>
-
-	<?php
-	/**
-	 * Hook: woocommerce_archive_description.
-	 *
-	 * @hooked woocommerce_taxonomy_archive_description - 10
-	 * @hooked woocommerce_product_archive_description - 10
-	 */
-	do_action( 'woocommerce_archive_description' );
-	?>
+<header class="woocommerce-products-header text-center padding-top-8 padding-bottom-8 grid-container">
+	<div class="grid-x grid-margin-x align-center">
+		<div class="cell medium-8">
+			<?php if ( apply_filters( 'woocommerce_show_page_title', true ) ) : ?>
+			<h1 class="woocommerce-products-header__title page-title"><?php woocommerce_page_title(); ?></h1>
+		<?php endif; ?>
+	
+		<?php
+		/**
+		 * Hook: woocommerce_archive_description.
+		 *
+		 * @hooked woocommerce_taxonomy_archive_description - 10
+		 * @hooked woocommerce_product_archive_description - 10
+		 */
+		do_action( 'woocommerce_archive_description' );
+		?>
+		</div>
+	</div>
 </header>
+<hr class="margin-bottom-2">
 <?php
 if ( woocommerce_product_loop() ) {
 
@@ -100,6 +105,6 @@ do_action( 'woocommerce_after_main_content' );
  *
  * @hooked woocommerce_get_sidebar - 10
  */
-do_action( 'woocommerce_sidebar' );
+// do_action( 'woocommerce_sidebar' );
 
 get_footer( 'shop' );

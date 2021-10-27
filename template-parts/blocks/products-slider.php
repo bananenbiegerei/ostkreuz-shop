@@ -17,20 +17,27 @@ if ($cat) {
   ));
 }
 ?>
-<section class="products-slider margin-top-6 margin-bottom-6 fullwidth">
-  <div class="grid-container">
+<section class="products-slider margin-bottom-6 fullwidth">
+  <hr>
+  <div class="grid-container fluid">
     <div class="grid-x grid-margin-x">
+      <div class="auto cell">
+        <a class="button small clear" href="#top" data-smooth-scroll>Top</a>
+      </div>
+      <div class="shrink cell">
+        <a class="small clear button" href="<?php echo get_term_link($cat->term_id); ?>">Alle <?php echo $cat->name; ?></a>
+      </div>
       <div class="cell medium-12">
         <h2 class="h1 text-center"><?php echo $cat->name; ?></h2>
       </div>
     </div>
   </div>
-  <div class="swiper product-swiper padding-2">
+  <div class="swiper product-swiper padding-2 margin-top-6">
     <div class="swiper-wrapper">
       <?php if (!empty($products) && $products->have_posts()) : ?>
       <?php while ($products->have_posts()) : $products->the_post();?>
       <div class="swiper-slide">
-        <?php get_template_part('woocommerce/content', 'product'); ?>
+        <?php get_template_part('woocommerce/content', 'product-swiper'); ?>
       </div>
       <?php endwhile; wp_reset_postdata(); ?>
       <?php endif; ?>

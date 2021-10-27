@@ -44,11 +44,7 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 	do_action( 'woocommerce_before_shop_loop_item_title' ); ?>
 
 	<div class="product-image-container">
-		<div class="one-one-min-height-container">
-			<div class="one-one-min-height">
-				<?php the_post_thumbnail('three-columns', array('class' => 'product-image')); ?>
-			</div>
-		</div>
+		<?php the_post_thumbnail('three-columns', array('class' => 'product-image')); ?>
 	</div>
 	<div class="card-section">
 	<?php

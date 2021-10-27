@@ -2,10 +2,11 @@
 @mixin white-color {
   color: $white;
   a,
-  label {
+  label,
+  .button.clear {
     color: $white;
   }
-  .button {
+  .button:not(.clear) {
     @include button-fill-style($button-fill, $white, $light-gray, $black);
   }
 }
@@ -68,5 +69,17 @@ $colors: (
     .label {
       color: $hex;
     }
+  }
+}
+
+// Negative Color Schemes
+.has-black-background-color {
+  @include white-color;
+  .wp-block-button,
+  .wp-block-buttons > .wp-block-button {
+      margin-bottom: $space-small;
+      .wp-block-button__link {
+        @include button(false, $white, $white, $black, solid);
+      }
   }
 }

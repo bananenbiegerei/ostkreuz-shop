@@ -21,16 +21,28 @@ $mobile-fullheight-header-footer: calc(100vh - #{$mobile-header-height + $mobile
 $fullheight: calc(100vh);
 $halfheight: 100vh * 0.5;
 $twothirdheight: 100vh * 0.66666;
+$product-image-size: 400px;
+$mobile-product-image-size: 260px;
 /* Shadows */
 $shadow: 0 3px 1px 0 rgba(0,0,0,0.10);
 $text-shadow: 0 2px 4px rgba(0,0,0,0.50);
 /* Animation */
 $global-transition: all 0.8s ease;
 $global-transition-quick: all 0.1s ease;
+// z-index
+$front: 999;
+$middle: 99;
+$back: 9;
 
 @mixin fullheight-header {
 	height: $mobile-fullheight-header;
 	@include breakpoint(medium) {
 		height: $fullheight-header;
+	}
+}
+@mixin fullheight {
+	height: $fullheight;
+	@include breakpoint(medium) {
+		height: $fullheight;
 	}
 }

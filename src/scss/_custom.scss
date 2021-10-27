@@ -19,10 +19,10 @@
 /* Layout */
 .main-content {
   // Margin-top would be for fixed header
-  // margin-top: $mobile-header-height;
-  // @include breakpoint(medium) {
-  //   margin-top: $header-height;
-  // }
+  margin-top: $mobile-header-height;
+  @include breakpoint(medium) {
+    margin-top: $header-height;
+  }
   min-height: $mobile-fullheight-header-footer;
   @include breakpoint(medium) {
     min-height: $fullheight-header-footer;
@@ -31,6 +31,13 @@
 
 /* Header */
 .site-header {
+  position: fixed;
+  z-index: $front;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba($white, 0.1);
+  backdrop-filter: saturate(100%) blur(20px);
   .grid-x {
     min-height: $mobile-header-height;
     @include breakpoint(medium) {
@@ -82,5 +89,17 @@
   .cell {
     margin-bottom: $space-medium;
   }
+}
+.grid-container {
+  .grid-container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+table {
+  tbody {
+    border-left: none;
+    border-right: none;
+  } 
 }
 /* Plugins */

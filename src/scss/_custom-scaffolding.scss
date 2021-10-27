@@ -64,6 +64,11 @@ img.fullwidth {
     left: 0;
     bottom: 0;
     right: 0;
+    img {
+      object-fit: contain;
+      width: 100%;
+      height: 100%;
+    }
   }
 }
 
@@ -73,4 +78,34 @@ img.fullwidth {
 
 .menu-offset-right {
   margin-right: -1rem;
+}
+
+@mixin product-image-size-landscape {
+  &.landscape {
+    width: $mobile-product-image-size * 1.25;
+    @include breakpoint(medium) {
+      width: $product-image-size * 1.25;
+    }
+    height: auto;
+  } 
+}
+@mixin product-image-size-portrait {
+  &.portrait {
+    height: $mobile-product-image-size;
+    @include breakpoint(medium) {
+      height: $product-image-size;
+    }
+    width: auto;
+  }
+}
+@mixin product-image-background {
+  background-color: $light-gray;
+  padding: $space-medium;
+}
+@mixin product-image-container-scaffolding {
+  img {
+    @include product-image-size-landscape;
+    @include product-image-size-portrait;
+    @include product-image-background; 
+  }
 }

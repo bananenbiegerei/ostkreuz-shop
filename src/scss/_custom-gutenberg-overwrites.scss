@@ -1,11 +1,11 @@
 $column-gutter: map-get($grid-column-gutter, 'small');
-.page-content {
+
   // Buttons
   .wp-block-button,
   .wp-block-buttons > .wp-block-button {
       margin-bottom: $space-small;
       .wp-block-button__link {
-        @include button(false, $black, $black, $white, hollow);
+        @include button(false, $black, $black, $white, solid);
       }
   }
   // Groups
@@ -32,4 +32,3 @@ $column-gutter: map-get($grid-column-gutter, 'small');
       //font-family: $header-font-family-medium;
     }
   }
-}

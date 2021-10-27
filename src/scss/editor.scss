@@ -2,7 +2,7 @@
 @import 'custom-variables';
 @import 'custom-fonts';
 @import 'settings';
-
+@import 'custom-gutenberg-overwrites';
 
 .block-editor-writing-flow {
     font-family: $body-font-family;

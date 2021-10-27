@@ -34,6 +34,13 @@ function register_acf_block_types(){
 	'icon'				=> 'star-filled',
 	'keywords'			=> ['product', 'hero', 'ostkreuz' ],
 	]);
+	acf_register_block_type(['name' => 'anchor_top',
+	'title'				=> __('Anchor Top'),
+	'description'		=> __('Anchor Top + optional Link'),
+	'render_template'	=> 'template-parts/blocks/anchor-top.php',
+	'category'			=> 'custom-blocks',
+	'icon'				=> 'arrow-up'
+	]);
 }
 
 if (function_exists('acf_register_block_type')) {

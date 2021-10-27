@@ -9,7 +9,7 @@
  * @param   bool $is_preview True during AJAX preview.
  * @param   (int|string) $post_id The post ID this block is saved to.
  */
-
+global $post;
 // Create id attribute allowing for custom "anchor" value.
 $id = 'hero-teaser-' . $block['id'];
 if ( ! empty($block['anchor'] ) ) {
@@ -33,7 +33,7 @@ if ( ! empty( $block['align'] ) ) {
 </style>
 
 <div id="<?php echo esc_attr( $id ); ?>" class="<?php echo esc_attr( $classes ); ?> fullwidth">
-	<div class="grid-container padding-top-2">
+	<div class="grid-container padding-top-4">
 		<div class="grid-x grid-margin-x">
 			<div class="cell medium-6">
 				<h2 class="font-size-xlarge">

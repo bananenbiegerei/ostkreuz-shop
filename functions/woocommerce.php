@@ -85,3 +85,16 @@ function remove_shipping_phone_field($fields) {
 }
 
 require_once(get_template_directory().'/functions/woocommerce/product.php');
+
+
+// add cart with counter
+add_filter( 'woocommerce_add_to_cart_fragments', 'custom_add_to_cart_fragment' );
+
+function custom_add_to_cart_fragment( $fragments ) {
+
+  global $woocommerce;
+
+  $fragments['.custom-cart'] = '<a href="' . wc_get_cart_url() . '" class="custom-cart">Cart <span>' . $woocommerce->cart->cart_contents_count . '</span></a>';
+   return $fragments;
+
+ }
