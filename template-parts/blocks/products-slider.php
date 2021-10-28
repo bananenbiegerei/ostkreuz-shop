@@ -22,10 +22,12 @@ if ($cat) {
   <div class="grid-container fluid">
     <div class="grid-x grid-margin-x">
       <div class="auto cell">
-        <a class="button small clear" href="#top" data-smooth-scroll>Top</a>
+        <a class="icon-font button clear" href="#top" data-smooth-scroll>
+          
+        </a>
       </div>
       <div class="shrink cell">
-        <a class="small clear button" href="<?php echo get_term_link($cat->term_id); ?>">Alle <?php echo $cat->name; ?></a>
+        <a class="small clear button" href="<?php echo get_term_link($cat->term_id); ?>"><span class="icon-font"></span> Alle <?php echo $cat->name; ?></a>
       </div>
       <div class="cell medium-12">
         <h2 class="h1 text-center"><?php echo $cat->name; ?></h2>

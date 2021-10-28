@@ -42,7 +42,9 @@ if ( ! empty( $block['align'] ) ) {
 	<div class="grid-container fluid">
 		<div class="grid-x grid-margin-x">
 			<div class="auto cell">
-				<a class="button small clear" href="#top" data-smooth-scroll>Top</a>
+				<a class="icon-font button clear" href="#top" data-smooth-scroll>
+					
+				</a>
 			</div>
 			<div class="shrink cell">
 				<a class="button small clear" href="<?php echo esc_url( $link['url'] ); ?>" target="<?php echo esc_attr( $link['target'] ); ?>"><?php echo esc_html( $link['title'] ); ?></a>

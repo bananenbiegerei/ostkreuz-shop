@@ -1,4 +1,6 @@
 <div class="scroll-top">
 	<hr>
-	<a href="#top" data-smooth-scroll>Top</a>
+	<a class="icon-font button clear" href="#top" data-smooth-scroll>
+			
+	</a>
 </div>
