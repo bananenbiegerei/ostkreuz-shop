@@ -33,7 +33,7 @@ $global-transition-quick: all 0.1s ease;
 $front: 999;
 $middle: 99;
 $back: 9;
-
+$alternative-radius: 15px;
 @mixin fullheight-header {
 	height: $mobile-fullheight-header;
 	@include breakpoint(medium) {

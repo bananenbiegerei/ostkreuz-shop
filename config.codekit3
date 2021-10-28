@@ -4201,6 +4201,30 @@
       "oAP" : "\/dist\/woocommerce\/single-product.php",
       "oF" : 0
     },
+    "\/woocommerce\/single-product\/add-to-cart\/variable.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dist\/woocommerce\/single-product\/add-to-cart\/variable.php",
+      "oF" : 0
+    },
+    "\/woocommerce\/single-product\/add-to-cart\/variation-add-to-cart-button.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dist\/woocommerce\/single-product\/add-to-cart\/variation-add-to-cart-button.php",
+      "oF" : 0
+    },
+    "\/woocommerce\/single-product\/add-to-cart\/variation.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dist\/woocommerce\/single-product\/add-to-cart\/variation.php",
+      "oF" : 0
+    },
     "\/woocommerce\/single-product\/product-attributes.php" : {
       "cB" : 0,
       "ft" : 8192,

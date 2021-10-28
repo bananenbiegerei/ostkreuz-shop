@@ -5,7 +5,11 @@
 .icon-font {
   @include icon-font;
 }
-
+table {
+  th {
+    font-weight: 400;
+  }
+}
 /* Paragraph */
 p {
   font-size: $global-font-size;

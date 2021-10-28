@@ -76,7 +76,7 @@ $foundation-palette: (
   alert: #cc4b37,
 );
 $light-gray: #F5F8F7;
-$medium-gray: #cacaca;
+$medium-gray: #EDEDED;
 $dark-gray: #8a8a8a;
 $black: #0a0a0a;
 $white: #fefefe;
@@ -88,7 +88,7 @@ $global-margin: 1rem;
 $global-padding: 1rem;
 $global-position: 1rem;
 $global-weight-normal: normal;
-$global-weight-bold: bold;
+$global-weight-bold: 400;
 $global-radius: 0;
 $global-menu-padding: 0.7rem 1rem;
 $global-menu-nested-margin: 1rem;
@@ -281,7 +281,7 @@ $breadcrumbs-item-separator-color: $medium-gray;
 
 $button-font-family: inherit;
 $button-padding: 0.85em 1em;
-$button-margin: 0 0 $global-margin 0;
+$button-margin: 0;
 $button-fill: solid;
 $button-background: $primary-color;
 $button-background-hover: scale-color($button-background, $lightness: -15%);
@@ -771,17 +771,17 @@ $switch-paddle-transition: all 0.25s ease-out;
 // 50. Table
 // ---------
 
-$table-background: $white;
+$table-background: transparent;
 $table-color-scale: 95%;
-$table-border: 2px solid smart-scale($table-background, $table-color-scale);
-$table-padding: rem-calc(15 0 0);
+$table-border: 2px solid $black;
+$table-padding: rem-calc(30);
 $table-hover-scale: 2%;
 $table-row-hover: darken($table-background, $table-hover-scale);
 $table-row-stripe-hover: darken($table-background, $table-color-scale + $table-hover-scale);
 $table-is-striped: false;
 $table-striped-background: smart-scale($table-background, $table-color-scale);
 $table-stripe: even;
-$table-head-background: smart-scale($table-background, $table-color-scale / 2);
+$table-head-background: $white;
 $table-head-row-hover: darken($table-head-background, $table-hover-scale);
 $table-foot-background: smart-scale($table-background, $table-color-scale);
 $table-foot-row-hover: darken($table-foot-background, $table-hover-scale);
