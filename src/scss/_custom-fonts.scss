@@ -1,10 +1,15 @@
-// @font-face {
-//     font-family: 'apercu-black';
-//     src: url('../fonts/apercu-black-web/apercu-black.eot');
-//     src: url('../fonts/apercu-black-web/apercu-black.eot?#iefix') format('embedded-opentype'),
-//          url('../fonts/apercu-black-web/apercu-black.woff') format('woff'),
-//          url('../fonts/apercu-black-web/apercu-black.woff2') format('woff2'),
-//          url('../fonts/apercu-black-web/apercu-black.ttf') format('truetype');
-//     font-weight: normal;
-//     font-style: normal;
-// }
+@font-face {
+	font-family: 'hm_ostblock-webfont';
+	src: url(../fonts/hm_ostblock-webfont.eot);
+	src: url(../fonts/hm_ostblock-webfont.eot?#iefix) format('embedded-opentype'), url(../fonts/hm_ostblock-webfont.woff) format('woff'), url(../fonts/hm_ostblock-webfont.ttf) format('truetype'), url(../fonts/hm_ostblock-webfont.svg#hm_ostblock-webfont) format('svg');
+	font-weight: 400;
+	font-style: normal
+}
+
+@font-face {
+	font-family: 'ostkreuzicons-regular';
+	src: url(../fonts/ostkreuzicons-regular.eot);
+	src: url(../fonts/ostkreuzicons-regular.eot?#iefix) format('embedded-opentype'), url(../fonts/ostkreuzicons-regular.woff) format('woff'), url(../fonts/ostkreuzicons-regular.ttf) format('truetype'), url(../fonts/ostkreuzicons-regular.svg#ostkreuzicons-regular) format('svg');
+	font-weight: 400;
+	font-style: normal
+}

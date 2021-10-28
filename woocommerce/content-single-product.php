@@ -59,17 +59,17 @@ if ( post_password_required() ) {
 		</div>
 	</header>
 	<hr>
-	<div class="swiper single-product-swiper">
+	<div class="swiper single-product-swiper margin-top-4 margin-bottom-4">
 		<!-- Additional required wrapper -->
 		<div class="swiper-wrapper">
 			<?php
 			  $attachment_ids = $product->get_gallery_image_ids(); ?>
 			<div class="swiper-slide">
-				<?php the_post_thumbnail('four-columns', array('class' => 'product-image')); ?>
+				<?php the_post_thumbnail('eight-columns', array('class' => 'product-image')); ?>
 			</div>
 			<?php foreach( $attachment_ids as $attachment_id ) { ?>
 			<div class="swiper-slide">
-				<?php echo wp_get_attachment_image( $attachment_id, 'four-columns', false, ["class" => "product-image"] ); ?>
+				<?php echo wp_get_attachment_image( $attachment_id, 'eight-columns', false, ["class" => "product-image"] ); ?>
 			</div>
 			<?php }
 			  ?>
@@ -113,7 +113,7 @@ if ( post_password_required() ) {
 	</div>
 
   <div class="grid-x grid-margin-x padding-vertical-1">
-    <div class="cell medium-7">
+    <div class="cell medium-7 lead">
       <?php the_content(); ?>
     </div>
 
@@ -177,11 +177,11 @@ if ( post_password_required() ) {
             }
           ?>
         </div>
-        <div class="tabs-panel" id="tab-shipping-info">Shipppping IIIIIIIINFOOOOO</div>
+        <div class="tabs-panel" id="tab-shipping-info">Shipppping IIIIIIIINFOOOOO – kommt noch!</div>
       </div>
     </div>
   </div>
-
+  <hr class="margin-top-4 margin-bottom-4">
 	<?php
 	/**
 	 * Hook: woocommerce_after_single_product_summary.

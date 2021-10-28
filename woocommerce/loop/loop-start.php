@@ -19,6 +19,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 ?>
+
+<?php /*
 <form
   class="filters grid-x grid-margin-x margin-bottom-2"
   action=""
@@ -29,8 +31,8 @@ if ( ! defined( 'ABSPATH' ) ) {
     //input:change->form#submit
     rangeslider:change->form#submit"
 >
-  <div class="cell medium-3">
 
+  <div class="cell medium-3">
     <select
       id="photographer"
       name="photographer"
@@ -92,6 +94,7 @@ if ( ! defined( 'ABSPATH' ) ) {
     <input type="submit" value="go" data-form-target="submit">
   </div>
 </form>
+*/ ?>
 <turbo-frame id="products" target="_top">
   <div class="grid-container">
     <div class="grid-x grid-margin-x">

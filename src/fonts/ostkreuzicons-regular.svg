@@ -1,0 +1,40 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata></metadata>
+<defs>
+<font id="ostkreuziconsregular" horiz-adv-x="1680" >
+<font-face units-per-em="1680" ascent="1344" descent="-336" />
+<missing-glyph horiz-adv-x="600" />
+<glyph />
+<glyph />
+<glyph unicode="&#xd;" />
+<glyph unicode=" "  horiz-adv-x="600" />
+<glyph unicode="&#x09;" horiz-adv-x="600" />
+<glyph unicode="&#xa0;" horiz-adv-x="600" />
+<glyph unicode="&#x2000;" horiz-adv-x="840" />
+<glyph unicode="&#x2001;" />
+<glyph unicode="&#x2002;" horiz-adv-x="840" />
+<glyph unicode="&#x2003;" />
+<glyph unicode="&#x2004;" horiz-adv-x="560" />
+<glyph unicode="&#x2005;" horiz-adv-x="420" />
+<glyph unicode="&#x2006;" horiz-adv-x="280" />
+<glyph unicode="&#x2007;" horiz-adv-x="280" />
+<glyph unicode="&#x2008;" horiz-adv-x="210" />
+<glyph unicode="&#x2009;" horiz-adv-x="336" />
+<glyph unicode="&#x200a;" horiz-adv-x="93" />
+<glyph unicode="&#x202f;" horiz-adv-x="336" />
+<glyph unicode="&#x205f;" horiz-adv-x="420" />
+<glyph unicode="&#x25fc;" horiz-adv-x="500" d="M0 0z" />
+<glyph unicode="&#xf000;" d="M0 0v1680h1680v-1680h-1680zM112 112h1456v1456h-1456v-1456zM336 448v112h1008v-112h-1008zM336 784v112h1008v-112h-1008zM336 1120v112h1008v-112h-1008z" />
+<glyph unicode="&#xf001;" d="M0 0v1680h1680v-1680h-1680zM112 112h1456v1456h-1456v-1456zM444 523l317 317l-317 316l79 80l317 -317l317 317l79 -80l-317 -316l317 -317l-79 -79l-317 316l-317 -316z" />
+<glyph unicode="&#xf002;" d="M0 840l1680 840v-1680z" />
+<glyph unicode="&#xf003;" d="M0 0v1680l1680 -840z" />
+<glyph unicode="&#xf004;" d="M0 1680h1680l-840 -1680z" />
+<glyph unicode="&#xf005;" d="M0 0l840 1680l840 -1680h-1680z" />
+<glyph unicode="&#xf006;" d="M336 840l1008 504v-1008z" />
+<glyph unicode="&#xf007;" d="M336 336v1008l1008 -504z" />
+<glyph unicode="&#xf008;" d="M336 1344h1008l-504 -1008z" />
+<glyph unicode="&#xf009;" d="M336 336l504 1008l504 -1008h-1008z" />
+</font>
+</defs></svg> 

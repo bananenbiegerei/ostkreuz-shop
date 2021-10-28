@@ -3381,6 +3381,48 @@
       "oAP" : "\/dist\/single.php",
       "oF" : 1
     },
+    "\/src\/fonts\/hm_ostblock-webfont.woff" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/dist\/fonts\/hm_ostblock-webfont.woff",
+      "oF" : 0
+    },
+    "\/src\/fonts\/ostkreuzicons-regular.eot" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/dist\/fonts\/ostkreuzicons-regular.eot",
+      "oF" : 0
+    },
+    "\/src\/fonts\/ostkreuzicons-regular.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 0,
+      "oAP" : "\/dist\/fonts\/ostkreuzicons-regular.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/src\/fonts\/ostkreuzicons-regular.ttf" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/dist\/fonts\/ostkreuzicons-regular.ttf",
+      "oF" : 0
+    },
+    "\/src\/fonts\/ostkreuzicons-regular.woff" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/dist\/fonts\/ostkreuzicons-regular.woff",
+      "oF" : 0
+    },
     "\/src\/img\/favicons\/android-chrome-192x192.png" : {
       "ft" : 32768,
       "iS" : 3725,
@@ -4167,6 +4209,14 @@
       "oAP" : "\/dist\/woocommerce\/single-product\/product-attributes.php",
       "oF" : 0
     },
+    "\/woocommerce\/single-product\/related.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dist\/woocommerce\/single-product\/related.php",
+      "oF" : 0
+    },
     "\/yarn.lock" : {
       "cB" : 0,
       "ft" : 8192,
@@ -4188,7 +4238,7 @@
     "displayValueWasSetByUser" : 0,
     "iconImageName" : "\/src\/img\/favicons\/apple-touch-icon.png",
     "iconImageWasSetByUser" : 0,
-    "lastBuiltDate" : 655030923.42944896
+    "lastBuiltDate" : 657122471.62134004
   },
   "projectSettings" : {
     "abortBuildOnError" : 1,

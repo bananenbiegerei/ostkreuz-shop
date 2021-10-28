@@ -1,3 +1,11 @@
+/* Font Families */
+@mixin icon-font {
+  font-family: 'ostkreuzicons-regular';
+}
+.icon-font {
+  @include icon-font;
+}
+
 /* Paragraph */
 p {
   font-size: $global-font-size;
