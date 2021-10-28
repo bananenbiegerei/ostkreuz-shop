@@ -73,10 +73,10 @@ ul.products {
 }
 .woocommerce-message {
 	background-color: $black;
-	margin: 0 auto;
+	margin: $space-medium auto;
 	@include white-color;
 	@include breakpoint(medium) {
-		max-width: 50%;
+		max-width: 100%;
 	}
 	padding: $space-medium;
 	padding-bottom: $space-xlarge;
