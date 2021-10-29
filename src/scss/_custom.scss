@@ -106,4 +106,25 @@ table {
   background-color: $black;
   @include white-color;
 }
+
+/* Foundation Elements */
+.accordion {
+  background-color: transparent;
+  
+  &-item + &-item {
+    margin-top: $space-xsmall;
+  }
+
+  &-title {
+    background-color: $black;
+    &:hover {
+      color: $white;
+    }
+    &:active, &:focus {
+      border: none;
+      color: $white;
+    }
+  }
+}
+
 /* Plugins */

@@ -118,9 +118,13 @@ if ( post_password_required() ) {
     </div>
 
     <div class="cell medium-5">
-      <ul class="tabs" data-tabs id="product-tabs">
-        <li class="tabs-title is-active"><a data-tabs-target="tab-product-info" aria-selected="true">Product Info</a></li>
-        <li class="tabs-title"><a data-tabs-target="tab-shipping-info" href="#tab-shipping-info">Shipping and Payment Info</a></li>
+      <ul class="tabs" data-responsive-accordion-tabs="accordion large-tabs" id="product-tabs">
+        <li class="tabs-title is-active">
+					<a data-tabs-target="tab-product-info" href="#tab-product-info" aria-selected="true">Product Info</a>
+				</li>
+        <li class="tabs-title">
+					<a data-tabs-target="tab-shipping-info" href="#tab-shipping-info">Shipping and Payment Info</a>
+				</li>
       </ul>
       
       <div class="tabs-content" data-tabs-content="product-tabs">
