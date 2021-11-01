@@ -29,7 +29,7 @@ get_header( 'shop' );
 do_action( 'woocommerce_before_main_content' );
 
 ?>
-<header class="woocommerce-products-header text-center padding-top-6 padding-bottom-6 grid-container">
+<header class="woocommerce-products-header page-title-container grid-container">
 	<div class="grid-x grid-margin-x align-center">
 		<div class="cell medium-12">
 			<?php if ( apply_filters( 'woocommerce_show_page_title', true ) ) : ?>

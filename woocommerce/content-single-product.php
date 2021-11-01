@@ -33,8 +33,8 @@ if ( post_password_required() ) {
 ?>
 <article id="product-<?php the_ID(); ?>" <?php wc_product_class( '', $product ); ?>>
 
-	<header class="product-header padding-top-3 padding-bottom-3 text-center">
-		<h1 class="product-header__title margin-bottom-0"><?php the_title(); ?></h1>
+	<header class="product-header page-title-container">
+		<h1 class="product-header__title"><?php the_title(); ?></h1>
 		<div class="product-header__photographers">
 			<?php $photographers = get_the_terms(get_the_id(), 'photographer');
 			if (!empty($photographers)) :
@@ -111,6 +111,7 @@ if ( post_password_required() ) {
 		do_action( 'woocommerce_single_product_summary' );
 		?>
 	</div>
+	<hr>
 
   <div class="grid-x grid-margin-x padding-vertical-1">
     <div class="cell medium-7 lead">

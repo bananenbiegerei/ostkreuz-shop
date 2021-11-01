@@ -1,7 +1,7 @@
 /* Spaces */
 //map-get($grid-column-gutter, medium)
 $gutter: 15px;
-$space-xxlarge: calc(12 * #{$gutter});
+$space-xxlarge: calc(8 * #{$gutter});
 $space-xlarge: calc(6 * #{$gutter});
 $space-large: calc(4 * #{$gutter});
 $space-medium: calc(2 * #{$gutter});

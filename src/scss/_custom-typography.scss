@@ -100,7 +100,10 @@ $small-font-size-h6: map-deep-get($header-styles, small, h6, font-size) * 1px;
 
 .lead,
 .archive .term-description {
-  font-size: $lead-font-size;
+  font-size: $global-font-size;
+  @include breakpoint(medium) {
+    font-size: $lead-font-size;
+  }
 }
 
 p.small,
