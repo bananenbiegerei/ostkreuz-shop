@@ -109,12 +109,24 @@ a {
     }
   }
 }
+html.backdropfilter {
+  .site-header,
+  .mobile-menu {
+    background-color: rgba($white, 0.1);
+    backdrop-filter: saturate(100%) blur(20px);
+  }
+}
+html.no-backdropfilter {
+  .site-header,
+  .mobile-menu {
+    background: $white;
+  }
+}
+
 .mobile-menu {
   display: none;
   background: lime;
   height: calc(100vh);
-  background-color: rgba($white, 0.1);
-  backdrop-filter: saturate(100%) blur(20px);
   padding-top: $space-large;
   .menu {
     li {
