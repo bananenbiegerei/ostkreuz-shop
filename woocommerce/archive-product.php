@@ -29,9 +29,9 @@ get_header( 'shop' );
 do_action( 'woocommerce_before_main_content' );
 
 ?>
-<header class="woocommerce-products-header text-center padding-top-8 padding-bottom-8 grid-container">
+<header class="woocommerce-products-header text-center padding-top-6 padding-bottom-6 grid-container">
 	<div class="grid-x grid-margin-x align-center">
-		<div class="cell medium-8">
+		<div class="cell medium-12">
 			<?php if ( apply_filters( 'woocommerce_show_page_title', true ) ) : ?>
 			<h1 class="woocommerce-products-header__title page-title"><?php woocommerce_page_title(); ?></h1>
 		<?php endif; ?>

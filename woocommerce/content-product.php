@@ -76,6 +76,7 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 	remove_action('woocommerce_after_shop_loop_item','woocommerce_template_loop_add_to_cart',10);
 	do_action( 'woocommerce_after_shop_loop_item' );
 	?>
+
 	</div>
 	</div>
 </li>
