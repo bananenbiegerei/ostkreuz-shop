@@ -76,6 +76,12 @@ a {
       height: calc(1 * #{$header-height - $gutter * 2});
     }
   }
+  .cart-container {
+    border-top: 1px solid $black;
+    @include breakpoint(medium) {
+      border-left: 1px solid $black;
+    }
+  }
 }
 /* Navigation */
 .menu {
@@ -99,6 +105,22 @@ a {
     }
     &.is-active {
       background-color: transparent;
+    }
+  }
+}
+.mobile-menu {
+  display: none;
+  background: lime;
+  height: calc(100vh);
+  background-color: rgba($white, 0.1);
+  backdrop-filter: saturate(100%) blur(20px);
+  padding-top: $space-large;
+  .menu {
+    li {
+      a {
+        text-align: center;
+        @include font-size-h1;
+      }
     }
   }
 }
