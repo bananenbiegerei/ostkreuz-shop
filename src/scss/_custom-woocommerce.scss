@@ -49,6 +49,9 @@ ul.products {
 		}
 	}
 }
+table.shop_table {
+	@include table-stack(true);
+}
 
 .product {
 	span.onsale {
@@ -174,8 +177,10 @@ ul.woocommerce-error {
 		// 	transform: rotate(180deg);
 		// }
 		img.attachment-woocommerce_thumbnail {
-			max-height: 120px;
-			max-width: 120px;
+			@include breakpoint(medium) {
+				max-height: 120px;
+				max-width: 120px;
+			}
 		}
 	}
 	.woocommerce-cart-form {

@@ -20,8 +20,37 @@ defined( 'ABSPATH' ) || exit;
 do_action( 'woocommerce_before_cart' ); ?>
 <form class="woocommerce-cart-form" action="<?php echo esc_url( wc_get_cart_url() ); ?>" method="post">
 	<?php do_action( 'woocommerce_before_cart_table' ); ?>
-
-	<table class="shop_table shop_table_responsive cart woocommerce-cart-form__contents" cellspacing="0">
+	<table class="stack">
+		  <thead>
+			<tr>
+			  <th width="300">Table Header</th>
+			  <th>Table Header</th>
+			  <th width="150">Table Header</th>
+			  <th width="150">Table Header</th>
+			</tr>
+		  </thead>
+		  <tbody>
+			<tr>
+			  <td>Content Goes Here</td>
+			  <td>This is longer content Donec id elit non mi porta gravida at eget metus.</td>
+			  <td>Content Goes Here</td>
+			  <td>Content Goes Here</td>
+			</tr>
+			<tr>
+			  <td>Content Goes Here</td>
+			  <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+			  <td>Content Goes Here</td>
+			  <td>Content Goes Here</td>
+			</tr>
+			<tr>
+			  <td>Content Goes Here</td>
+			  <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+			  <td>Content Goes Here</td>
+			  <td>Content Goes Here</td>
+			</tr>
+		  </tbody>
+		</table>
+	<table class="shop_table shop_table_responsive cart woocommerce-cart-form__contents stack" cellspacing="0">
 		<thead>
 			<tr>
 				<th class="product-remove">&nbsp;</th>
