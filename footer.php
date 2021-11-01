@@ -30,6 +30,11 @@
 				<?php // no rows found ?>
 				<?php endif; ?>
 			</div>
+			<div class="cell shrink">
+				<a href="<?php echo home_url(); ?>">
+					<img class="logo" src="<?php echo get_stylesheet_directory_uri(); ?>/dist/img/ostkreuz-logo.svg" alt="Logo">
+				</a>
+			</div>
 		</div>
 	</div>
 </footer>

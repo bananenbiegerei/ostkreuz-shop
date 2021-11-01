@@ -109,6 +109,10 @@ a {
   @include breakpoint(medium) {
     min-height: $footer-height;
   }
+  img.logo {
+    width: 120px;
+    height: auto;
+  }
 }
 /* Home */
 /* Page */

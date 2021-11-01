@@ -28,7 +28,7 @@
                 </div>
                 <div class="cell shrink">
                     <a href="<?php echo home_url(); ?>">
-                    <img class="logo" src="<?php echo get_stylesheet_directory_uri(); ?>/dist/img/ostkreuz-logo-small.png" alt="Logo">
+                    <img class="logo" src="<?php echo get_stylesheet_directory_uri(); ?>/dist/img/ostkreuz-logo-small.svg" alt="Logo">
                     </a>
                 </div>
 

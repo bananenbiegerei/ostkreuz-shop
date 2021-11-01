@@ -3535,6 +3535,19 @@
       "oAP" : "\/dist\/img\/favicons\/site.webmanifest",
       "oF" : 1
     },
+    "\/src\/img\/OSTKREUZ_VECTOR.png" : {
+      "ft" : 32768,
+      "iS" : 32760,
+      "oA" : 0,
+      "oAP" : "\/dist\/img\/OSTKREUZ_VECTOR.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 1,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/src\/img\/ostkreuz-logo-small.png" : {
       "ft" : 32768,
       "iS" : 2403,
@@ -3547,6 +3560,16 @@
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
+    },
+    "\/src\/img\/ostkreuz-logo-small.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 0,
+      "oAP" : "\/dist\/img\/ostkreuz-logo-small.svg",
+      "oF" : 0,
+      "opt" : 1,
+      "plM" : 52780316221407,
+      "prP" : 0
     },
     "\/src\/img\/ostkreuz-logo.svg" : {
       "ft" : 2097152,
@@ -4129,14 +4152,6 @@
       "oAP" : "\/dist\/woocommerce\/archive-product.php",
       "oF" : 0
     },
-    "\/woocommerce\/cart\/cart-empty.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 1,
-      "oAP" : "\/dist\/woocommerce\/cart\/cart-empty.php",
-      "oF" : 0
-    },
     "\/woocommerce\/cart\/cart-item-data.php" : {
       "cB" : 0,
       "ft" : 8192,
@@ -4169,36 +4184,12 @@
       "oAP" : "\/dist\/woocommerce\/cart\/cart.php",
       "oF" : 0
     },
-    "\/woocommerce\/cart\/cross-sells.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 1,
-      "oAP" : "\/dist\/woocommerce\/cart\/cross-sells.php",
-      "oF" : 0
-    },
-    "\/woocommerce\/cart\/mini-cart.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 1,
-      "oAP" : "\/dist\/woocommerce\/cart\/mini-cart.php",
-      "oF" : 0
-    },
     "\/woocommerce\/cart\/proceed-to-checkout-button.php" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 1,
       "oAP" : "\/dist\/woocommerce\/cart\/proceed-to-checkout-button.php",
-      "oF" : 0
-    },
-    "\/woocommerce\/cart\/shipping-calculator.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 1,
-      "oAP" : "\/dist\/woocommerce\/cart\/shipping-calculator.php",
       "oF" : 0
     },
     "\/woocommerce\/checkout\/form-checkout.php" : {
