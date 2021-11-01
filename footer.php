@@ -14,6 +14,17 @@
 			</div>	
 			<?php endif; ?>
 			<div class="cell auto">
+				<nav class="text-left">
+					<?php
+					wp_nav_menu(array(
+						'container' => '',
+						'menu' => 'footer',
+						'menu_class' => 'menu vertical',
+						'theme_location' => 'footer',
+						'walker' => new F6_Main_Menu_Walker(),
+					));
+					?>
+				</nav>
 				<?php if ( have_rows( 'social_media_links', 'option' ) ) : ?>
 				<?php while ( have_rows( 'social_media_links', 'option' ) ) : the_row(); ?>
 					<?php 

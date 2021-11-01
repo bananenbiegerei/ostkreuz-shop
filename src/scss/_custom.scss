@@ -113,6 +113,13 @@ a {
     width: 120px;
     height: auto;
   }
+  .menu {
+    li {
+      a {
+        padding-top: 0;
+      }
+    }
+  }
 }
 /* Home */
 /* Page */
