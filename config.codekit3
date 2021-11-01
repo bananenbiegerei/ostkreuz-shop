@@ -3403,7 +3403,7 @@
       "oA" : 0,
       "oAP" : "\/dist\/fonts\/ostkreuzicons-regular.svg",
       "oF" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "plM" : 52780316221407,
       "prP" : 0
     },
@@ -3547,6 +3547,16 @@
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
+    },
+    "\/src\/img\/ostkreuz-logo.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 0,
+      "oAP" : "\/dist\/img\/ostkreuz-logo.svg",
+      "oF" : 0,
+      "opt" : 1,
+      "plM" : 52780316221407,
+      "prP" : 0
     },
     "\/src\/img\/sales-bg.svg" : {
       "ft" : 2097152,
@@ -3911,6 +3921,21 @@
       "pg" : 0,
       "sct" : 1
     },
+    "\/src\/scss\/components\/_hero-swiper.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dist\/scss\/components\/_hero-swiper.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 1
+    },
     "\/src\/scss\/components\/_hero-teaser.scss" : {
       "aP" : 0,
       "bl" : 0,
@@ -3952,6 +3977,21 @@
       "oA" : 1,
       "oAP" : "\/dist\/scss\/components\/_products.css",
       "oF" : 1,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 1
+    },
+    "\/src\/scss\/components\/_select2-overwrites.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dist\/scss\/components\/_select2-overwrites.css",
+      "oF" : 0,
       "oS" : 0,
       "pg" : 0,
       "sct" : 1
@@ -4012,6 +4052,14 @@
       "hM" : 0,
       "oA" : 1,
       "oAP" : "\/dist\/template-parts\/blocks\/anchor-top.php",
+      "oF" : 0
+    },
+    "\/template-parts\/blocks\/hero-swiper.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dist\/template-parts\/blocks\/hero-swiper.php",
       "oF" : 0
     },
     "\/template-parts\/blocks\/hero-teaser.php" : {
@@ -4153,6 +4201,14 @@
       "oAP" : "\/dist\/woocommerce\/cart\/shipping-calculator.php",
       "oF" : 0
     },
+    "\/woocommerce\/checkout\/form-checkout.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dist\/woocommerce\/checkout\/form-checkout.php",
+      "oF" : 0
+    },
     "\/woocommerce\/content-product-swiper.php" : {
       "cB" : 0,
       "ft" : 8192,
@@ -4191,6 +4247,30 @@
       "hM" : 0,
       "oA" : 1,
       "oAP" : "\/dist\/woocommerce\/loop\/loop-start.php",
+      "oF" : 0
+    },
+    "\/woocommerce\/myaccount\/dashboard.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dist\/woocommerce\/myaccount\/dashboard.php",
+      "oF" : 0
+    },
+    "\/woocommerce\/myaccount\/my-account.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dist\/woocommerce\/myaccount\/my-account.php",
+      "oF" : 0
+    },
+    "\/woocommerce\/myaccount\/navigation.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dist\/woocommerce\/myaccount\/navigation.php",
       "oF" : 0
     },
     "\/woocommerce\/single-product.php" : {
@@ -4262,7 +4342,7 @@
     "displayValueWasSetByUser" : 0,
     "iconImageName" : "\/src\/img\/favicons\/apple-touch-icon.png",
     "iconImageWasSetByUser" : 0,
-    "lastBuiltDate" : 657122471.62134004
+    "lastBuiltDate" : 657407735.39402604
   },
   "projectSettings" : {
     "abortBuildOnError" : 1,
