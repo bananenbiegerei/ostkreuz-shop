@@ -1,0 +1,13 @@
+.block-hero-teaser {
+	position: relative;
+	@include fullheight;
+	img.hero-bg-image {
+		position: absolute;
+		top: 0;
+		left: 0;
+		@include fullheight;
+		width: 100%;
+		z-index: -1;
+		object-fit: cover;
+	}
+}

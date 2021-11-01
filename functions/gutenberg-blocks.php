@@ -28,8 +28,16 @@ function register_acf_block_types(){
 	]);
 	acf_register_block_type(['name' => 'hero_teaser',
 	'title'				=> __('Hero Teaser'),
-	'description'		=> __('Slider for Products'),
+	'description'		=> __('Teaser for Products'),
 	'render_template'	=> 'template-parts/blocks/hero-teaser.php',
+	'category'			=> 'custom-blocks',
+	'icon'				=> 'star-filled',
+	'keywords'			=> ['product', 'hero', 'ostkreuz' ],
+	]);
+	acf_register_block_type(['name' => 'hero_swiper',
+	'title'				=> __('Hero Swiper'),
+	'description'		=> __('Slider for Products'),
+	'render_template'	=> 'template-parts/blocks/hero-swiper.php',
 	'category'			=> 'custom-blocks',
 	'icon'				=> 'star-filled',
 	'keywords'			=> ['product', 'hero', 'ostkreuz' ],
