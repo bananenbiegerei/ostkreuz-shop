@@ -2,7 +2,7 @@
 import { Application } from 'stimulus';
 import { definitionsFromContext } from 'stimulus/webpack-helpers';
 import Foundation from 'foundation-sites';
-import Swiper, { Navigation } from 'swiper';
+import Swiper, { Navigation, Pagination, FreeMode, Autoplay, Parallax, EffectFade } from 'swiper';
 import $ from "jquery";
 
 import FormController from './controllers/form_controller';
@@ -12,7 +12,7 @@ const application = Application.start();
 //application.load(definitionsFromContext(context))
 //application.register('form', FormController);
 
-
+Swiper.use([Navigation, Pagination, Autoplay, EffectFade, FreeMode]);
 
 $(document).ready(function($) {
   $(document).foundation();
@@ -21,8 +21,15 @@ $(document).ready(function($) {
 
   // Swipers
   const swiper = new Swiper('.single-product-swiper', {
-    // Install modules
-    modules: [Navigation],
+    speed: 500,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    autoHeight: true
+  });
+  
+  const heroSwiper = new Swiper('.hero-swiper', {
     speed: 500,
     navigation: {
       nextEl: '.swiper-button-next',
@@ -32,7 +39,24 @@ $(document).ready(function($) {
   });
 
   const productSwiper = new Swiper('.product-swiper', {
+    freeMode: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: true,
+    },
+    breakpoints: {
+      640: {
+        slidesPerView: 1,
+      },
+      768: {
+        slidesPerView: 4,
+      },
+      1024: {
+        slidesPerView: 4,
+      },
+    },
     slidesPerView: 4,
+    spaceBetween: 60,
   })
 });
 
