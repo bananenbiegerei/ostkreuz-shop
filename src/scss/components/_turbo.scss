@@ -1,0 +1,6 @@
+turbo-frame {
+  transition: all .2s linear;
+  &[busy] {
+    opacity: 0.5;
+  }
+}

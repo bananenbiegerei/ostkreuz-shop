@@ -48,6 +48,30 @@ do_action( 'woocommerce_before_main_content' );
 		</div>
 	</div>
 </header>
+
+<?php if (is_tax('photographer')) : ?>
+	<div class="grid-container">
+		<form
+		method="get"
+		data-controller="form"
+		data-action="change->form#submit"
+		data-turbo-frame="products">
+			<select
+			class="width-auto"
+			id="product_cat"
+			name="product_cat">
+				<option value="">All</option>
+				<?php $product_cat = get_terms(array(
+					'taxonomy' => 'product_cat', 
+				));
+				foreach ($product_cat as $p) :?>
+					<option value="<?php echo $p->slug; ?>"><?php echo $p->name; ?></option>
+				<?php endforeach; ?>
+			</select>
+		</form>
+	</div>
+<?php endif; ?>
+
 <hr class="margin-bottom-2">
 <?php
 if ( woocommerce_product_loop() ) {

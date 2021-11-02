@@ -1,4 +1,4 @@
-//import * as Turbo from '@hotwired/turbo';
+import * as Turbo from '@hotwired/turbo';
 import { Application } from 'stimulus';
 import { definitionsFromContext } from 'stimulus/webpack-helpers';
 import Foundation from 'foundation-sites';
@@ -10,7 +10,7 @@ import FormController from './controllers/form_controller';
 const application = Application.start();
 //const context = require.context('./controllers', true, /\.js$/);
 //application.load(definitionsFromContext(context))
-//application.register('form', FormController);
+application.register('form', FormController);
 
 Swiper.use([Navigation, Pagination, Autoplay, EffectFade, FreeMode]);
 

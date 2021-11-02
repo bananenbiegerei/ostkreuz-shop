@@ -2,7 +2,7 @@
 <html <?php language_attributes(); ?> class="no-js">
 <?php get_template_part('head'); ?>
 
-<body <?php body_class(); ?>>
+<body <?php body_class(); ?> <?php if (!is_tax('photographer')) : ?> data-turbo="false"<?php endif; ?>>
     <header id="site-header" class="site-header desktop-header show-for-medium" role="banner">
         <div class="grid-container" id="top">
             <div class="grid-x grid-margin-x align-middle">

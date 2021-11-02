@@ -39,7 +39,7 @@ if ( post_password_required() ) {
 			<?php $photographers = get_the_terms(get_the_id(), 'photographer');
 			if (!empty($photographers)) :
 		    $photographers = array_map(function($p) {
-			return $p->name;
+			return '<a href="' . get_term_link($p->term_id) . '">' . $p->name . '</a>';
 		    },$photographers);
 		    $photographers = implode(', ', $photographers);
 	  		?>
@@ -121,10 +121,10 @@ if ( post_password_required() ) {
     <div class="cell medium-5">
       <ul class="tabs" data-responsive-accordion-tabs="accordion large-tabs" id="product-tabs">
         <li class="tabs-title is-active">
-					<a data-tabs-target="tab-product-info" href="#tab-product-info" aria-selected="true">Product Info</a>
+					<a data-tabs-target="tab-product-info" href="#tab-product-info" aria-selected="true">Produkt Info</a>
 				</li>
         <li class="tabs-title">
-					<a data-tabs-target="tab-shipping-info" href="#tab-shipping-info">Shipping and Payment Info</a>
+					<a data-tabs-target="tab-shipping-info" href="#tab-shipping-info">Versand</a>
 				</li>
       </ul>
       
@@ -137,7 +137,8 @@ if ( post_password_required() ) {
 						$filtered_attributes = array();
 
 						if (array_key_exists('pa_breite', $attributes) && array_key_exists('pa_hoehe', $attributes) ) {
-							$filtered_attributes['dimensions'] = get_term($attributes['pa_breite']['options'][0])->name . ' x ' . get_term($attributes['pa_hoehe']['options'][0])->name;
+							$filtered_attributes['dimensions']['name'] = 'Maße';
+							$filtered_attributes['dimensions']['value'] = get_term($attributes['pa_breite']['options'][0])->name . ' x ' . get_term($attributes['pa_hoehe']['options'][0])->name;
 							unset($attributes['pa_breite']);
 							unset($attributes['pa_hoehe']);
 						}
@@ -161,7 +162,7 @@ if ( post_password_required() ) {
 						// }
 
 						foreach($filtered_attributes as $key => $attr) {
-							echo '<div>' . $attr . '</div>';
+							echo '<div>' . $attr['name'] . ': ' . $attr['value'] . '</div>';
 						}
 
             foreach ($attributes as $key => $attr) {
@@ -176,8 +177,11 @@ if ( post_password_required() ) {
 										}
 								}, $options);
 								$options = implode(', ', $options);
+								$name = $data['name'];
+								if (strpos($name, 'pa_') !== false)
+									$name = ucwords(substr($name, 3));
 
-                echo '<div>' . $options . '</div>';
+                echo '<div>' . $name . ': ' . $options . '</div>';
               }
             }
           ?>

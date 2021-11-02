@@ -5,3 +5,11 @@
 li.product {
   list-style: none;
 }
+
+.product-header {
+  &__photographers {
+    a {
+      text-decoration: none;
+    }
+  }
+}
