@@ -49,6 +49,11 @@
 					<img class="logo" src="<?php echo get_stylesheet_directory_uri(); ?>/dist/img/ostkreuz-logo.svg" alt="Logo">
 				</a>
 			</div>
+			<div class="cell medium-12">
+				<div class="revoke-cookie-consent-container margin-bottom-1">
+					<?php echo do_shortcode('[cmplz-revoke-link text="Cookie Einstellungen"]'); ?>
+				</div>
+			</div>
 		</div>
 	</div>
 </footer>
