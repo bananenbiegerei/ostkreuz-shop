@@ -44,13 +44,18 @@ a {
 /* Layout */
 .main-content {
   // Margin-top would be for fixed header
-  margin-top: $mobile-header-height;
+  margin-top: $mobile-header-height * 1.5;
   @include breakpoint(medium) {
-    margin-top: $header-height;
+    margin-top: $header-height * 1.5;
   }
   min-height: $mobile-fullheight-header-footer;
   @include breakpoint(medium) {
     min-height: $fullheight-header-footer;
+  }
+}
+.home {
+  .main-content {
+    margin-top: 0;
   }
 }
 
@@ -171,6 +176,8 @@ html.no-backdropfilter {
 /* F6 */
 .button {
   text-decoration: none;
+  &:hover {
+  }
 }
 .block-grid {
   .cell {

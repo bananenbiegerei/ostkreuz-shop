@@ -24,10 +24,10 @@ defined( 'ABSPATH' ) || exit;
  */
 ?>
 <div class="grid-x grid-margin-x">
-    <div class="cell shrink">
+    <div class="cell small-12 medium-shrink">
         <?php do_action( 'woocommerce_account_navigation' ); ?>
     </div>
-    <div class="cell auto">
+    <div class="cell small-12 medium-auto">
         <div class="woocommerce-MyAccount-content">
             <?php
                 /**

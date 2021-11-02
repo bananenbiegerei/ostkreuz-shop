@@ -82,7 +82,7 @@ img.fullwidth {
 }
 
 .menu-offset-right {
-  margin-right: -1rem;
+  margin-right: -1rem; 
 }
 
 @mixin product-image-size-landscape {
@@ -104,7 +104,7 @@ img.fullwidth {
   }
 }
 @mixin product-image-background {
-  background-color: $light-gray;
+  background-color: $white;
   padding: $space-medium;
 }
 @mixin product-image-container-scaffolding {
