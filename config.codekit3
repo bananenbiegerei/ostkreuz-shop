@@ -82,10 +82,10 @@
     "\/footer.php" : {
       "cB" : 0,
       "ft" : 8192,
-      "hM" : 1,
+      "hM" : 0,
       "oA" : 1,
       "oAP" : "\/dist\/footer.php",
-      "oF" : 1
+      "oF" : 0
     },
     "\/front-page.php" : {
       "cB" : 0,
@@ -125,7 +125,7 @@
       "hM" : 0,
       "oA" : 1,
       "oAP" : "\/dist\/functions\/enqueue-scripts.php",
-      "oF" : 1
+      "oF" : 0
     },
     "\/functions\/features.php" : {
       "cB" : 0,
@@ -3467,15 +3467,15 @@
       "prP" : 0
     },
     "\/src\/js\/app.js" : {
-      "bF" : 4,
+      "bF" : 0,
       "ft" : 64,
-      "ma" : 1,
+      "ma" : 0,
       "mi" : 1,
       "oA" : 0,
       "oAP" : "\/dist\/js\/app.js",
-      "oF" : 3,
-      "sC" : 0,
-      "tS" : 1
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
     },
     "\/src\/js\/controllers\/active_filter_controller.js" : {
       "bF" : 0,
@@ -3702,7 +3702,7 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/dist\/scss\/_custom-scaffolding.css",
-      "oF" : 1,
+      "oF" : 0,
       "oS" : 0,
       "pg" : 0,
       "sct" : 1
@@ -3716,7 +3716,7 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/dist\/scss\/_custom-swiper.css",
-      "oF" : 1,
+      "oF" : 0,
       "oS" : 0,
       "pg" : 0,
       "sct" : 1
@@ -3758,7 +3758,7 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/dist\/scss\/_custom-woocommerce.css",
-      "oF" : 1,
+      "oF" : 0,
       "oS" : 0,
       "pg" : 0,
       "sct" : 1
@@ -3772,7 +3772,7 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/dist\/scss\/_custom.css",
-      "oF" : 1,
+      "oF" : 0,
       "oS" : 0,
       "pg" : 0,
       "sct" : 1
@@ -4209,7 +4209,7 @@
     "displayValueWasSetByUser" : 0,
     "iconImageName" : "\/src\/img\/favicons\/apple-touch-icon.png",
     "iconImageWasSetByUser" : 0,
-    "lastBuiltDate" : 657548043.99149501
+    "lastBuiltDate" : 657557543.10167301
   },
   "projectSettings" : {
     "abortBuildOnError" : 1,
