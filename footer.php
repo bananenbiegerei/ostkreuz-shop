@@ -14,6 +14,9 @@
 			</div>	
 			<?php endif; ?>
 			<div class="cell medium-auto small-12">
+				<div class="revoke-cookie-consent-container">
+					<?php echo do_shortcode('[cmplz-revoke-link text="Cookie Einstellungen"]'); ?>
+				</div>
 				<nav class="text-left">
 					<?php
 					wp_nav_menu(array(

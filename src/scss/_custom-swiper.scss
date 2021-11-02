@@ -20,7 +20,10 @@ $mobile-product-image-height: auto;
   &:after {
     color: $black;
     @include icon-font;
-    font-size: var(--swiper-navigation-size);
+    font-size: $global-font-size;
+    @include breakpoint(medium) {
+      @include font-size-h2;
+    }
     text-transform: none !important;
     letter-spacing: 0;
     text-transform: none;

@@ -49,8 +49,32 @@ ul.products {
 		}
 	}
 }
+@mixin my-table-stack {
+	  thead {
+		th {
+		  display: block;
+		}
+	  }
+	
+	  tfoot {
+		display: none;
+	  }
+	
+	  tr,
+	  th,
+	  td {
+		display: block;
+	  }
+	
+	  td {
+		border-top: 0;
+	  }
+	}
+	
 table.shop_table {
-	@include table-stack(true);
+	@include breakpoint(medium down) {
+		  @include my-table-stack;
+	 }
 }
 
 .product {
