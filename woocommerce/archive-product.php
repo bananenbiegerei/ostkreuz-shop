@@ -60,7 +60,7 @@ do_action( 'woocommerce_before_main_content' );
 			class="width-auto"
 			id="product_cat"
 			name="product_cat">
-				<option value="">All</option>
+				<option value="">Alle</option>
 				<?php $product_cat = get_terms(array(
 					'taxonomy' => 'product_cat', 
 				));

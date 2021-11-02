@@ -3,8 +3,8 @@
 <?php get_template_part('head'); ?>
 
 <body <?php body_class(); ?> <?php if (!is_tax('photographer')) : ?> data-turbo="false"<?php endif; ?>>
-    <header id="site-header" class="site-header desktop-header show-for-medium" role="banner">
-        <div class="grid-container" id="top">
+    <header id="site-header" class="site-header desktop-header show-for-large" role="banner">
+        <div class="grid-container fluid" id="top">
             <div class="grid-x grid-margin-x align-middle">
                 <div class="cell shrink">
                     <nav>
@@ -35,11 +35,11 @@
             </div>
         </div>
     </header>
-    <header id="site-header" class="site-header mobile-header hide-for-medium" role="banner">
-        <div class="grid-container" id="top">
+    <header id="site-header" class="site-header mobile-header hide-for-large" role="banner">
+        <div class="grid-container fluid" id="top">
             <div class="grid-x grid-margin-x align-middle">
                 <div class="cell auto">
-                    <button class="icon-font clear h1 margin-bottom-0" data-toggle="mobile-menu">
+                    <button class="icon-font clear margin-bottom-0 hamburger-icon" data-toggle="mobile-menu">
                         
                     </button>
                 </div>
