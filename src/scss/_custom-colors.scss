@@ -73,8 +73,12 @@ $colors: (
 }
 
 // Negative Color Schemes
-.has-black-background-color {
+:root .has-black-background-color {
+  background-color: $black;
   @include white-color;
+  .card {
+    background-color: $black;
+  }
   .wp-block-button,
   .wp-block-buttons > .wp-block-button {
       margin-bottom: $space-small;

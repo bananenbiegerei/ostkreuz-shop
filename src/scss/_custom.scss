@@ -66,8 +66,7 @@ a {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: rgba($white, 0.1);
-  backdrop-filter: saturate(100%) blur(20px);
+  border-bottom: 2px solid $black;
   .grid-x {
     min-height: $mobile-header-height;
     @include breakpoint(large) {
@@ -211,10 +210,10 @@ table {
     border: none;
   }
 }
-.callout {
-  background-color: $black;
-  @include white-color;
-}
+// .callout {
+//   background-color: $black;
+//   @include white-color;
+// }
 
 /* Foundation Elements */
 .accordion {
@@ -236,4 +235,19 @@ table {
   }
 }
 
-/* Plugins */
+/* Custom Styles for Categories */
+.product_cat-poster,
+.product_cat-online-portfoliosichtungen,
+.product_cat-spezial-editionen,
+.product_cat-print-editionen {
+  .card,
+  &.swiper-slide {
+    img {
+      box-shadow: $shadow;
+      background-color: $white;
+    }
+    &.clickable:hover {
+      box-shadow: none;
+    }
+  }
+}

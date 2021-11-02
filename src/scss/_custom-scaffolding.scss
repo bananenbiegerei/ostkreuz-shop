@@ -104,13 +104,25 @@ img.fullwidth {
   }
 }
 @mixin product-image-background {
-  background-color: $white;
+  background-color: transparent;
   padding: $space-medium;
 }
 @mixin product-image-container-scaffolding {
+  @include product-image-background;
   img {
     @include product-image-size-landscape;
-    @include product-image-size-portrait;
-    @include product-image-background; 
+    @include product-image-size-portrait; 
+  }
+}
+.product-image-container {
+  background: red;
+  @include product-image-background;
+}
+
+@mixin fullheight-header {
+  max-height: calc(#{$mobile-fullheight-header} - #{$space-medium});
+  width: auto;
+  @include breakpoint(medium) {
+    max-height: 800px;
   }
 }

@@ -33,25 +33,39 @@ if ( ! empty( $block['align'] ) ) {
 </style>
 
 <div id="<?php echo esc_attr( $id ); ?>" class="<?php echo esc_attr( $classes ); ?> fullwidth">
-	<div class="grid-container padding-top-4">
+	<div class="grid-container fluid padding-top-6">
 		<div class="grid-x grid-margin-x">
-			<div class="cell medium-6">
-				<h2 class="font-size-xlarge">
-					<?php the_field( 'description' ); ?>
-				</h2>
-				<!-- @LG oh man das alte Problem … -->
-				<?php $selected_product = get_field( 'selected_product' ); ?>
-				<?php if ( $selected_product ) : ?>
-					<?php $post = $selected_product; ?>
-					<?php setup_postdata( $post ); ?> 
-					<a class="button" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-					<?php wp_reset_postdata(); ?>
-				<?php endif; ?>	
+			<div class="cell medium-4">
+				<div class="callout">
+					<h2 class="h1">
+						<?php the_field( 'description' ); ?>
+					</h2>
+				<?php
+				if( get_field('objekt_wahlen') == 'produkt' ) { ?>
+					<?php $selected_product = get_field( 'selected_product' ); ?>
+					<?php if ( $selected_product ) : ?>
+						<?php $post = $selected_product; ?>
+						<?php setup_postdata( $post ); ?> 
+						<a class="button" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+						<?php wp_reset_postdata(); ?>
+					<?php endif; ?>	
+				<?php }
+				?>
+				<?php
+				if( get_field('objekt_wahlen') == 'produkt-kategorie' ) { ?>
+					<?php $ausgewahlte_produkt_kategorie = get_field( 'ausgewahlte_produkt_kategorie' ); ?>
+					<?php $term = get_term_by( 'id', $ausgewahlte_produkt_kategorie, 'product_cat' ); ?>
+					<?php if ( $term ) : ?>
+						<a class="button" href="<?php echo esc_url( get_term_link( $term ) ); ?>"><?php echo esc_html( $term->name ); ?></a>
+					<?php endif; ?>
+				<?php }
+				?>
+				</div>
 			</div>
 		</div>
 	</div>
 	<?php $background_image = get_field( 'background_image' ); ?>
-	<?php $size = 'twelve-columns'; ?>
+	<?php $size = 'full'; ?>
 	<?php if ( $background_image ) : ?>
 		<?php echo wp_get_attachment_image( $background_image, $size, false, ["class" => "hero-bg-image"] );?>
 	<?php endif; ?>

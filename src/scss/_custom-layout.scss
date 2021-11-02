@@ -34,10 +34,11 @@ $column-gutter: map-get($grid-column-gutter, 'small');
 		// 	display: block;	
 		// }
 		.wp-block-group__inner-container {
-		  max-width: calc(12 / 12 * #{$global-width} - #{$column-gutter} * 1);
-		  padding-left: $column-gutter * 0.5;
-		  padding-right: $column-gutter * 0.5;
-		  margin: 0 auto;
+		  // max-width: calc(12 / 12 * #{$global-width} - #{$column-gutter} * 1);
+		  // padding-left: $column-gutter * 0.5;
+		  // padding-right: $column-gutter * 0.5;
+		  // margin: 0 auto;
+		  overflow: hidden;
 		}
 	  }
 	}

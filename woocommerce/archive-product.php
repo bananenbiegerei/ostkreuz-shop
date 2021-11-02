@@ -50,7 +50,7 @@ do_action( 'woocommerce_before_main_content' );
 </header>
 
 <?php if (is_tax('photographer')) : ?>
-	<div class="grid-container">
+	<div class="grid-container margin-bottom-2">
 		<form
 		method="get"
 		data-controller="form"
@@ -72,7 +72,6 @@ do_action( 'woocommerce_before_main_content' );
 	</div>
 <?php endif; ?>
 
-<hr class="margin-bottom-2">
 <?php
 if ( woocommerce_product_loop() ) {
 

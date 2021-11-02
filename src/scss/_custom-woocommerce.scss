@@ -238,6 +238,14 @@ ul.woocommerce-error {
 					th {
 						text-align: left;
 					}
+					tr {
+						@include breakpoint(large) {
+							td:nth-child(2) {
+								text-align: right;
+								padding-right: $space-medium;
+							}
+						}
+					}
 				}
 			}
 			.wc-proceed-to-checkout {

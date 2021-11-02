@@ -49,8 +49,9 @@ $mobile-product-image-height: auto;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      .product-image {
-        @include product-image-background;
+      img {
+        max-height: 600px;
+        width: auto;
       }
     }
   }
@@ -63,7 +64,6 @@ $mobile-product-image-height: auto;
       height: auto;
       display: flex;
       align-items: center;
-      @include product-image-container-scaffolding;
     }
   }
 }
