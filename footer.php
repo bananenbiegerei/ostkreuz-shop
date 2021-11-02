@@ -13,7 +13,18 @@
 				<?php the_field('adresse_2','option'); ?>
 			</div>	
 			<?php endif; ?>
-			<div class="cell auto">
+			<div class="cell medium-auto small-12">
+				<nav class="text-left">
+					<?php
+					wp_nav_menu(array(
+						'container' => '',
+						'menu' => 'footer',
+						'menu_class' => 'menu vertical menu-offset-left margin-bottom-2',
+						'theme_location' => 'footer',
+						'walker' => new F6_Main_Menu_Walker(),
+					));
+					?>
+				</nav>
 				<?php if ( have_rows( 'social_media_links', 'option' ) ) : ?>
 				<?php while ( have_rows( 'social_media_links', 'option' ) ) : the_row(); ?>
 					<?php 
@@ -29,6 +40,11 @@
 				<?php else : ?>
 				<?php // no rows found ?>
 				<?php endif; ?>
+			</div>
+			<div class="cell medium-shrink small-12">
+				<a href="<?php echo home_url(); ?>">
+					<img class="logo" src="<?php echo get_stylesheet_directory_uri(); ?>/dist/img/ostkreuz-logo.svg" alt="Logo">
+				</a>
 			</div>
 		</div>
 	</div>

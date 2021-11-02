@@ -66,7 +66,7 @@
 // ---------
 
 $global-font-size: 100%;
-$global-width: rem-calc(1600);
+$global-width: rem-calc(1440);
 $global-lineheight: 1.2;
 $foundation-palette: (
   primary: #0a0a0a,
@@ -121,8 +121,8 @@ $breakpoint-classes: (small medium large);
 $grid-row-width: $global-width;
 $grid-column-count: 12;
 $grid-column-gutter: (
-  small: 15px,
-  medium: 15px,
+  small: 30px,
+  medium: 30px,
 );
 $grid-column-align-edge: true;
 $grid-column-alias: 'columns';
@@ -140,18 +140,18 @@ $header-lineheight: 1.1;
 $header-margin-bottom: 1rem;
 $header-styles: (
   small: (
-    'h1': ('font-size': 24),
-    'h2': ('font-size': 20),
-    'h3': ('font-size': 19),
+    'h1': ('font-size': 30),
+    'h2': ('font-size': 24),
+    'h3': ('font-size': 22),
     'h4': ('font-size': 18),
-    'h5': ('font-size': 17),
+    'h5': ('font-size': 16),
     'h6': ('font-size': 16),
   ),
   medium: (
     'h1': ('font-size': 48),
     'h2': ('font-size': 30),
     'h3': ('font-size': 24),
-    'h4': ('font-size': 20),
+    'h4': ('font-size': 22),
     'h5': ('font-size': 20),
     'h6': ('font-size': 16),
   ),
@@ -170,7 +170,7 @@ $code-border: 1px solid $medium-gray;
 $code-padding: rem-calc(2 5 1);
 $anchor-color: $primary-color;
 $anchor-color-hover: scale-color($anchor-color, $lightness: -14%);
-$anchor-text-decoration: none;
+$anchor-text-decoration: underline;
 $anchor-text-decoration-hover: none;
 $hr-width: 100%;
 $hr-border: 2px solid $black;
@@ -201,7 +201,7 @@ $abbr-underline: 1px dotted $black;
 // ---------------------
 
 $lead-font-size: $global-font-size * 1.5;
-$lead-lineheight: 1.1;
+$lead-lineheight: 1.2;
 $subheader-lineheight: 1.4;
 $subheader-color: $black;
 $subheader-font-weight: $global-weight-normal;
@@ -330,7 +330,7 @@ $callout-link-tint: 30%;
 $card-background: $white;
 $card-font-color: $body-font-color;
 $card-divider-background: $light-gray;
-$card-border: 1px solid $white;
+$card-border: 0 solid $white;
 $card-shadow: none;
 $card-border-radius: $global-radius;
 $card-padding: $global-padding;
@@ -474,8 +474,8 @@ $menu-margin: 0;
 $menu-nested-margin: $global-menu-nested-margin;
 $menu-items-padding: $global-menu-padding;
 $menu-simple-margin: 1rem;
-$menu-item-color-active: $white;
-$menu-item-background-active: get-color(primary);
+$menu-item-color-active: $black;
+$menu-item-background-active: $white;
 $menu-icon-spacing: 0.25rem;
 $menu-state-back-compat: true;
 $menu-centered-back-compat: true;
@@ -773,15 +773,15 @@ $switch-paddle-transition: all 0.25s ease-out;
 
 $table-background: transparent;
 $table-color-scale: 95%;
-$table-border: 2px solid $black;
-$table-padding: rem-calc(30);
+$table-border: 1px solid $black;
+$table-padding: rem-calc(7.5);
 $table-hover-scale: 2%;
 $table-row-hover: darken($table-background, $table-hover-scale);
 $table-row-stripe-hover: darken($table-background, $table-color-scale + $table-hover-scale);
 $table-is-striped: false;
 $table-striped-background: smart-scale($table-background, $table-color-scale);
 $table-stripe: even;
-$table-head-background: $white;
+$table-head-background: transparent;
 $table-head-row-hover: darken($table-head-background, $table-hover-scale);
 $table-foot-background: smart-scale($table-background, $table-color-scale);
 $table-foot-row-hover: darken($table-foot-background, $table-hover-scale);
@@ -859,8 +859,8 @@ $xy-grid: true;
 $grid-container: $global-width;
 $grid-columns: 12;
 $grid-margin-gutters: (
-  small: 15px,
-  medium: 15px
+  small: 30px,
+  medium: 30px
 );
 $grid-padding-gutters: $grid-margin-gutters;
 $grid-container-padding: (small: 30px, medium: 100px);

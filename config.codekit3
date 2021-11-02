@@ -3399,6 +3399,19 @@
       "oAP" : "\/dist\/img\/favicons\/site.webmanifest",
       "oF" : 1
     },
+    "\/src\/img\/OSTKREUZ_VECTOR.png" : {
+      "ft" : 32768,
+      "iS" : 32760,
+      "oA" : 0,
+      "oAP" : "\/dist\/img\/OSTKREUZ_VECTOR.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 1,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/src\/img\/ostkreuz-logo-small.png" : {
       "ft" : 32768,
       "iS" : 2403,
@@ -3411,6 +3424,26 @@
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
+    },
+    "\/src\/img\/ostkreuz-logo-small.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 0,
+      "oAP" : "\/dist\/img\/ostkreuz-logo-small.svg",
+      "oF" : 0,
+      "opt" : 1,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/src\/img\/ostkreuz-logo.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 0,
+      "oAP" : "\/dist\/img\/ostkreuz-logo.svg",
+      "oF" : 0,
+      "opt" : 1,
+      "plM" : 52780316221407,
+      "prP" : 0
     },
     "\/src\/img\/sales-bg.svg" : {
       "ft" : 2097152,
@@ -3761,6 +3794,21 @@
       "pg" : 0,
       "sct" : 1
     },
+    "\/src\/scss\/components\/_hero-swiper.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dist\/scss\/components\/_hero-swiper.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 1
+    },
     "\/src\/scss\/components\/_hero-teaser.scss" : {
       "aP" : 0,
       "bl" : 0,
@@ -3799,6 +3847,21 @@
       "oA" : 1,
       "oAP" : "\/dist\/scss\/components\/_products.css",
       "oF" : 1,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 1
+    },
+    "\/src\/scss\/components\/_select2-overwrites.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dist\/scss\/components\/_select2-overwrites.css",
+      "oF" : 0,
       "oS" : 0,
       "pg" : 0,
       "sct" : 1
@@ -3857,6 +3920,14 @@
       "hM" : 0,
       "oA" : 1,
       "oAP" : "\/dist\/template-parts\/blocks\/anchor-top.php",
+      "oF" : 0
+    },
+    "\/template-parts\/blocks\/hero-swiper.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dist\/template-parts\/blocks\/hero-swiper.php",
       "oF" : 0
     },
     "\/template-parts\/blocks\/hero-teaser.php" : {
@@ -3926,14 +3997,6 @@
       "oAP" : "\/dist\/woocommerce\/archive-product.php",
       "oF" : 0
     },
-    "\/woocommerce\/cart\/cart-empty.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 1,
-      "oAP" : "\/dist\/woocommerce\/cart\/cart-empty.php",
-      "oF" : 0
-    },
     "\/woocommerce\/cart\/cart-item-data.php" : {
       "cB" : 0,
       "ft" : 8192,
@@ -3966,22 +4029,6 @@
       "oAP" : "\/dist\/woocommerce\/cart\/cart.php",
       "oF" : 0
     },
-    "\/woocommerce\/cart\/cross-sells.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 1,
-      "oAP" : "\/dist\/woocommerce\/cart\/cross-sells.php",
-      "oF" : 0
-    },
-    "\/woocommerce\/cart\/mini-cart.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 1,
-      "oAP" : "\/dist\/woocommerce\/cart\/mini-cart.php",
-      "oF" : 0
-    },
     "\/woocommerce\/cart\/proceed-to-checkout-button.php" : {
       "cB" : 0,
       "ft" : 8192,
@@ -3990,12 +4037,12 @@
       "oAP" : "\/dist\/woocommerce\/cart\/proceed-to-checkout-button.php",
       "oF" : 0
     },
-    "\/woocommerce\/cart\/shipping-calculator.php" : {
+    "\/woocommerce\/checkout\/form-checkout.php" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 1,
-      "oAP" : "\/dist\/woocommerce\/cart\/shipping-calculator.php",
+      "oAP" : "\/dist\/woocommerce\/checkout\/form-checkout.php",
       "oF" : 0
     },
     "\/woocommerce\/content-product-swiper.php" : {
@@ -4036,6 +4083,30 @@
       "hM" : 0,
       "oA" : 1,
       "oAP" : "\/dist\/woocommerce\/loop\/loop-start.php",
+      "oF" : 0
+    },
+    "\/woocommerce\/myaccount\/dashboard.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dist\/woocommerce\/myaccount\/dashboard.php",
+      "oF" : 0
+    },
+    "\/woocommerce\/myaccount\/my-account.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dist\/woocommerce\/myaccount\/my-account.php",
+      "oF" : 0
+    },
+    "\/woocommerce\/myaccount\/navigation.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dist\/woocommerce\/myaccount\/navigation.php",
       "oF" : 0
     },
     "\/woocommerce\/single-product.php" : {
