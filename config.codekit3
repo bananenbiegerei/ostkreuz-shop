@@ -3747,7 +3747,7 @@
       "ft" : 64,
       "ma" : 0,
       "mi" : 1,
-      "oA" : 1,
+      "oA" : 0,
       "oAP" : "\/dist\/js\/darkmode.js",
       "oF" : 0,
       "sC" : 3,
@@ -4401,7 +4401,7 @@
     "displayValueWasSetByUser" : 0,
     "iconImageName" : "\/src\/img\/favicons\/apple-touch-icon.png",
     "iconImageWasSetByUser" : 0,
-    "lastBuiltDate" : 657555855.46805799
+    "lastBuiltDate" : 657627858.22152698
   },
   "projectSettings" : {
     "abortBuildOnError" : 1,

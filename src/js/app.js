@@ -58,10 +58,10 @@ $(document).ready(function($) {
         slidesPerView: 3,
       },
       1024: {
-        slidesPerView: 6,
+        slidesPerView: 5,
       },
       1024: {
-        slidesPerView: 8,
+        slidesPerView: 6,
       },
     },
   })
