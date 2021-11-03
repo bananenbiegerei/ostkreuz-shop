@@ -59,6 +59,17 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 	 */
 	do_action( 'woocommerce_shop_loop_item_title' );
 
+	$photographers = get_the_terms(get_the_id(), 'photographer');
+	if (!empty($photographers && count($photographers) <= 3)) :
+		$photographers = array_map(function($p) {
+	return $p->name;
+		},$photographers);
+		$photographers = implode(', ', $photographers);
+		?>
+		<p class=""><?php echo $photographers; ?></p>
+	<?php endif; ?>
+
+	<?php
 	/**
 	 * Hook: woocommerce_after_shop_loop_item_title.
 	 *
