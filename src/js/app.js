@@ -41,6 +41,8 @@ $(document).ready(function($) {
 
   const productSwiper = new Swiper('.product-swiper', {
     freeMode: true,
+    slidesPerView: 1,
+    spaceBetween: 60,
     autoplay: {
       delay: 2500,
       disableOnInteraction: true,
@@ -57,8 +59,6 @@ $(document).ready(function($) {
         slidesPerView: 4,
       },
     },
-    slidesPerView: 4,
-    spaceBetween: 60,
   })
 });
 
