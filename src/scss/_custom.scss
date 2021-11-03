@@ -96,28 +96,30 @@ a {
     &.current-product-parent,
     &.current-menu-item,
     &.is-active {
-      position: relative;
-      &:before {
-        content: '';
-        width: 10px;
-        height: 10px;
-        background: $black;
-        border-radius: 100%;
-        position: absolute;
-        top: 14px;
-        left: 0;
-      }
+      // position: relative;
+      // &:before {
+      //   content: '';
+      //   width: 10px;
+      //   height: 10px;
+      //   background: $black;
+      //   border-radius: 100%;
+      //   position: absolute;
+      //   top: 14px;
+      //   left: 0;
+      // }
+      text-decoration: underline;
     }
     &.is-active {
       background-color: transparent;
     }
   }
 }
+
 html.backdropfilter {
   .site-header,
-  .mobile-menu {
-    background-color: rgba($white, 1);
-    //backdrop-filter: saturate(100%) blur(20px);
+  .mobile-menu,
+  .callout {
+    @include background-blur;
   }
 }
 html.no-backdropfilter {

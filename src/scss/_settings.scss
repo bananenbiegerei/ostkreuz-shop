@@ -69,7 +69,7 @@ $global-font-size: 100%;
 $global-width: rem-calc(1440);
 $global-lineheight: 1.2;
 $foundation-palette: (
-  primary: #0a0a0a,
+  primary: #231F20,
   secondary: #767676,
   success: #3adb76,
   warning: #ffae00,
@@ -78,7 +78,7 @@ $foundation-palette: (
 $light-gray: #F5F8F7;
 $medium-gray: #EDEDED;
 $dark-gray: #8a8a8a;
-$black: #0a0a0a;
+$black: #231F20;
 $white: #fefefe;
 $body-background: $white;
 $body-font-color: $black;
@@ -773,7 +773,7 @@ $switch-paddle-transition: all 0.25s ease-out;
 
 $table-background: transparent;
 $table-color-scale: 95%;
-$table-border: 1px dashed $black;
+$table-border: 1px solid $black;
 $table-padding: rem-calc(7.5);
 $table-hover-scale: 2%;
 $table-row-hover: darken($table-background, $table-hover-scale);
@@ -800,7 +800,7 @@ $tab-background-active: $black;
 $tab-active-color: $white;
 $tab-item-font-size: rem-calc(16);
 $tab-item-background-hover: $white;
-$tab-item-padding: 1.25rem 1.5rem;
+$tab-item-padding: 0.75rem;
 $tab-content-background: $white;
 $tab-content-border: transparent;
 $tab-content-color: $body-font-color;

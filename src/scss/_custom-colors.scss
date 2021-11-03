@@ -34,6 +34,10 @@
     background: $secondary-color;
   }
 }
+@mixin background-blur {
+  background-color: rgba($white, 0.2);
+  backdrop-filter: saturate(100%) blur(20px);
+}
 /* Color Schemes */
 $colors: (
   "primary-color": $primary-color,

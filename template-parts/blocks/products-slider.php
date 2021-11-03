@@ -27,7 +27,7 @@ if ($cat) {
         </a>
       </div>
       <div class="shrink cell">
-        <a class="small clear button" href="<?php echo get_term_link($cat->term_id); ?>"><span class="icon-font"></span> Alle <?php echo $cat->name; ?></a>
+        <a class="clear button" href="<?php echo get_term_link($cat->term_id); ?>"><span class="icon-font"></span> Alle <?php echo $cat->name; ?></a>
       </div>
       <div class="cell medium-12">
         <h2 class="h1 text-center"><?php echo $cat->name; ?></h2>

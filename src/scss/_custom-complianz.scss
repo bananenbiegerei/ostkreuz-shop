@@ -10,7 +10,7 @@
 #cc-window.cc-window.cc-floating {
 	font-family: $body-font-family;
 	font-weight: 400;
-	background: $medium-gray;
+	background: $white;
 	border-radius: $global-radius;
 	box-shadow: $shadow;
 	border: none;
@@ -156,3 +156,17 @@
 		}
 	}
 }
+body .cc-compliance .cc-btn.cc-show-settings, .cc-compliance .cc-btn.cc-save {
+	background: transparent!important;
+}
+// Blur
+html.backdropfilter {
+	  #cc-window.cc-window.cc-floating  {
+		@include background-blur;
+	  }
+	}
+	html.no-backdropfilter {
+	  #cc-window.cc-window.cc-floating  {
+		background: $white;
+	  }
+	}

@@ -11,33 +11,20 @@ $column-gutter: map-get($grid-column-gutter, 'small');
 	margin: 0 auto;
 	width: 100%;
 	max-width: calc(#{$global-width} + #{$column-gutter * 1});
-	padding-left: $column-gutter * 0.5;
-	padding-right: $column-gutter * 0.5;
+	// padding-left: $column-gutter * 0.5;
+	// padding-right: $column-gutter * 0.5;
 
 	@include breakpoint(medium) {
 	  max-width: calc(12 / 12 * #{$global-width});
-	  // width: 66.6666666667%;
 	  &.wp-block-file {
 		max-width: calc(12 / 12 * #{$global-width} - #{$column-gutter} * 4);
 	  }
-	  // &.wide,
-	  // .wide {
-		// max-width: calc(12 / 12 * #{$global-width});
-		// width: 100%;
-	  // }
 	  &.fullwidth,
 	  &.fullwidth {
 		max-width: 100%;
 		padding-left: 0;
 		padding-right: 0;
-		// &.products-slider {
-		// 	display: block;	
-		// }
 		.wp-block-group__inner-container {
-		  // max-width: calc(12 / 12 * #{$global-width} - #{$column-gutter} * 1);
-		  // padding-left: $column-gutter * 0.5;
-		  // padding-right: $column-gutter * 0.5;
-		  // margin: 0 auto;
 		  overflow: hidden;
 		}
 	  }

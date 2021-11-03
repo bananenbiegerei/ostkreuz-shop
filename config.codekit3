@@ -7,7 +7,7 @@
       "uuidString" : "CD596436-1EE7-428C-9CF1-9B011BEC2826"
     }
   ],
-  "creatorBuild" : "34127",
+  "creatorBuild" : "34214",
   "files" : {
     "\/.babelrc" : {
       "cB" : 0,
@@ -82,10 +82,10 @@
     "\/footer.php" : {
       "cB" : 0,
       "ft" : 8192,
-      "hM" : 0,
+      "hM" : 1,
       "oA" : 1,
       "oAP" : "\/dist\/footer.php",
-      "oF" : 0
+      "oF" : 1
     },
     "\/front-page.php" : {
       "cB" : 0,
@@ -125,7 +125,7 @@
       "hM" : 0,
       "oA" : 1,
       "oAP" : "\/dist\/functions\/enqueue-scripts.php",
-      "oF" : 0
+      "oF" : 1
     },
     "\/functions\/features.php" : {
       "cB" : 0,
@@ -227,7 +227,7 @@
       "ft" : 65536,
       "oA" : 1,
       "oAP" : "\/dist\/node_modules",
-      "oF" : 0
+      "oF" : 1
     },
     "\/node_modules\/@hotwired\/turbo\/dist\/turbo.es2017-esm.js" : {
       "bF" : 0,
@@ -672,6 +672,7 @@
     "\/node_modules\/foundation-sites\/_vendor\/sassy-lists\/stylesheets\/functions\/_contain.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -686,6 +687,7 @@
     "\/node_modules\/foundation-sites\/_vendor\/sassy-lists\/stylesheets\/functions\/_purge.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -700,6 +702,7 @@
     "\/node_modules\/foundation-sites\/_vendor\/sassy-lists\/stylesheets\/functions\/_remove.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -714,6 +717,7 @@
     "\/node_modules\/foundation-sites\/_vendor\/sassy-lists\/stylesheets\/functions\/_replace.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -728,6 +732,7 @@
     "\/node_modules\/foundation-sites\/_vendor\/sassy-lists\/stylesheets\/functions\/_to-list.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -742,6 +747,7 @@
     "\/node_modules\/foundation-sites\/_vendor\/sassy-lists\/stylesheets\/helpers\/_missing-dependencies.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -756,6 +762,7 @@
     "\/node_modules\/foundation-sites\/_vendor\/sassy-lists\/stylesheets\/helpers\/_true.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -781,6 +788,7 @@
     "\/node_modules\/foundation-sites\/scss\/_global.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -795,6 +803,7 @@
     "\/node_modules\/foundation-sites\/scss\/components\/_accordion-menu.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -809,6 +818,7 @@
     "\/node_modules\/foundation-sites\/scss\/components\/_accordion.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -823,6 +833,7 @@
     "\/node_modules\/foundation-sites\/scss\/components\/_badge.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -837,6 +848,7 @@
     "\/node_modules\/foundation-sites\/scss\/components\/_breadcrumbs.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -851,6 +863,7 @@
     "\/node_modules\/foundation-sites\/scss\/components\/_button-group.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -865,6 +878,7 @@
     "\/node_modules\/foundation-sites\/scss\/components\/_button.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -879,6 +893,7 @@
     "\/node_modules\/foundation-sites\/scss\/components\/_callout.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -893,6 +908,7 @@
     "\/node_modules\/foundation-sites\/scss\/components\/_card.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -907,6 +923,7 @@
     "\/node_modules\/foundation-sites\/scss\/components\/_close-button.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -921,6 +938,7 @@
     "\/node_modules\/foundation-sites\/scss\/components\/_drilldown.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -935,6 +953,7 @@
     "\/node_modules\/foundation-sites\/scss\/components\/_dropdown-menu.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -949,6 +968,7 @@
     "\/node_modules\/foundation-sites\/scss\/components\/_dropdown.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -963,6 +983,7 @@
     "\/node_modules\/foundation-sites\/scss\/components\/_flex.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -977,6 +998,7 @@
     "\/node_modules\/foundation-sites\/scss\/components\/_float.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -991,6 +1013,7 @@
     "\/node_modules\/foundation-sites\/scss\/components\/_label.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -1005,6 +1028,7 @@
     "\/node_modules\/foundation-sites\/scss\/components\/_media-object.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -1019,6 +1043,7 @@
     "\/node_modules\/foundation-sites\/scss\/components\/_menu-icon.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -1033,6 +1058,7 @@
     "\/node_modules\/foundation-sites\/scss\/components\/_menu.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -1047,6 +1073,7 @@
     "\/node_modules\/foundation-sites\/scss\/components\/_off-canvas.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -1061,6 +1088,7 @@
     "\/node_modules\/foundation-sites\/scss\/components\/_orbit.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -1075,6 +1103,7 @@
     "\/node_modules\/foundation-sites\/scss\/components\/_pagination.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -1089,6 +1118,7 @@
     "\/node_modules\/foundation-sites\/scss\/components\/_progress-bar.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -1103,6 +1133,7 @@
     "\/node_modules\/foundation-sites\/scss\/components\/_responsive-embed.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -1117,6 +1148,7 @@
     "\/node_modules\/foundation-sites\/scss\/components\/_reveal.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -1131,6 +1163,7 @@
     "\/node_modules\/foundation-sites\/scss\/components\/_slider.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -1145,6 +1178,7 @@
     "\/node_modules\/foundation-sites\/scss\/components\/_sticky.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -1159,6 +1193,7 @@
     "\/node_modules\/foundation-sites\/scss\/components\/_switch.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -1173,6 +1208,7 @@
     "\/node_modules\/foundation-sites\/scss\/components\/_table.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -1187,6 +1223,7 @@
     "\/node_modules\/foundation-sites\/scss\/components\/_tabs.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -1201,6 +1238,7 @@
     "\/node_modules\/foundation-sites\/scss\/components\/_thumbnail.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -1215,6 +1253,7 @@
     "\/node_modules\/foundation-sites\/scss\/components\/_title-bar.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -1229,6 +1268,7 @@
     "\/node_modules\/foundation-sites\/scss\/components\/_tooltip.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -1243,6 +1283,7 @@
     "\/node_modules\/foundation-sites\/scss\/components\/_top-bar.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -1257,6 +1298,7 @@
     "\/node_modules\/foundation-sites\/scss\/components\/_visibility.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -1271,6 +1313,7 @@
     "\/node_modules\/foundation-sites\/scss\/forms\/_checkbox.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -1285,6 +1328,7 @@
     "\/node_modules\/foundation-sites\/scss\/forms\/_error.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -1299,6 +1343,7 @@
     "\/node_modules\/foundation-sites\/scss\/forms\/_fieldset.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -1313,6 +1358,7 @@
     "\/node_modules\/foundation-sites\/scss\/forms\/_forms.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -1327,6 +1373,7 @@
     "\/node_modules\/foundation-sites\/scss\/forms\/_help-text.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -1341,6 +1388,7 @@
     "\/node_modules\/foundation-sites\/scss\/forms\/_input-group.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -1355,6 +1403,7 @@
     "\/node_modules\/foundation-sites\/scss\/forms\/_label.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -1369,6 +1418,7 @@
     "\/node_modules\/foundation-sites\/scss\/forms\/_meter.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -1383,6 +1433,7 @@
     "\/node_modules\/foundation-sites\/scss\/forms\/_progress.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -1397,6 +1448,7 @@
     "\/node_modules\/foundation-sites\/scss\/forms\/_range.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -1411,6 +1463,7 @@
     "\/node_modules\/foundation-sites\/scss\/forms\/_select.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -1425,6 +1478,7 @@
     "\/node_modules\/foundation-sites\/scss\/forms\/_text.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -1439,6 +1493,7 @@
     "\/node_modules\/foundation-sites\/scss\/foundation.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -1453,6 +1508,7 @@
     "\/node_modules\/foundation-sites\/scss\/grid\/_classes.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -1467,6 +1523,7 @@
     "\/node_modules\/foundation-sites\/scss\/grid\/_column.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -1481,6 +1538,7 @@
     "\/node_modules\/foundation-sites\/scss\/grid\/_flex-grid.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -1495,6 +1553,7 @@
     "\/node_modules\/foundation-sites\/scss\/grid\/_grid.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -1509,6 +1568,7 @@
     "\/node_modules\/foundation-sites\/scss\/grid\/_gutter.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -1523,6 +1583,7 @@
     "\/node_modules\/foundation-sites\/scss\/grid\/_layout.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -1537,6 +1598,7 @@
     "\/node_modules\/foundation-sites\/scss\/grid\/_position.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -1551,6 +1613,7 @@
     "\/node_modules\/foundation-sites\/scss\/grid\/_row.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -1565,6 +1628,7 @@
     "\/node_modules\/foundation-sites\/scss\/grid\/_size.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -1579,6 +1643,7 @@
     "\/node_modules\/foundation-sites\/scss\/prototype\/_arrow.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -1593,6 +1658,7 @@
     "\/node_modules\/foundation-sites\/scss\/prototype\/_border-box.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -1607,6 +1673,7 @@
     "\/node_modules\/foundation-sites\/scss\/prototype\/_border-none.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -1621,6 +1688,7 @@
     "\/node_modules\/foundation-sites\/scss\/prototype\/_bordered.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -1635,6 +1703,7 @@
     "\/node_modules\/foundation-sites\/scss\/prototype\/_box.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -1649,6 +1718,7 @@
     "\/node_modules\/foundation-sites\/scss\/prototype\/_display.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -1663,6 +1733,7 @@
     "\/node_modules\/foundation-sites\/scss\/prototype\/_font-styling.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -1677,6 +1748,7 @@
     "\/node_modules\/foundation-sites\/scss\/prototype\/_list-style-type.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -1691,6 +1763,7 @@
     "\/node_modules\/foundation-sites\/scss\/prototype\/_overflow.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -1705,6 +1778,7 @@
     "\/node_modules\/foundation-sites\/scss\/prototype\/_position.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -1719,6 +1793,7 @@
     "\/node_modules\/foundation-sites\/scss\/prototype\/_prototype.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -1733,6 +1808,7 @@
     "\/node_modules\/foundation-sites\/scss\/prototype\/_relation.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -1747,6 +1823,7 @@
     "\/node_modules\/foundation-sites\/scss\/prototype\/_rotate.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -1761,6 +1838,7 @@
     "\/node_modules\/foundation-sites\/scss\/prototype\/_rounded.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -1775,6 +1853,7 @@
     "\/node_modules\/foundation-sites\/scss\/prototype\/_separator.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -1789,6 +1868,7 @@
     "\/node_modules\/foundation-sites\/scss\/prototype\/_shadow.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -1803,6 +1883,7 @@
     "\/node_modules\/foundation-sites\/scss\/prototype\/_sizing.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -1817,6 +1898,7 @@
     "\/node_modules\/foundation-sites\/scss\/prototype\/_spacing.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -1831,6 +1913,7 @@
     "\/node_modules\/foundation-sites\/scss\/prototype\/_text-decoration.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -1845,6 +1928,7 @@
     "\/node_modules\/foundation-sites\/scss\/prototype\/_text-transformation.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -1859,6 +1943,7 @@
     "\/node_modules\/foundation-sites\/scss\/prototype\/_text-utilities.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -1873,6 +1958,7 @@
     "\/node_modules\/foundation-sites\/scss\/typography\/_alignment.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -1887,6 +1973,7 @@
     "\/node_modules\/foundation-sites\/scss\/typography\/_base.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -1901,6 +1988,7 @@
     "\/node_modules\/foundation-sites\/scss\/typography\/_helpers.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -1915,6 +2003,7 @@
     "\/node_modules\/foundation-sites\/scss\/typography\/_print.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -1929,6 +2018,7 @@
     "\/node_modules\/foundation-sites\/scss\/typography\/_typography.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -1943,6 +2033,7 @@
     "\/node_modules\/foundation-sites\/scss\/util\/_breakpoint.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -1957,6 +2048,7 @@
     "\/node_modules\/foundation-sites\/scss\/util\/_color.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -1971,6 +2063,7 @@
     "\/node_modules\/foundation-sites\/scss\/util\/_direction.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -1985,6 +2078,7 @@
     "\/node_modules\/foundation-sites\/scss\/util\/_flex.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -1999,6 +2093,7 @@
     "\/node_modules\/foundation-sites\/scss\/util\/_math.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -2013,6 +2108,7 @@
     "\/node_modules\/foundation-sites\/scss\/util\/_mixins.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -2027,6 +2123,7 @@
     "\/node_modules\/foundation-sites\/scss\/util\/_selector.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -2041,6 +2138,7 @@
     "\/node_modules\/foundation-sites\/scss\/util\/_typography.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -2055,6 +2153,7 @@
     "\/node_modules\/foundation-sites\/scss\/util\/_unit.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -2069,6 +2168,7 @@
     "\/node_modules\/foundation-sites\/scss\/util\/_util.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -2083,6 +2183,7 @@
     "\/node_modules\/foundation-sites\/scss\/util\/_value.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -2097,6 +2198,7 @@
     "\/node_modules\/foundation-sites\/scss\/vendor\/normalize.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -2111,6 +2213,7 @@
     "\/node_modules\/foundation-sites\/scss\/xy-grid\/_cell.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -2125,6 +2228,7 @@
     "\/node_modules\/foundation-sites\/scss\/xy-grid\/_classes.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -2139,6 +2243,7 @@
     "\/node_modules\/foundation-sites\/scss\/xy-grid\/_collapse.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -2153,6 +2258,7 @@
     "\/node_modules\/foundation-sites\/scss\/xy-grid\/_frame.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -2167,6 +2273,7 @@
     "\/node_modules\/foundation-sites\/scss\/xy-grid\/_grid.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -2181,6 +2288,7 @@
     "\/node_modules\/foundation-sites\/scss\/xy-grid\/_gutters.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -2195,6 +2303,7 @@
     "\/node_modules\/foundation-sites\/scss\/xy-grid\/_layout.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -2209,6 +2318,7 @@
     "\/node_modules\/foundation-sites\/scss\/xy-grid\/_position.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -2223,6 +2333,7 @@
     "\/node_modules\/foundation-sites\/scss\/xy-grid\/_xy-grid.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -2248,6 +2359,7 @@
     "\/node_modules\/motion-ui\/motion-ui.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -2262,6 +2374,7 @@
     "\/node_modules\/motion-ui\/src\/_classes.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -2276,6 +2389,7 @@
     "\/node_modules\/motion-ui\/src\/_settings.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -2290,6 +2404,7 @@
     "\/node_modules\/motion-ui\/src\/effects\/_fade.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -2304,6 +2419,7 @@
     "\/node_modules\/motion-ui\/src\/effects\/_hinge.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -2318,6 +2434,7 @@
     "\/node_modules\/motion-ui\/src\/effects\/_shake.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -2332,6 +2449,7 @@
     "\/node_modules\/motion-ui\/src\/effects\/_slide.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -2346,6 +2464,7 @@
     "\/node_modules\/motion-ui\/src\/effects\/_spin.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -2360,6 +2479,7 @@
     "\/node_modules\/motion-ui\/src\/effects\/_wiggle.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -2374,6 +2494,7 @@
     "\/node_modules\/motion-ui\/src\/effects\/_zoom.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -2388,6 +2509,7 @@
     "\/node_modules\/motion-ui\/src\/motion-ui.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -2402,6 +2524,7 @@
     "\/node_modules\/motion-ui\/src\/transitions\/_fade.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -2416,6 +2539,7 @@
     "\/node_modules\/motion-ui\/src\/transitions\/_hinge.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -2430,6 +2554,7 @@
     "\/node_modules\/motion-ui\/src\/transitions\/_slide.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -2444,6 +2569,7 @@
     "\/node_modules\/motion-ui\/src\/transitions\/_spin.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -2458,6 +2584,7 @@
     "\/node_modules\/motion-ui\/src\/transitions\/_zoom.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -2472,6 +2599,7 @@
     "\/node_modules\/motion-ui\/src\/util\/_animation.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -2486,6 +2614,7 @@
     "\/node_modules\/motion-ui\/src\/util\/_args.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -2500,6 +2629,7 @@
     "\/node_modules\/motion-ui\/src\/util\/_function.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -2514,6 +2644,7 @@
     "\/node_modules\/motion-ui\/src\/util\/_keyframe.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -2528,6 +2659,7 @@
     "\/node_modules\/motion-ui\/src\/util\/_selector.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -2542,6 +2674,7 @@
     "\/node_modules\/motion-ui\/src\/util\/_series.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -2556,6 +2689,7 @@
     "\/node_modules\/motion-ui\/src\/util\/_string.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -2570,6 +2704,7 @@
     "\/node_modules\/motion-ui\/src\/util\/_transition.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -2584,6 +2719,7 @@
     "\/node_modules\/motion-ui\/src\/util\/_unit.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -3260,25 +3396,25 @@
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
-      "oA" : 2,
+      "oA" : 0,
       "oAP" : "\/dist\/fonts\/hm_ostblock-webfont.woff",
-      "oF" : 1
+      "oF" : 0
     },
     "\/src\/fonts\/ostkreuzicons-regular.eot" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
-      "oA" : 2,
+      "oA" : 0,
       "oAP" : "\/dist\/fonts\/ostkreuzicons-regular.eot",
-      "oF" : 1
+      "oF" : 0
     },
     "\/src\/fonts\/ostkreuzicons-regular.svg" : {
       "ft" : 2097152,
       "miP" : 0,
-      "oA" : 2,
+      "oA" : 0,
       "oAP" : "\/dist\/fonts\/ostkreuzicons-regular.svg",
-      "oF" : 1,
-      "opt" : 0,
+      "oF" : 0,
+      "opt" : 1,
       "plM" : 52780316221407,
       "prP" : 0
     },
@@ -3286,17 +3422,17 @@
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
-      "oA" : 2,
+      "oA" : 0,
       "oAP" : "\/dist\/fonts\/ostkreuzicons-regular.ttf",
-      "oF" : 1
+      "oF" : 0
     },
     "\/src\/fonts\/ostkreuzicons-regular.woff" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
-      "oA" : 2,
+      "oA" : 0,
       "oAP" : "\/dist\/fonts\/ostkreuzicons-regular.woff",
-      "oF" : 1
+      "oF" : 0
     },
     "\/src\/img\/favicons\/android-chrome-192x192.png" : {
       "ft" : 32768,
@@ -3469,12 +3605,12 @@
     "\/src\/js\/app.js" : {
       "bF" : 4,
       "ft" : 64,
-      "ma" : 0,
+      "ma" : 1,
       "mi" : 1,
       "oA" : 0,
       "oAP" : "\/dist\/js\/app.js",
-      "oF" : 0,
-      "sC" : 3,
+      "oF" : 3,
+      "sC" : 0,
       "tS" : 1
     },
     "\/src\/js\/controllers\/active_filter_controller.js" : {
@@ -3482,9 +3618,9 @@
       "ft" : 64,
       "ma" : 0,
       "mi" : 1,
-      "oA" : 1,
+      "oA" : 0,
       "oAP" : "\/dist\/js\/controllers\/active_filter_controller.js",
-      "oF" : 1,
+      "oF" : 0,
       "sC" : 3,
       "tS" : 0
     },
@@ -3493,9 +3629,9 @@
       "ft" : 64,
       "ma" : 0,
       "mi" : 1,
-      "oA" : 1,
+      "oA" : 0,
       "oAP" : "\/dist\/js\/controllers\/active_filters_controller.js",
-      "oF" : 1,
+      "oF" : 0,
       "sC" : 3,
       "tS" : 0
     },
@@ -3504,9 +3640,9 @@
       "ft" : 64,
       "ma" : 0,
       "mi" : 1,
-      "oA" : 1,
+      "oA" : 0,
       "oAP" : "\/dist\/js\/controllers\/filters_controller.js",
-      "oF" : 1,
+      "oF" : 0,
       "sC" : 3,
       "tS" : 0
     },
@@ -3517,7 +3653,7 @@
       "mi" : 1,
       "oA" : 1,
       "oAP" : "\/dist\/js\/controllers\/form_controller.js",
-      "oF" : 1,
+      "oF" : 0,
       "sC" : 3,
       "tS" : 0
     },
@@ -3526,9 +3662,9 @@
       "ft" : 64,
       "ma" : 0,
       "mi" : 1,
-      "oA" : 1,
+      "oA" : 0,
       "oAP" : "\/dist\/js\/controllers\/input_controller.js",
-      "oF" : 1,
+      "oF" : 0,
       "sC" : 3,
       "tS" : 0
     },
@@ -3537,9 +3673,9 @@
       "ft" : 64,
       "ma" : 0,
       "mi" : 1,
-      "oA" : 1,
+      "oA" : 0,
       "oAP" : "\/dist\/js\/controllers\/input_group_controller.js",
-      "oF" : 1,
+      "oF" : 0,
       "sC" : 3,
       "tS" : 0
     },
@@ -3548,9 +3684,9 @@
       "ft" : 64,
       "ma" : 0,
       "mi" : 1,
-      "oA" : 1,
+      "oA" : 0,
       "oAP" : "\/dist\/js\/controllers\/loader_controller.js",
-      "oF" : 1,
+      "oF" : 0,
       "sC" : 3,
       "tS" : 0
     },
@@ -3559,9 +3695,9 @@
       "ft" : 64,
       "ma" : 0,
       "mi" : 1,
-      "oA" : 1,
+      "oA" : 0,
       "oAP" : "\/dist\/js\/controllers\/rangeslider_controller.js",
-      "oF" : 1,
+      "oF" : 0,
       "sC" : 3,
       "tS" : 0
     },
@@ -3570,9 +3706,9 @@
       "ft" : 64,
       "ma" : 0,
       "mi" : 1,
-      "oA" : 1,
+      "oA" : 0,
       "oAP" : "\/dist\/js\/controllers\/select_controller.js",
-      "oF" : 1,
+      "oF" : 0,
       "sC" : 3,
       "tS" : 0
     },
@@ -3581,9 +3717,9 @@
       "ft" : 64,
       "ma" : 0,
       "mi" : 1,
-      "oA" : 1,
+      "oA" : 0,
       "oAP" : "\/dist\/js\/controllers\/swiper_controller.js",
-      "oF" : 1,
+      "oF" : 0,
       "sC" : 3,
       "tS" : 0
     },
@@ -3592,9 +3728,9 @@
       "ft" : 64,
       "ma" : 0,
       "mi" : 1,
-      "oA" : 1,
+      "oA" : 0,
       "oAP" : "\/dist\/js\/controllers\/usable_watcher_controller.js",
-      "oF" : 1,
+      "oF" : 0,
       "sC" : 3,
       "tS" : 0
     },
@@ -3605,13 +3741,14 @@
       "mi" : 1,
       "oA" : 1,
       "oAP" : "\/dist\/js\/mixins\/useInput.js",
-      "oF" : 1,
+      "oF" : 0,
       "sC" : 3,
       "tS" : 0
     },
     "\/src\/scss\/_custom-colors-variables.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -3626,6 +3763,7 @@
     "\/src\/scss\/_custom-colors.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -3640,6 +3778,7 @@
     "\/src\/scss\/_custom-complianz.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -3654,6 +3793,7 @@
     "\/src\/scss\/_custom-fonts.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -3668,6 +3808,7 @@
     "\/src\/scss\/_custom-gutenberg-overwrites.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -3682,6 +3823,7 @@
     "\/src\/scss\/_custom-layout.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -3696,13 +3838,14 @@
     "\/src\/scss\/_custom-scaffolding.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/dist\/scss\/_custom-scaffolding.css",
-      "oF" : 0,
+      "oF" : 1,
       "oS" : 0,
       "pg" : 0,
       "sct" : 1
@@ -3710,13 +3853,14 @@
     "\/src\/scss\/_custom-swiper.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/dist\/scss\/_custom-swiper.css",
-      "oF" : 0,
+      "oF" : 1,
       "oS" : 0,
       "pg" : 0,
       "sct" : 1
@@ -3724,6 +3868,7 @@
     "\/src\/scss\/_custom-typography.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -3738,6 +3883,7 @@
     "\/src\/scss\/_custom-variables.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -3752,13 +3898,14 @@
     "\/src\/scss\/_custom-woocommerce.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/dist\/scss\/_custom-woocommerce.css",
-      "oF" : 0,
+      "oF" : 1,
       "oS" : 0,
       "pg" : 0,
       "sct" : 1
@@ -3766,13 +3913,14 @@
     "\/src\/scss\/_custom.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/dist\/scss\/_custom.css",
-      "oF" : 0,
+      "oF" : 1,
       "oS" : 0,
       "pg" : 0,
       "sct" : 1
@@ -3780,6 +3928,7 @@
     "\/src\/scss\/_settings.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -3792,15 +3941,16 @@
       "sct" : 1
     },
     "\/src\/scss\/app.scss" : {
-      "aP" : 0,
+      "aP" : 1,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
-      "ma" : 0,
+      "ma" : 1,
       "oA" : 0,
       "oAP" : "\/dist\/css\/app.css",
-      "oF" : 2,
+      "oF" : 3,
       "oS" : 0,
       "pg" : 0,
       "sct" : 1
@@ -3808,6 +3958,7 @@
     "\/src\/scss\/components\/_hero-swiper.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -3822,6 +3973,7 @@
     "\/src\/scss\/components\/_hero-teaser.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -3836,6 +3988,7 @@
     "\/src\/scss\/components\/_inputs.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -3850,6 +4003,7 @@
     "\/src\/scss\/components\/_products.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -3864,6 +4018,7 @@
     "\/src\/scss\/components\/_select2-overwrites.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -3878,6 +4033,7 @@
     "\/src\/scss\/components\/_tabs.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -3892,6 +4048,7 @@
     "\/src\/scss\/components\/_turbo.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -3906,6 +4063,7 @@
     "\/src\/scss\/editor.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -4209,7 +4367,7 @@
     "displayValueWasSetByUser" : 0,
     "iconImageName" : "\/src\/img\/favicons\/apple-touch-icon.png",
     "iconImageWasSetByUser" : 0,
-    "lastBuiltDate" : 657642623.89064395
+    "lastBuiltDate" : 657555855.46805799
   },
   "projectSettings" : {
     "abortBuildOnError" : 1,
@@ -5144,7 +5302,8 @@
         "optionString" : ""
       },
       "no-multi-assign" : {
-        "active" : 0
+        "active" : 0,
+        "optionString" : "{'ignoreNonDeclaration': false}"
       },
       "no-multi-spaces" : {
         "active" : 0,
@@ -5267,7 +5426,8 @@
         "active" : 0
       },
       "no-sequences" : {
-        "active" : 0
+        "active" : 0,
+        "optionString" : "{'allowInParentheses': true}"
       },
       "no-setter-return" : {
         "active" : 1
@@ -5631,354 +5791,6 @@
     "gitIgnoreBuildFolder" : 0,
     "hideConfigFile" : 0,
     "jsCheckerReservedNamesString" : "",
-    "jsHintFlags2" : {
-      "asi" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "bitwise" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "boss" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "browser" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "browserify" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "camelcase" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "couch" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "curly" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "debug" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "devel" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "dojo" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "elision" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "eqeqeq" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "eqnull" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "es3" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "esnext" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "evil" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "expr" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "forin" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "freeze" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "funcscope" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "futurehostile" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "globalstrict" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "immed" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "indent" : {
-        "active" : 0,
-        "flagValue" : 4
-      },
-      "iterator" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "jasmine" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "jquery" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "lastsemic" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "latedef" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "laxbreak" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "laxcomma" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "loopfunc" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "maxcomplexity" : {
-        "active" : 0,
-        "flagValue" : 10
-      },
-      "maxdepth" : {
-        "active" : 0,
-        "flagValue" : 3
-      },
-      "maxlen" : {
-        "active" : 0,
-        "flagValue" : 150
-      },
-      "maxparams" : {
-        "active" : 0,
-        "flagValue" : 3
-      },
-      "maxstatements" : {
-        "active" : 0,
-        "flagValue" : 4
-      },
-      "mocha" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "mootools" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "moz" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "multistr" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "newcap" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "noarg" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "nocomma" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "node" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "noempty" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "nonbsp" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "nonew" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "nonstandard" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "notypeof" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "noyield" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "onecase" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "phantom" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "plusplus" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "proto" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "prototypejs" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "qunit" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "regexp" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "rhino" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "scripturl" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "shadow" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "shelljs" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "singleGroups" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "strict" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "sub" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "supernew" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "typed" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "undef" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "unused" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "varstmt" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "withstmt" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "worker" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "wsh" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "yui" : {
-        "active" : 0,
-        "flagValue" : -1
-      }
-    },
-    "jsLintFlags2" : {
-      "bitwise" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "browser" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "couch" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "devel" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "es6" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "eval" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "for" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "maxlen" : {
-        "active" : 0,
-        "flagValue" : 150
-      },
-      "node" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "this" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "white" : {
-        "active" : 0,
-        "flagValue" : -1
-      }
-    },
     "languageDefaultsCOFFEE" : {
       "autoOutputAction" : 0,
       "autoOutputPathFilenamePattern" : "*.js",
@@ -6297,6 +6109,7 @@
     "tsEmitBOM" : 0,
     "tsEmitDecoratorMetadata" : 0,
     "tsESModuleInterop" : 0,
+    "tsExactOptionalPropertyTypes" : 0,
     "tsForceConsistentCasingInFileNames" : 0,
     "tsImportHelpers" : 0,
     "tsIsolatedModules" : 0,
@@ -6305,6 +6118,7 @@
     "tsNoEmitHelpers" : 0,
     "tsNoFallthroughCasesInSwitch" : 0,
     "tsNoImplicitAny" : 0,
+    "tsNoImplicitOverride" : 0,
     "tsNoImplicitReturns" : 0,
     "tsNoImplicitThis" : 0,
     "tsNoImplicitUseStrict" : 0,
@@ -6325,6 +6139,7 @@
     "tsStripInternal" : 0,
     "tsSuppressExcessPropertyErrors" : 0,
     "tsSuppressImplicitAnyIndexErrors" : 0,
+    "tsUseUnknownInCatchVariables" : 0,
     "uglifyDefinesString" : "",
     "uglifyFlags2" : {
       "arguments" : {

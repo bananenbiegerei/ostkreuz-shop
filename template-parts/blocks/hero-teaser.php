@@ -32,10 +32,10 @@ if ( ! empty( $block['align'] ) ) {
 	}
 </style>
 
-<div id="<?php echo esc_attr( $id ); ?>" class="<?php echo esc_attr( $classes ); ?> fullwidth">
+<div id="<?php echo esc_attr( $id ); ?>" class="<?php echo esc_attr( $classes ); ?> fullwidth position-relative">
 	<div class="grid-container fluid padding-top-6">
 		<div class="grid-x grid-margin-x">
-			<div class="cell medium-4">
+			<div class="cell medium-8 large-5">
 				<div class="callout">
 					<h2 class="h1">
 						<?php the_field( 'description' ); ?>
@@ -69,4 +69,9 @@ if ( ! empty( $block['align'] ) ) {
 	<?php if ( $background_image ) : ?>
 		<?php echo wp_get_attachment_image( $background_image, $size, false, ["class" => "hero-bg-image"] );?>
 	<?php endif; ?>
+	<a href="#scroll-anchor" class="button clear scroll-down icon-font h1" data-smooth-scroll data-offset="45">
+		
+	</a>
+</div>
+<div id="scroll-anchor">
 </div>
