@@ -7,6 +7,7 @@ import $ from "jquery";
 
 import FormController from './controllers/form_controller';
 
+Turbo.session.drive = false;
 const application = Application.start();
 //const context = require.context('./controllers', true, /\.js$/);
 //application.load(definitionsFromContext(context))
