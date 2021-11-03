@@ -1,7 +1,7 @@
 </main><!-- .site-content -->
 <footer id="colophon" class="site-footer" role="contentinfo">
 	<?php get_template_part('template-parts/partials/scroll-top'); ?>
-	<div class="grid-container">
+	<div class="grid-container fluid">
 		<div class="grid-x grid-margin-x padding-top-medium">
 			<?php if( get_field('adresse_1','option') ): ?>
 			<div class="cell medium-3">
@@ -48,6 +48,11 @@
 				<a href="<?php echo home_url(); ?>">
 					<img class="logo" src="<?php echo get_stylesheet_directory_uri(); ?>/dist/img/ostkreuz-logo.svg" alt="Logo">
 				</a>
+			</div>
+			<div class="cell medium-12">
+				<div class="revoke-cookie-consent-container margin-bottom-1">
+					<?php echo do_shortcode('[cmplz-revoke-link text="Cookie Einstellungen"]'); ?>
+				</div>
 			</div>
 		</div>
 	</div>

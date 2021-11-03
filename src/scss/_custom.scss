@@ -45,11 +45,11 @@ a {
 .main-content {
   // Margin-top would be for fixed header
   margin-top: $mobile-header-height * 1.5;
-  @include breakpoint(medium) {
+  @include breakpoint(large) {
     margin-top: $header-height * 1.5;
   }
   min-height: $mobile-fullheight-header-footer;
-  @include breakpoint(medium) {
+  @include breakpoint(large) {
     min-height: $fullheight-header-footer;
   }
 }
@@ -66,24 +66,23 @@ a {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: rgba($white, 0.1);
-  backdrop-filter: saturate(100%) blur(20px);
+  border-bottom: 2px solid $black;
   .grid-x {
     min-height: $mobile-header-height;
-    @include breakpoint(medium) {
+    @include breakpoint(large) {
       min-height: $header-height;
     }
   }
   img.logo {
     height: calc(1 * #{$mobile-header-height - $gutter * 2});
     margin-left: auto; // Makes the logo right aligned in Title Bar
-    @include breakpoint(medium) {
+    @include breakpoint(large) {
       height: calc(1 * #{$header-height - $gutter * 2});
     }
   }
   .cart-container {
     border-top: 1px solid $black;
-    @include breakpoint(medium) {
+    @include breakpoint(large) {
       border-left: 1px solid $black;
       border-top: none;
     }
@@ -117,8 +116,8 @@ a {
 html.backdropfilter {
   .site-header,
   .mobile-menu {
-    background-color: rgba($white, 0.1);
-    backdrop-filter: saturate(100%) blur(20px);
+    background-color: rgba($white, 1);
+    //backdrop-filter: saturate(100%) blur(20px);
   }
 }
 html.no-backdropfilter {
@@ -142,11 +141,14 @@ html.no-backdropfilter {
     }
   }
 }
+.hamburger-icon {
+  font-size: $small-font-size-h1;
+}
 /* Footer */
 .site-footer {
   overflow: hidden; // Foundation Menu
   min-height: $mobile-footer-height;
-  @include breakpoint(medium) {
+  @include breakpoint(large) {
     min-height: $footer-height;
   }
   img.logo {
@@ -208,10 +210,10 @@ table {
     border: none;
   }
 }
-.callout {
-  background-color: $black;
-  @include white-color;
-}
+// .callout {
+//   background-color: $black;
+//   @include white-color;
+// }
 
 /* Foundation Elements */
 .accordion {
@@ -233,4 +235,19 @@ table {
   }
 }
 
-/* Plugins */
+/* Custom Styles for Categories */
+.product_cat-poster,
+.product_cat-online-portfoliosichtungen,
+.product_cat-spezial-editionen,
+.product_cat-print-editionen {
+  .card,
+  &.swiper-slide {
+    img {
+      box-shadow: $shadow;
+      background-color: $white;
+    }
+    &.clickable:hover {
+      box-shadow: none;
+    }
+  }
+}

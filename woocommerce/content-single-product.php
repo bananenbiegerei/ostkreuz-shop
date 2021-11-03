@@ -64,11 +64,11 @@ if ( post_password_required() ) {
 		<div class="swiper-wrapper">
 			<?php
 			  $attachment_ids = $product->get_gallery_image_ids(); ?>
-			<div class="swiper-slide">
+			<div <?php wc_product_class( 'swiper-slide', $product ); ?>">
 				<?php the_post_thumbnail('eight-columns', array('class' => 'product-image')); ?>
 			</div>
 			<?php foreach( $attachment_ids as $attachment_id ) { ?>
-			<div class="swiper-slide">
+			<div <?php wc_product_class( 'swiper-slide', $product ); ?>>
 				<?php echo wp_get_attachment_image( $attachment_id, 'eight-columns', false, ["class" => "product-image"] ); ?>
 			</div>
 			<?php }

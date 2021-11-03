@@ -82,7 +82,7 @@
 
 .revoke-cookie-consent-container {
 	.cc-revoke-custom {
-		@include button(false, $black, auto, auto, hollow);
+		text-decoration: underline;
 		margin-bottom: $gutter * 0.25;
 	}
 
