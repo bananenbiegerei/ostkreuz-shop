@@ -22,7 +22,7 @@
                 <div class="cell auto cart-container">
                     <ul class="menu">
                         <li>
-                            <a href="<?php echo wc_get_cart_url() ?>" class="custom-cart">Warenkorb <span><?php echo $woocommerce->cart->cart_contents_count ?></span></a>
+                            <a href="<?php echo wc_get_cart_url() ?>" class="custom-cart">Warenkorb</a>
                         </li>
                     </ul>
                 </div>
