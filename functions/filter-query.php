@@ -7,6 +7,10 @@ add_filter( 'query_vars', function( $vars ) {
 });
 
 add_filter( 'pre_get_posts', function( $query ) {
+    if ( $query->is_main_query() && !is_admin() && (is_post_type_archive('product') || is_tax()) ) {
+        $query->set( 'orderby', 'rand' );
+    }
+
     if ( $query->is_main_query() && is_post_type_archive( 'product' ) ) {
         //$query->set( 'posts_per_page', 2 );
 
