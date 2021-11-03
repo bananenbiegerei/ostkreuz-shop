@@ -2356,6 +2356,14 @@
       "sC" : 3,
       "tS" : 0
     },
+    "\/node_modules\/js-cookie\/dist\/js.cookie.mjs" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dist\/node_modules\/js-cookie\/dist\/js.cookie.mjs",
+      "oF" : 0
+    },
     "\/node_modules\/motion-ui\/motion-ui.scss" : {
       "aP" : 0,
       "bl" : 0,
@@ -3734,6 +3742,17 @@
       "sC" : 3,
       "tS" : 0
     },
+    "\/src\/js\/darkmode.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 1,
+      "oAP" : "\/dist\/js\/darkmode.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
     "\/src\/js\/mixins\/useInput.js" : {
       "bF" : 0,
       "ft" : 64,
@@ -3951,6 +3970,21 @@
       "oA" : 0,
       "oAP" : "\/dist\/css\/app.css",
       "oF" : 3,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 1
+    },
+    "\/src\/scss\/components\/_dark-mode.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dist\/scss\/components\/_dark-mode.css",
+      "oF" : 0,
       "oS" : 0,
       "pg" : 0,
       "sct" : 1

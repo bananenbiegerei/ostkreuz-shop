@@ -62,6 +62,12 @@ $mobile-product-image-height: auto;
 }
 
 .product-swiper {
+  padding-top: $space-medium;
+  padding-bottom: $space-medium;
+  @include breakpoint(medium) {
+    padding-top: $space-large;
+    padding-bottom: $space-large;
+  }
   .swiper-wrapper {
     .swiper-slide {
       //width: auto!important;

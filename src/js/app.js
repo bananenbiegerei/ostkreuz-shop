@@ -3,6 +3,7 @@ import { Application } from 'stimulus';
 import { definitionsFromContext } from 'stimulus/webpack-helpers';
 import Foundation from 'foundation-sites';
 import Swiper, { Navigation, Pagination, FreeMode, Autoplay, Parallax, EffectFade } from 'swiper';
+//import { Darkmode } from "./darkmode";
 import $ from "jquery";
 
 import FormController from './controllers/form_controller';
@@ -42,21 +43,25 @@ $(document).ready(function($) {
   const productSwiper = new Swiper('.product-swiper', {
     freeMode: true,
     slidesPerView: 1,
-    spaceBetween: 60,
+    spaceBetween: 30,
     autoplay: {
       delay: 2500,
       disableOnInteraction: true,
     },
+    loop: true,
     breakpoints: {
       640: {
-        slidesPerView: 1,
+        slidesPerView: 2,
         spaceBetween: 15,
       },
       768: {
-        slidesPerView: 4,
+        slidesPerView: 3,
       },
       1024: {
-        slidesPerView: 4,
+        slidesPerView: 6,
+      },
+      1024: {
+        slidesPerView: 8,
       },
     },
   })

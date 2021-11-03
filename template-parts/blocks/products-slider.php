@@ -34,7 +34,7 @@ if ($cat) {
       </div>
     </div>
   </div>
-  <div class="swiper product-swiper padding-2 margin-top-6">
+  <div class="swiper product-swiper">
     <div class="swiper-wrapper">
       <?php if (!empty($products) && $products->have_posts()) : ?>
       <?php while ($products->have_posts()) : $products->the_post();?>
