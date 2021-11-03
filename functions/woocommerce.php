@@ -94,7 +94,10 @@ function custom_add_to_cart_fragment( $fragments ) {
 
   global $woocommerce;
 
-  $fragments['.custom-cart'] = '<a href="' . wc_get_cart_url() . '" class="custom-cart">Cart <span>' . $woocommerce->cart->cart_contents_count . '</span></a>';
-   return $fragments;
+  $fragments['.custom-cart'] = '<a href="' . wc_get_cart_url() . '" class="custom-cart">Cart';
+  if ($woocommerce->cart->cart_contents_count > 0)
+    $fragments['.custom-cart'] .= ' <span>' . $woocommerce->cart->cart_contents_count . '</span>';
+  $fragments['.custom-cart'] .= '</a>';
 
+  return $fragments;
  }
