@@ -9,3 +9,19 @@
     border-bottom: 1px solid $medium-gray;
   }
 }
+
+body[data-darkmode-isdark-value="true"] {
+  .tabs, .tabs-content {
+    background-color: $black;
+    color: $white;
+  }
+
+  .tabs-title {
+    border: 2px solid $white;
+
+    > a[aria-selected="true"] {
+      background-color: $white;
+      color: $black;
+    }
+  }
+}

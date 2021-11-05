@@ -170,3 +170,9 @@ html.backdropfilter {
 		background: $white;
 	  }
 	}
+
+body[data-darkmode-isdark-value="true"] {
+	.cc-revoke-custom {
+		color: $white;
+	}
+}

@@ -91,3 +91,54 @@ $colors: (
       }
   }
 }
+
+
+#darkmode-moon, #darkmode-sun {
+  width: 1rem;
+  height: 1rem;
+}
+#darkmode-moon {
+  display: block;
+}
+
+#darkmode-sun {
+  display: none;
+}
+
+// Darkmode Colors
+@supports (--foo: seagreen) {
+  :root {
+    --background-color: $white;
+    --body-font-color: $black;
+  }
+
+  [data-darkmode-isdark-value="true"] {
+    --background-color: #{$black};
+    --body-font-color: #{$white};
+
+    color: $white;
+    background-color: $black;
+
+    .button:not(.clear) {
+      background-color: $white;
+      color: $black;
+    }
+
+    a {
+      color: $white;
+    }
+
+    .card {
+      background-color: $black;
+      color: $white;
+    }
+
+    #darkmode-sun {
+      display:  block;
+    }
+
+    #darkmode-moon {
+      display:  none;
+    }
+  }
+}

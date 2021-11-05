@@ -7,12 +7,14 @@ import Swiper, { Navigation, Pagination, FreeMode, Autoplay, Parallax, EffectFad
 import $ from "jquery";
 
 import FormController from './controllers/form_controller';
+import DarkmodeController from './controllers/darkmode_controller';
 
 Turbo.session.drive = false;
 const application = Application.start();
 //const context = require.context('./controllers', true, /\.js$/);
 //application.load(definitionsFromContext(context))
 application.register('form', FormController);
+application.register('darkmode', DarkmodeController);
 
 Swiper.use([Navigation, Pagination, Autoplay, EffectFade, FreeMode]);
 

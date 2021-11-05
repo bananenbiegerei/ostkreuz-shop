@@ -82,10 +82,10 @@
     "\/footer.php" : {
       "cB" : 0,
       "ft" : 8192,
-      "hM" : 1,
+      "hM" : 0,
       "oA" : 1,
       "oAP" : "\/dist\/footer.php",
-      "oF" : 1
+      "oF" : 0
     },
     "\/front-page.php" : {
       "cB" : 0,
@@ -125,7 +125,7 @@
       "hM" : 0,
       "oA" : 1,
       "oAP" : "\/dist\/functions\/enqueue-scripts.php",
-      "oF" : 1
+      "oF" : 0
     },
     "\/functions\/features.php" : {
       "cB" : 0,
@@ -227,7 +227,7 @@
       "ft" : 65536,
       "oA" : 1,
       "oAP" : "\/dist\/node_modules",
-      "oF" : 1
+      "oF" : 0
     },
     "\/node_modules\/@hotwired\/turbo\/dist\/turbo.es2017-esm.js" : {
       "bF" : 0,
@@ -3404,25 +3404,25 @@
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
-      "oA" : 0,
+      "oA" : 2,
       "oAP" : "\/dist\/fonts\/hm_ostblock-webfont.woff",
-      "oF" : 0
+      "oF" : 1
     },
     "\/src\/fonts\/ostkreuzicons-regular.eot" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
-      "oA" : 0,
+      "oA" : 2,
       "oAP" : "\/dist\/fonts\/ostkreuzicons-regular.eot",
-      "oF" : 0
+      "oF" : 1
     },
     "\/src\/fonts\/ostkreuzicons-regular.svg" : {
       "ft" : 2097152,
       "miP" : 0,
-      "oA" : 0,
+      "oA" : 2,
       "oAP" : "\/dist\/fonts\/ostkreuzicons-regular.svg",
-      "oF" : 0,
-      "opt" : 1,
+      "oF" : 1,
+      "opt" : 0,
       "plM" : 52780316221407,
       "prP" : 0
     },
@@ -3430,17 +3430,17 @@
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
-      "oA" : 0,
+      "oA" : 2,
       "oAP" : "\/dist\/fonts\/ostkreuzicons-regular.ttf",
-      "oF" : 0
+      "oF" : 1
     },
     "\/src\/fonts\/ostkreuzicons-regular.woff" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
-      "oA" : 0,
+      "oA" : 2,
       "oAP" : "\/dist\/fonts\/ostkreuzicons-regular.woff",
-      "oF" : 0
+      "oF" : 1
     },
     "\/src\/img\/favicons\/android-chrome-192x192.png" : {
       "ft" : 32768,
@@ -3590,6 +3590,14 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
+    "\/src\/img\/ostkreuz-logo-small.svg.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dist\/img\/ostkreuz-logo-small.svg.php",
+      "oF" : 0
+    },
     "\/src\/img\/ostkreuz-logo.svg" : {
       "ft" : 2097152,
       "miP" : 0,
@@ -3613,12 +3621,12 @@
     "\/src\/js\/app.js" : {
       "bF" : 4,
       "ft" : 64,
-      "ma" : 1,
-      "mi" : 1,
+      "ma" : 3,
+      "mi" : 2,
       "oA" : 0,
       "oAP" : "\/dist\/js\/app.js",
-      "oF" : 3,
-      "sC" : 0,
+      "oF" : 0,
+      "sC" : 3,
       "tS" : 1
     },
     "\/src\/js\/controllers\/active_filter_controller.js" : {
@@ -3626,9 +3634,9 @@
       "ft" : 64,
       "ma" : 0,
       "mi" : 1,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/dist\/js\/controllers\/active_filter_controller.js",
-      "oF" : 0,
+      "oF" : 1,
       "sC" : 3,
       "tS" : 0
     },
@@ -3637,8 +3645,19 @@
       "ft" : 64,
       "ma" : 0,
       "mi" : 1,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/dist\/js\/controllers\/active_filters_controller.js",
+      "oF" : 1,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/src\/js\/controllers\/darkmode_controller.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 1,
+      "oAP" : "\/dist\/js\/controllers\/darkmode_controller.js",
       "oF" : 0,
       "sC" : 3,
       "tS" : 0
@@ -3648,9 +3667,9 @@
       "ft" : 64,
       "ma" : 0,
       "mi" : 1,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/dist\/js\/controllers\/filters_controller.js",
-      "oF" : 0,
+      "oF" : 1,
       "sC" : 3,
       "tS" : 0
     },
@@ -3661,7 +3680,7 @@
       "mi" : 1,
       "oA" : 1,
       "oAP" : "\/dist\/js\/controllers\/form_controller.js",
-      "oF" : 0,
+      "oF" : 1,
       "sC" : 3,
       "tS" : 0
     },
@@ -3670,9 +3689,9 @@
       "ft" : 64,
       "ma" : 0,
       "mi" : 1,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/dist\/js\/controllers\/input_controller.js",
-      "oF" : 0,
+      "oF" : 1,
       "sC" : 3,
       "tS" : 0
     },
@@ -3681,9 +3700,9 @@
       "ft" : 64,
       "ma" : 0,
       "mi" : 1,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/dist\/js\/controllers\/input_group_controller.js",
-      "oF" : 0,
+      "oF" : 1,
       "sC" : 3,
       "tS" : 0
     },
@@ -3692,9 +3711,9 @@
       "ft" : 64,
       "ma" : 0,
       "mi" : 1,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/dist\/js\/controllers\/loader_controller.js",
-      "oF" : 0,
+      "oF" : 1,
       "sC" : 3,
       "tS" : 0
     },
@@ -3703,9 +3722,9 @@
       "ft" : 64,
       "ma" : 0,
       "mi" : 1,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/dist\/js\/controllers\/rangeslider_controller.js",
-      "oF" : 0,
+      "oF" : 1,
       "sC" : 3,
       "tS" : 0
     },
@@ -3714,9 +3733,9 @@
       "ft" : 64,
       "ma" : 0,
       "mi" : 1,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/dist\/js\/controllers\/select_controller.js",
-      "oF" : 0,
+      "oF" : 1,
       "sC" : 3,
       "tS" : 0
     },
@@ -3725,9 +3744,9 @@
       "ft" : 64,
       "ma" : 0,
       "mi" : 1,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/dist\/js\/controllers\/swiper_controller.js",
-      "oF" : 0,
+      "oF" : 1,
       "sC" : 3,
       "tS" : 0
     },
@@ -3736,20 +3755,9 @@
       "ft" : 64,
       "ma" : 0,
       "mi" : 1,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/dist\/js\/controllers\/usable_watcher_controller.js",
-      "oF" : 0,
-      "sC" : 3,
-      "tS" : 0
-    },
-    "\/src\/js\/darkmode.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/dist\/js\/darkmode.js",
-      "oF" : 0,
+      "oF" : 1,
       "sC" : 3,
       "tS" : 0
     },
@@ -3760,7 +3768,7 @@
       "mi" : 1,
       "oA" : 1,
       "oAP" : "\/dist\/js\/mixins\/useInput.js",
-      "oF" : 0,
+      "oF" : 1,
       "sC" : 3,
       "tS" : 0
     },
@@ -3864,7 +3872,7 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/dist\/scss\/_custom-scaffolding.css",
-      "oF" : 1,
+      "oF" : 0,
       "oS" : 0,
       "pg" : 0,
       "sct" : 1
@@ -3879,7 +3887,7 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/dist\/scss\/_custom-swiper.css",
-      "oF" : 1,
+      "oF" : 0,
       "oS" : 0,
       "pg" : 0,
       "sct" : 1
@@ -3924,7 +3932,7 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/dist\/scss\/_custom-woocommerce.css",
-      "oF" : 1,
+      "oF" : 0,
       "oS" : 0,
       "pg" : 0,
       "sct" : 1
@@ -3939,7 +3947,7 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/dist\/scss\/_custom.css",
-      "oF" : 1,
+      "oF" : 0,
       "oS" : 0,
       "pg" : 0,
       "sct" : 1
@@ -3960,31 +3968,16 @@
       "sct" : 1
     },
     "\/src\/scss\/app.scss" : {
-      "aP" : 1,
-      "bl" : 0,
-      "co" : 0,
-      "dP" : 10,
-      "ec" : 1,
-      "ft" : 4,
-      "ma" : 1,
-      "oA" : 0,
-      "oAP" : "\/dist\/css\/app.css",
-      "oF" : 3,
-      "oS" : 0,
-      "pg" : 0,
-      "sct" : 1
-    },
-    "\/src\/scss\/components\/_dark-mode.scss" : {
       "aP" : 0,
       "bl" : 0,
       "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
-      "ma" : 0,
-      "oA" : 1,
-      "oAP" : "\/dist\/scss\/components\/_dark-mode.css",
-      "oF" : 0,
+      "ma" : 3,
+      "oA" : 0,
+      "oAP" : "\/dist\/css\/app.css",
+      "oF" : 2,
       "oS" : 0,
       "pg" : 0,
       "sct" : 1
@@ -4401,7 +4394,7 @@
     "displayValueWasSetByUser" : 0,
     "iconImageName" : "\/src\/img\/favicons\/apple-touch-icon.png",
     "iconImageWasSetByUser" : 0,
-    "lastBuiltDate" : 657627858.22152698
+    "lastBuiltDate" : 657808131.52365005
   },
   "projectSettings" : {
     "abortBuildOnError" : 1,
@@ -4438,7 +4431,7 @@
         "active" : 0
       },
       "class-properties" : {
-        "active" : 0
+        "active" : 1
       },
       "classes" : {
         "active" : 0
@@ -4695,7 +4688,7 @@
     "bowerUseExactVersion" : 0,
     "browserRefreshDelay" : 0,
     "browserslistString" : ">0.2%, last 2 versions, Firefox ESR, not dead",
-    "buildEnvironment" : 0,
+    "buildEnvironment" : 1,
     "buildFolderActive" : 1,
     "buildFolderName" : "dist",
     "cleanBuild" : 1,
@@ -4840,7 +4833,7 @@
     "cssoForceMediaMerge" : 0,
     "cssoRestructure" : 1,
     "environmentVariableEntries" : [
-      "NODE_ENV:::production"
+      "NODE_ENV:::development"
     ],
     "esLintConfigFileHandlingType" : 0,
     "esLintECMAVersion" : 7,
