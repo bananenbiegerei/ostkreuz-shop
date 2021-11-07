@@ -72,7 +72,6 @@ if ( post_password_required() ) {
 			</div>
 			<?php }
 			  ?>
-			...
 		</div>
 
 		<!-- If we need navigation buttons -->

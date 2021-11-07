@@ -35,7 +35,7 @@ if ( ! $checkout->is_registration_enabled() && $checkout->is_registration_requir
 
 		<?php do_action( 'woocommerce_checkout_before_customer_details' ); ?>
 
-		<div class="grid-x grid-margin-x margin-bottom-4" id="customer_details">
+		<div class="grid-x grid-margin-x margin-bottom-6" id="customer_details">
 			<div class="medium-6 cell">
 				<?php do_action( 'woocommerce_checkout_billing' ); ?>
 			</div>
@@ -51,8 +51,7 @@ if ( ! $checkout->is_registration_enabled() && $checkout->is_registration_requir
 	
 	<?php do_action( 'woocommerce_checkout_before_order_review_heading' ); ?>
 	
-	<h3 id="order_review_heading" class="h1 text-center"><?php esc_html_e( 'Your order', 'woocommerce' ); ?></h3>
-	<hr class="margin-bottom-4 margin-top-4">
+	<h3 id="order_review_heading" class="h1 text-center margin-bottom-4"><?php esc_html_e( 'Your order', 'woocommerce' ); ?></h3>
 	<?php do_action( 'woocommerce_checkout_before_order_review' ); ?>
 
 	<div id="order_review" class="woocommerce-checkout-review-order">
