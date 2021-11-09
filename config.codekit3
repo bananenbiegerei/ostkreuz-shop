@@ -73,6 +73,14 @@
       "oAP" : "\/dist\/archive.php",
       "oF" : 1
     },
+    "\/category-photographer.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dist\/category-photographer.php",
+      "oF" : 0
+    },
     "\/dist" : {
       "ft" : 65536,
       "oA" : 1,
@@ -227,7 +235,7 @@
       "ft" : 65536,
       "oA" : 1,
       "oAP" : "\/dist\/node_modules",
-      "oF" : 1
+      "oF" : 0
     },
     "\/node_modules\/@hotwired\/turbo\/dist\/turbo.es2017-esm.js" : {
       "bF" : 0,
@@ -4457,7 +4465,7 @@
     "displayValueWasSetByUser" : 0,
     "iconImageName" : "\/src\/img\/favicons\/apple-touch-icon.png",
     "iconImageWasSetByUser" : 0,
-    "lastBuiltDate" : 658074609.77742696
+    "lastBuiltDate" : 658182553.00899696
   },
   "projectSettings" : {
     "abortBuildOnError" : 1,

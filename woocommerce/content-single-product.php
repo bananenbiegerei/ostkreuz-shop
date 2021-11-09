@@ -185,7 +185,33 @@ if ( post_password_required() ) {
             }
           ?>
         </div>
-        <div class="tabs-panel" id="tab-shipping-info">Shipppping IIIIIIIINFOOOOO – kommt noch!</div>
+
+        <div class="tabs-panel" id="tab-shipping-info">
+					<?php
+					$shipping = array(
+						'tax_status' => $product->get_tax_status() == 'taxable' ? 'besteuerbar' : '',
+						'tax_class' => $product->get_tax_class(),
+						'manage_stock' => $product->get_manage_stock(),
+						'stock_quantity' => $product->get_stock_quantity(),
+						'stock_status' => $product->get_stock_status(),
+						'backorders' => $product->get_backorders(),
+						'sold_individually' => $product->get_sold_individually(),
+						'purchase_note' => $product->get_purchase_note(),
+						'shipping_class_id' => $product->get_shipping_class_id(),
+					);
+
+					if (!empty($shipping['shipping_class_id'])) {
+						$term =  get_term($shipping['shipping_class_id'], 'product_shipping_class');
+						$shipping_wrapper = new WC_Shipping();
+						$shipping['shipping_class'] = $shipping_wrapper->shipping_classes;
+					}
+
+					// var_dump($shipping);
+					foreach ($shipping as $key => $s) {
+						echo '<div>' . $key . ': ' . $s . '</div>';
+					}
+					?>
+				</div>
       </div>
     </div>
   </div>
