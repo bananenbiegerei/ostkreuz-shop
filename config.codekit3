@@ -3608,6 +3608,14 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
+    "\/src\/img\/ostkreuz-logo.svg.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dist\/img\/ostkreuz-logo.svg.php",
+      "oF" : 0
+    },
     "\/src\/img\/sales-bg.svg" : {
       "ft" : 2097152,
       "miP" : 0,

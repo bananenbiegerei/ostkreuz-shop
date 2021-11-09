@@ -161,9 +161,10 @@ html.no-backdropfilter {
   @include breakpoint(large) {
     min-height: $footer-height;
   }
-  img.logo {
+  .logo {
     width: 120px;
     height: auto;
+    margin-bottom: $space-small;
   }
   .menu {
     li {

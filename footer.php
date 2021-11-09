@@ -14,9 +14,6 @@
 			</div>	
 			<?php endif; ?>
 			<div class="cell medium-auto small-12">
-				<div class="revoke-cookie-consent-container">
-					<?php echo do_shortcode('[cmplz-revoke-link text="Cookie Einstellungen"]'); ?>
-				</div>
 				<nav class="text-left">
 					<?php
 					wp_nav_menu(array(
@@ -46,7 +43,9 @@
 			</div>
 			<div class="cell medium-shrink small-12">
 				<a href="<?php echo home_url(); ?>">
-					<img class="logo" src="<?php echo get_stylesheet_directory_uri(); ?>/dist/img/ostkreuz-logo.svg" alt="Logo">
+					<div class="logo">
+						<?php echo file_get_contents(get_template_directory(). "/src/img/ostkreuz-logo.svg.php"); ?>
+					</div>
 				</a>
 			</div>
 			<div class="cell medium-12">

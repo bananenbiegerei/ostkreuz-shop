@@ -70,7 +70,9 @@ data-darkmode-isdark-value="<?php echo isset($_COOKIE['isdark']) ? $_COOKIE['isd
                 </div>
                 <div class="cell shrink">
                     <a href="<?php echo home_url(); ?>">
-                    <img class="logo" src="<?php echo get_stylesheet_directory_uri(); ?>/dist/img/ostkreuz-logo-small.svg" alt="Logo">
+                        <div class="logo">
+                            <?php echo file_get_contents(get_template_directory(). "/src/img/ostkreuz-logo-small.svg.php"); ?>
+                        </div>
                     </a>
                 </div>
             </div>
