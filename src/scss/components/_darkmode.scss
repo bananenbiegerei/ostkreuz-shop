@@ -1,0 +1,180 @@
+#darkmode-moon,
+#darkmode-sun {
+  width: 2rem;
+  height: 2rem;
+  @include breakpoint(medium) {
+	  width: 1rem;
+	height: 1rem;
+  }
+}
+
+#darkmode-moon {
+  display: block;
+}
+
+#darkmode-sun {
+  display: none;
+}
+// Darkmode Colors
+@supports (--foo: seagreen) {
+  :root {
+	--background-color: $white;
+	--body-font-color: $black;
+  }
+
+  [data-darkmode-isdark-value="true"] {
+	--background-color: #{$black};
+	--body-font-color: #{$white};
+
+	color: $white;
+	background-color: $black;
+	/* Borders */
+	.site-header {
+		border-bottom: 2px solid $white;
+		.cart-container {
+			border-top: 1px solid $white;
+			@include breakpoint(large) {
+			  border-left: 1px solid $white;
+			  border-top: none;
+			}
+		}
+		.hamburger-icon {
+			color: $white;
+		}
+	}
+	.custom-cart {
+		span {
+			border: 2px solid $white;
+		}
+	}
+	&.woocommerce-cart,
+	&.woocommerce-checkout {
+		.cart-collaterals {			
+			h2 {
+				border-bottom: 2px solid $white;
+			}
+		}
+	}
+	.woocommerce-checkout-payment {	
+		ul.methods {	
+			li {
+				border: 2px solid $white;
+			}
+		}
+	}
+	.woocommerce-order {
+		.woocommerce-bacs-bank-details {
+			border-top: 2px solid $black;
+			border-bottom: 2px solid $black;
+		}
+	}
+	.woocommerce-notice,
+	.woocommerce-message,
+	.callout,
+	.Tab--selected, .Tab:hover {
+		border: 2px solid $white;
+	}
+	hr,
+	tbody tr {
+		border-bottom-color: $white;
+	}
+	
+	
+	.button:not(.clear) {
+	  background-color: $white;
+	  color: $black;
+	}
+
+	a,
+	.button.clear,
+	.callout,
+	label,
+	table,
+	tfoot {
+	  color: $white;
+	}
+
+	.card,
+	&.woocommerce-checkout .shop_table {
+	  background-color: $black;
+	  color: $white;
+	}
+	
+	// Negative Color Schemes
+	.has-black-background-color {
+	  background-color: $white;
+	  @include black-color;
+	
+	  .card {
+		background-color: $white;
+	  }
+	
+	  .wp-block-button,
+	  .wp-block-buttons>.wp-block-button {	
+		.wp-block-button__link {
+		  @include button(false, $black, $black, $white, solid);
+		}
+	  }
+	}
+	#cc-window.cc-window.cc-floating {
+		a {
+			color: $white;
+		}
+		.cc-message,
+		.cmplz-categories-wrap {
+			@include button(false, $white, auto, auto, hollow);
+		}
+		.cc-compliance {
+			.cc-btn {
+				@include button(false, $white, auto, auto, hollow);
+				&.cc-accept-all,
+				&.cc-dismiss,
+				&.cc-show-settings {
+					@include button(false, $white, auto, auto, hollow);
+				}
+				&.cc-show-settings {
+					border-color: $white!important;
+					color: $white!important;
+					border-width: 2px!important;
+				}
+				&.cc-dismiss {
+					@include breakpoint(medium) {
+						border-top: 2px solid $white;
+						border-bottom:  2px solid $white;
+					}
+				}
+			}
+		}	
+	}
+	
+	.swiper-button-next,
+	.swiper-button-prev {
+	  &:after {
+		color: $white;
+	  }
+	}
+
+	#darkmode-sun {
+	  display: block;
+	}
+
+	#darkmode-moon {
+	  display: none;
+	}
+  }
+}
+html.backdropfilter {
+  [data-darkmode-isdark-value="true"] {
+  .site-header,
+  .mobile-menu,
+  .callout {
+	@include background-blur-darkmode;
+  }
+}
+}
+html.no-backdropfilter {
+  .site-header,
+  .mobile-menu {
+	background: $white;
+  }
+}

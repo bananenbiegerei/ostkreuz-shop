@@ -314,7 +314,7 @@ $buttongroup-radius-on-each: true;
 // 13. Callout
 // -----------
 
-$callout-background: $white;
+$callout-background: red;
 $callout-background-fade: 85%;
 $callout-border: 2px solid rgba($black, 1);
 $callout-margin: 0 0 1rem 0;
@@ -774,7 +774,7 @@ $switch-paddle-transition: all 0.25s ease-out;
 $table-background: transparent;
 $table-color-scale: 95%;
 $table-border: 1px solid $black;
-$table-padding: rem-calc(7.5);
+$table-padding: rem-calc(22.5 7.5);
 $table-hover-scale: 2%;
 $table-row-hover: darken($table-background, $table-hover-scale);
 $table-row-stripe-hover: darken($table-background, $table-color-scale + $table-hover-scale);

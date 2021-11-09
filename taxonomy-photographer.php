@@ -17,7 +17,7 @@
 */
 get_header(); ?>
 <section class="row">
-	<div class="medium-12 columns">
+	<div class="medium-12 columns">		
 		<?php get_template_part('templates/partials/archive-loop' ); ?>
 	</div>
 </section>

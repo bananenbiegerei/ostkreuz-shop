@@ -58,6 +58,7 @@ if ( post_password_required() ) {
 			<?php endif; ?>
 		</div>
 	</header>
+	
 	<div class="swiper single-product-swiper margin-top-4 margin-bottom-4">
 		<!-- Additional required wrapper -->
 		<div class="swiper-wrapper">

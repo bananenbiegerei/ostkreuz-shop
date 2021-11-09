@@ -30,7 +30,7 @@
 // Basic components
 @include foundation-badge;
 @include foundation-breadcrumbs;
-//@include foundation-callout;
+@include foundation-callout;
 @include foundation-card;
 @include foundation-dropdown;
 @include foundation-pagination;
@@ -87,7 +87,6 @@
 @import 'custom-woocommerce';
 @import 'custom-layout';
 @import 'custom-gutenberg-overwrites';
-@import 'custom';
 
 // Components
 @import 'components/inputs';
@@ -95,3 +94,6 @@
 @import 'components/tabs';
 @import 'components/select2-overwrites';
 @import 'components/turbo';
+@import 'components/darkmode';
+
+@import 'custom';

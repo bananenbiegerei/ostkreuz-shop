@@ -49,7 +49,7 @@ if ($cat) {
   <div class="grid-container">
     <div class="grid-x grid-margin-x align-center">
       <div class="cell medium-8 text-center">
-        <div class="lead"><?php echo term_description($cat->term_id); ?></div>
+        <div class="lead margin-bottom-2"><?php echo term_description($cat->term_id); ?></div>
         <a class="button" href="<?php echo get_term_link($cat->term_id); ?>">Alle <?php echo $cat->name; ?></a>
       </div>
     </div>

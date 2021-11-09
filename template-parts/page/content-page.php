@@ -5,7 +5,7 @@
 		</div>
 	</div>
 </header>
-<div class="grid-container">
+<div class="grid-container margin-bottom-4">
 	<div class="grid-x grid-margin-x align-center">
 			<div class="cell medium-12">
 				<?php the_content(); ?>

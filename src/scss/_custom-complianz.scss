@@ -176,3 +176,40 @@ body[data-darkmode-isdark-value="true"] {
 		color: $white;
 	}
 }
+// Docs
+#cmplz-document,
+#cmplz-cookies-overview {
+	font-size: $global-font-size;
+	@include breakpoint(medium) {
+		font-size: $global-font-size;
+	}
+	max-width: 100%;
+	h2,
+	h3 {
+		border-bottom: none;
+	}
+	.cmplz-subtitle {
+		font-weight: 400;
+	}
+
+	p,
+	a,
+	li,
+	td {
+		font-size: $global-font-size;
+		@include breakpoint(medium) {
+			font-size: $global-font-size;
+		}
+	}
+	* {
+		p,
+		a,
+		li,
+		td {
+			font-size: $global-font-size;
+			@include breakpoint(medium) {
+				font-size: $global-font-size;
+			}
+		}
+	}
+}

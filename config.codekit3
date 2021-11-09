@@ -2356,6 +2356,14 @@
       "sC" : 3,
       "tS" : 0
     },
+    "\/node_modules\/js-cookie\/dist\/js.cookie.mjs" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dist\/node_modules\/js-cookie\/dist\/js.cookie.mjs",
+      "oF" : 0
+    },
     "\/node_modules\/motion-ui\/motion-ui.scss" : {
       "aP" : 0,
       "bl" : 0,
@@ -3582,6 +3590,14 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
+    "\/src\/img\/ostkreuz-logo-small.svg.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dist\/img\/ostkreuz-logo-small.svg.php",
+      "oF" : 0
+    },
     "\/src\/img\/ostkreuz-logo.svg" : {
       "ft" : 2097152,
       "miP" : 0,
@@ -3631,6 +3647,17 @@
       "mi" : 1,
       "oA" : 0,
       "oAP" : "\/dist\/js\/controllers\/active_filters_controller.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/src\/js\/controllers\/darkmode_controller.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 1,
+      "oAP" : "\/dist\/js\/controllers\/darkmode_controller.js",
       "oF" : 0,
       "sC" : 3,
       "tS" : 0
@@ -3955,6 +3982,21 @@
       "pg" : 0,
       "sct" : 1
     },
+    "\/src\/scss\/components\/_darkmode.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dist\/scss\/components\/_darkmode.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 1
+    },
     "\/src\/scss\/components\/_hero-swiper.scss" : {
       "aP" : 0,
       "bl" : 0,
@@ -4086,6 +4128,14 @@
       "oAP" : "\/dist\/style.css",
       "oF" : 1,
       "pg" : 0
+    },
+    "\/taxonomy-photographer.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dist\/taxonomy-photographer.php",
+      "oF" : 0
     },
     "\/template-parts\/blocks\/accordion.php" : {
       "cB" : 0,
@@ -4399,7 +4449,7 @@
     "displayValueWasSetByUser" : 0,
     "iconImageName" : "\/src\/img\/favicons\/apple-touch-icon.png",
     "iconImageWasSetByUser" : 0,
-    "lastBuiltDate" : 657646498.79670405
+    "lastBuiltDate" : 658074609.77742696
   },
   "projectSettings" : {
     "abortBuildOnError" : 1,

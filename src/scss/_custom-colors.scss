@@ -1,46 +1,74 @@
 /* Mixins */
 @mixin white-color {
   color: $white;
+
   a,
   label,
   .button.clear {
     color: $white;
   }
+
   .button:not(.clear) {
     @include button-fill-style($button-fill, $white, $light-gray, $black);
   }
 }
+
+@mixin black-color {
+  color: $black;
+
+  a,
+  label,
+  .button.clear {
+    color: $black;
+  }
+
+  .button:not(.clear) {
+    @include button-fill-style($button-fill, $black, $light-gray, $white);
+  }
+}
+
 @mixin medium-gray-color {
   color: $medium-gray;
+
   a {
     color: $medium-gray;
   }
 }
+
 @mixin default-color-scheme {
   .has-scheme-background-color {
     background: $medium-gray;
   }
+
   .has-light-scheme-background-color {
     background: $light-gray;
   }
 }
+
 @mixin primary-color-scheme {
   .has-scheme-background-color {
     background: $primary-color;
   }
 }
+
 @mixin secondary-color-scheme {
   .has-scheme-background-color {
     background: $secondary-color;
   }
 }
+
 @mixin background-blur {
   background-color: rgba($white, 0.2);
   backdrop-filter: saturate(100%) blur(20px);
 }
+
+@mixin background-blur-darkmode {
+  background-color: rgba($black, 0.5);
+  backdrop-filter: saturate(100%) blur(20px);
+}
+
 /* Color Schemes */
-$colors: (
-  "primary-color": $primary-color,
+$colors: ("primary-color": $primary-color,
   "secondary-color": $secondary-color,
   "success-color": $success-color,
   "warning-color": $warning-color,
@@ -51,14 +79,16 @@ $colors: (
   "white": $white,
 );
 
-@each $color, $hex in $colors {
+@each $color,
+$hex in $colors {
   .has-#{$color}-scheme {
     .has-scheme-background-color {
-          background: $hex;
-        }
-        .has-light-scheme-background-color {
-          background: light-#{$hex};
-        }
+      background: $hex;
+    }
+
+    .has-light-scheme-background-color {
+      background: light-#{$hex};
+    }
   }
 
   .card.has-#{$color}-scheme {
@@ -67,9 +97,11 @@ $colors: (
 
   .has-#{$color}-background-color {
     background-color: $hex;
+
     .card {
       background-color: $white;
     }
+
     .label {
       color: $hex;
     }
@@ -80,65 +112,17 @@ $colors: (
 :root .has-black-background-color {
   background-color: $black;
   @include white-color;
+
   .card {
     background-color: $black;
   }
+
   .wp-block-button,
-  .wp-block-buttons > .wp-block-button {
-      margin-bottom: $space-small;
-      .wp-block-button__link {
-        @include button(false, $white, $white, $black, solid);
-      }
-  }
-}
+  .wp-block-buttons>.wp-block-button {
+    margin-bottom: $space-small;
 
-
-#darkmode-moon, #darkmode-sun {
-  width: 1rem;
-  height: 1rem;
-}
-#darkmode-moon {
-  display: block;
-}
-
-#darkmode-sun {
-  display: none;
-}
-
-// Darkmode Colors
-@supports (--foo: seagreen) {
-  :root {
-    --background-color: $white;
-    --body-font-color: $black;
-  }
-
-  [data-darkmode-isdark-value="true"] {
-    --background-color: #{$black};
-    --body-font-color: #{$white};
-
-    color: $white;
-    background-color: $black;
-
-    .button:not(.clear) {
-      background-color: $white;
-      color: $black;
-    }
-
-    a {
-      color: $white;
-    }
-
-    .card {
-      background-color: $black;
-      color: $white;
-    }
-
-    #darkmode-sun {
-      display:  block;
-    }
-
-    #darkmode-moon {
-      display:  none;
+    .wp-block-button__link {
+      @include button(false, $white, $white, $black, solid);
     }
   }
 }
