@@ -77,10 +77,12 @@ a {
     }
   }
   .logo {
-    height: calc(1 * #{$mobile-header-height - $gutter * 2});
-    margin-left: auto; // Makes the logo right aligned in Title Bar
-    @include breakpoint(large) {
-      height: calc(1 * #{$header-height - $gutter * 2});
+    svg {
+      height: calc(1 * #{$mobile-header-height - $gutter * 2});
+      margin-left: auto; // Makes the logo right aligned in Title Bar
+      @include breakpoint(large) {
+        height: calc(1 * #{$header-height - $gutter * 2});
+      }
     }
   }
   .cart-container {
@@ -162,9 +164,11 @@ html.no-backdropfilter {
     min-height: $footer-height;
   }
   .logo {
-    width: 120px;
-    height: auto;
-    margin-bottom: $space-small;
+    svg {
+      width: 120px;
+      height: auto;
+      margin-bottom: $space-small;
+    }
   }
   .menu {
     li {
@@ -177,11 +181,11 @@ html.no-backdropfilter {
 /* Home */
 /* Page */
 .page-title-container {
-  padding-top: $space-large;
-  padding-bottom: $space-large;
+  padding-top: $space-small;
+  padding-bottom: $space-small;
   @include breakpoint(medium) {
-    padding-top: $space-xlarge;
-    padding-bottom: $space-xlarge;
+    padding-top: $space-large;
+    padding-bottom: $space-medium;
   }
   text-align: center;
 }
