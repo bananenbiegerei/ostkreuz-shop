@@ -62,17 +62,34 @@ if ( post_password_required() ) {
 	<div class="swiper single-product-swiper">
 		<!-- Additional required wrapper -->
 		<div class="swiper-wrapper">
+      <div <?php wc_product_class( 'swiper-slide', $product ); ?>">
+        <?php the_post_thumbnail('eight-columns', array('class' => 'product-image')); ?>
+      </div>
+
 			<?php
-			  $attachment_ids = $product->get_gallery_image_ids(); ?>
-			<div <?php wc_product_class( 'swiper-slide', $product ); ?>">
-				<?php the_post_thumbnail('eight-columns', array('class' => 'product-image')); ?>
-			</div>
-			<?php foreach( $attachment_ids as $attachment_id ) { ?>
-			<div <?php wc_product_class( 'swiper-slide', $product ); ?>>
-				<?php echo wp_get_attachment_image( $attachment_id, 'eight-columns', false, ["class" => "product-image"] ); ?>
-			</div>
-			<?php }
-			  ?>
+      $attachment_ids = $product->get_gallery_image_ids();
+			foreach( $attachment_ids as $attachment_id ) : ?>
+        <div <?php wc_product_class( 'swiper-slide', $product ); ?>>
+          <?php echo wp_get_attachment_image( $attachment_id, 'eight-columns', false, ["class" => "product-image"] ); ?>
+        </div>
+			<?php endforeach; ?>
+
+      <?php
+      if ($product->get_type() === "variable") :
+        $variations = $product->get_available_variations();
+        
+        foreach ($variations as $v) :
+          $slug = array_values($v['attributes'])[0] ?? null;
+          if (null != $slug && array_key_exists('image_id', $v)) :
+            $variationImage['image_id'] = $v['image_id'];
+            $variationImage['variationslug'] = $slug; ?>
+            <div <?php wc_product_class( 'swiper-slide', $product ); ?> data-variant="<?php echo $variationImage['variationslug']; ?>">
+              <?php echo wp_get_attachment_image( $variationImage['image_id'], 'eight-columns', false, ["class" => "product-image"] ); ?>
+            </div>
+            <?php endif;
+        endforeach;
+      endif; ?>
+    
 		</div>
 
 		<!-- If we need navigation buttons -->
@@ -131,7 +148,6 @@ if ( post_password_required() ) {
         <div class="tabs-panel is-active" id="tab-product-info">
           <?php
             $attributes = $product->get_attributes();
-						// var_dump($attributes);
 
 						$filtered_attributes = array();
 
@@ -206,7 +222,6 @@ if ( post_password_required() ) {
 						$shipping['shipping_class'] = $shipping_wrapper->shipping_classes;
 					}
 
-					// var_dump($shipping);
 					foreach ($shipping as $key => $s) {
 						echo '<div>' . $key . ': ' . $s . '</div>';
 					}
