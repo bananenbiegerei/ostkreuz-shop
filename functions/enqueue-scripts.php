@@ -8,3 +8,10 @@ function site_scripts() {
     wp_enqueue_style( 'style-css', get_template_directory_uri() . '/style.css', array(), '', 'all' );
 }
 add_action('wp_enqueue_scripts', 'site_scripts', 999);
+
+add_action( 'wp_print_styles', 'deregister_my_styles', 100 );
+ 
+function deregister_my_styles() {
+    wp_deregister_style( 'wpc-filter-everything' );
+}
+

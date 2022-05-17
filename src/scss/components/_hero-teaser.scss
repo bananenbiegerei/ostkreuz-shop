@@ -16,6 +16,6 @@
 		position: absolute;
 		bottom: 0;
 		@include font-size-h1;
-		box-shadow: $shadow;
+		text-shadow: $shadow;
 	}
 }

@@ -173,8 +173,12 @@ html.backdropfilter {
 }
 }
 html.no-backdropfilter {
-  .site-header,
-  .mobile-menu {
-	background: $white;
+	[data-darkmode-isdark-value="true"] {
+  	.site-header,
+  	.mobile-menu,
+	.callout,
+	#cc-window.cc-window.cc-floating {
+		background: $black;
+  	}
   }
 }

@@ -23,9 +23,14 @@ global $product;
 if ( empty( $product ) || ! $product->is_visible() ) {
 	return;
 }
+$types = get_the_terms(get_the_ID(), 'photographer');
+$type = !empty($types) ? $types[0] : null;
+$type_name = $type != null ? $type->name : '';
+$type_id = $type != null ? $type->term_id : '';
+
 ?>
 <li <?php wc_product_class( 'position-relative', $product ); ?>>
-	<div class="card text-center clickable">
+	<div class="card text-center clickable photographer-<?php echo $type_id; ?>">
 	<?php
 	/**
 	 * Hook: woocommerce_before_shop_loop_item.

@@ -10,6 +10,9 @@ table {
     font-weight: 400;
   }
 }
+strong {
+  font-weight: $header-font-weight;
+}
 /* Paragraph */
 p {
   font-size: $global-font-size;

@@ -141,7 +141,6 @@ html.no-backdropfilter {
 
 .mobile-menu {
   display: none;
-  background: lime;
   height: calc(100vh);
   padding-top: $space-large;
   .menu {
@@ -250,7 +249,9 @@ table {
 .product_cat-poster,
 .product_cat-online-portfoliosichtungen,
 .product_cat-spezial-editionen,
-.product_cat-print-editionen {
+.product_cat-print-editionen,
+.product_cat-sonderedition,
+.product_cat-prints {
   .card,
   &.swiper-slide {
     img {
@@ -262,3 +263,12 @@ table {
     }
   }
 }
+li.product_cat-prints {
+  .card.photographer-23,
+  &.swiper-slide.photographer-23 {
+    img {
+      box-shadow: none;
+    }
+  }
+}
+

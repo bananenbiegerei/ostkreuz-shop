@@ -29,6 +29,7 @@ get_header( 'shop' );
 do_action( 'woocommerce_before_main_content' );
 
 ?>
+
 <header class="woocommerce-products-header page-title-container grid-container">
 	<div class="grid-x grid-margin-x align-center">
 		<div class="cell medium-12">
@@ -71,7 +72,7 @@ do_action( 'woocommerce_before_main_content' );
 		</form>
 	</div>
 <?php endif; ?>
-
+<?php echo do_shortcode('[fe_widget]'); ?>
 <?php
 if ( woocommerce_product_loop() ) {
 

@@ -1,0 +1,54 @@
+.wpc-filters-widget-controls-container,
+.wpc-widget-close-container,
+.wpc-filters-open-button-container {
+	display: none;
+}
+
+.widget_wpc_filters_widget {
+	margin: 0 auto;
+	max-width: calc(6 / 12 * #{$global-width});
+	.wpc-inner-widget-chips-wrapper {
+		display: flex;
+		justify-content: center;
+		ul.wpc-filter-chips-list {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			margin-bottom: $space-medium;
+			li.wpc-filter-chip {
+				display: none;
+				&.wpc-chip-reset-all {
+					display: inline-block;
+				}
+				a {
+					@include button(false, $black, $black, $white, hollow);
+					text-decoration: none;
+				}
+			}
+		}
+	}
+	
+	/* not used yet - and not finshed so far */
+	ul.wpc-filters-labels {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		li {
+			display: inline-block;
+			.wpc-term-item-content-wrapper {
+				@include button(false, $black, $black, $white, hollow);
+				a {
+					margin-bottom: 0;
+					text-decoration: none;
+				}
+				input.wpc-label-input {
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+	.wpc-filter-header {
+		margin-bottom: $space-small;
+	}
+	
+}

@@ -1,5 +1,9 @@
 {
   "identifier" : "AE2C2AEF-C0D2-4122-B228-2D792F1C4EE9",
+  "ignoredFilePatterns" : [
+    "node_modules"
+  ],
+  "localPath" : ".",
   "remotePath" : "\/shop.ostkreuz.de\/wp-content\/themes\/ostkreuz-store-01",
   "server" : "OSTKREUZ",
   "usesPublishing" : true

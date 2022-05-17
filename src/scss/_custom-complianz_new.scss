@@ -7,7 +7,7 @@
 	background: transparent !important;
 }
 
-#cc-window.cc-window.cc-floating {
+#cmplz-cookiebanner-container {
 	font-family: $body-font-family;
 	font-weight: 400;
 	background: $white;
@@ -27,26 +27,28 @@
 
 	line-height: $paragraph-lineheight;
 	display: flex;
-
-	.cc-header {
-		display: none;
-	}
-
-	.cc-message,
-	.cmplz-categories-wrap {
+	.cmplz-cookiebanner {
+		border-radius: $global-radius;
+		.cmplz-btn {
 		@include button(false, $black, auto, auto, hollow);
-		padding: 0.75em 0.75em;
-		font-size: $small-font-size;
-		text-align: left;
-		float: left;
-		border-bottom: none !important;
-
-		.cc-link {
-			padding: 0;
-			opacity: 1 !important;
-			text-decoration: underline !important;
 		}
 	}
+
+// 	.cc-message,
+// 	.cmplz-categories-wrap {
+// 		@include button(false, $black, auto, auto, hollow);
+// 		padding: 0.75em 0.75em;
+// 		font-size: $small-font-size;
+// 		text-align: left;
+// 		float: left;
+// 		border-bottom: none !important;
+// 
+// 		.cc-link {
+// 			padding: 0;
+// 			opacity: 1 !important;
+// 			text-decoration: underline !important;
+// 		}
+// 	}
 
 	.cc-compliance {
 		display: flex !important;
@@ -56,7 +58,7 @@
 			flex-direction: row;
 		}
 
-		.cc-btn {
+		.cmplz-btn {
 			@include button(false, $black, auto, auto, hollow);
 			padding: 0.5em 0.75em;
 			font-weight: 400;
@@ -174,13 +176,13 @@ body .cc-compliance .cc-btn.cc-show-settings,
 
 // Blur
 html.backdropfilter {
-	#cc-window.cc-window.cc-floating {
+	#cmplz-cookiebanner-container {
 		@include background-blur;
 	}
 }
 
 html.no-backdropfilter {
-	#cc-window.cc-window.cc-floating {
+	#cmplz-cookiebanner-container {
 		background: $white;
 	}
 }
