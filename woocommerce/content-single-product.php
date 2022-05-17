@@ -62,17 +62,34 @@ if ( post_password_required() ) {
 	<div class="swiper single-product-swiper">
 		<!-- Additional required wrapper -->
 		<div class="swiper-wrapper">
+      <div <?php wc_product_class( 'swiper-slide', $product ); ?>">
+        <?php the_post_thumbnail('eight-columns', array('class' => 'product-image')); ?>
+      </div>
+
 			<?php
-			  $attachment_ids = $product->get_gallery_image_ids(); ?>
-			<div <?php wc_product_class( 'swiper-slide', $product ); ?>">
-				<?php the_post_thumbnail('eight-columns', array('class' => 'product-image')); ?>
-			</div>
-			<?php foreach( $attachment_ids as $attachment_id ) { ?>
-			<div <?php wc_product_class( 'swiper-slide', $product ); ?>>
-				<?php echo wp_get_attachment_image( $attachment_id, 'eight-columns', false, ["class" => "product-image"] ); ?>
-			</div>
-			<?php }
-			  ?>
+      $attachment_ids = $product->get_gallery_image_ids();
+			foreach( $attachment_ids as $attachment_id ) : ?>
+        <div <?php wc_product_class( 'swiper-slide', $product ); ?>>
+          <?php echo wp_get_attachment_image( $attachment_id, 'eight-columns', false, ["class" => "product-image"] ); ?>
+        </div>
+			<?php endforeach; ?>
+
+      <?php
+      if ($product->get_type() === "variable") :
+        $variations = $product->get_available_variations();
+        
+        foreach ($variations as $v) :
+          $slug = array_values($v['attributes'])[0] ?? null;
+          if (null != $slug && array_key_exists('image_id', $v)) :
+            $variationImage['image_id'] = $v['image_id'];
+            $variationImage['variationslug'] = $slug; ?>
+            <div <?php wc_product_class( 'swiper-slide', $product ); ?> data-variant="<?php echo $variationImage['variationslug']; ?>">
+              <?php echo wp_get_attachment_image( $variationImage['image_id'], 'eight-columns', false, ["class" => "product-image"] ); ?>
+            </div>
+            <?php endif;
+        endforeach;
+      endif; ?>
+    
 		</div>
 
 		<!-- If we need navigation buttons -->
@@ -191,7 +208,6 @@ if ( post_password_required() ) {
         <div class="tabs-panel is-active" id="tab-product-info">
           <?php
             $attributes = $product->get_attributes();
-						// var_dump($attributes);
 
 						$filtered_attributes = array();
 
@@ -245,7 +261,32 @@ if ( post_password_required() ) {
             }
           ?>
         </div>
-        <div class="tabs-panel" id="tab-shipping-info">Shipppping IIIIIIIINFOOOOO – kommt noch!</div>
+
+        <div class="tabs-panel" id="tab-shipping-info">
+					<?php
+					$shipping = array(
+						'tax_status' => $product->get_tax_status() == 'taxable' ? 'besteuerbar' : '',
+						'tax_class' => $product->get_tax_class(),
+						'manage_stock' => $product->get_manage_stock(),
+						'stock_quantity' => $product->get_stock_quantity(),
+						'stock_status' => $product->get_stock_status(),
+						'backorders' => $product->get_backorders(),
+						'sold_individually' => $product->get_sold_individually(),
+						'purchase_note' => $product->get_purchase_note(),
+						'shipping_class_id' => $product->get_shipping_class_id(),
+					);
+
+					if (!empty($shipping['shipping_class_id'])) {
+						$term =  get_term($shipping['shipping_class_id'], 'product_shipping_class');
+						$shipping_wrapper = new WC_Shipping();
+						$shipping['shipping_class'] = $shipping_wrapper->shipping_classes;
+					}
+
+					foreach ($shipping as $key => $s) {
+						echo '<div>' . $key . ': ' . $s . '</div>';
+					}
+					?>
+				</div>
       </div>
 	  */ ?>
     </div>

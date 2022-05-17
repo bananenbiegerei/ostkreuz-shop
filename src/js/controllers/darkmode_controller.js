@@ -13,12 +13,7 @@ export default class extends Controller {
     })
   }
 
-  connect() {
-    console.log('darkmode');
-  }
-
   toggle() {
-    console.log('toggle', this.isdarkValue);
     this.isdarkValue = !this.isdarkValue
     this.writeCookie()
   }
