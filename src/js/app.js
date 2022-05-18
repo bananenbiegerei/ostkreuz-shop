@@ -2,7 +2,7 @@ import * as Turbo from '@hotwired/turbo';
 import { Application } from 'stimulus';
 import { definitionsFromContext } from 'stimulus/webpack-helpers';
 import Foundation from 'foundation-sites';
-import Swiper, { Navigation, Pagination, FreeMode, Autoplay, Parallax, EffectFade } from 'swiper';
+import Swiper from 'swiper/bundle';
 //import { Darkmode } from "./darkmode";
 import $ from "jquery";
 
@@ -16,10 +16,8 @@ const application = Application.start();
 application.register('form', FormController);
 application.register('darkmode', DarkmodeController);
 
-Swiper.use([Navigation, Pagination, Autoplay, EffectFade, FreeMode]);
-
 $(document).ready(function($) {
-  $(document).foundation();
+  $(document).foundation();  
   /* TOC 
   part one - Swiper initialization
   part two - photoswipe initialization
@@ -299,7 +297,7 @@ $(document).ready(function($) {
   //console.log(application, context);
 
   // Swipers
-  const swiper = new Swiper('.single-product-swiper', {
+  const singleswiper = new Swiper('.single-product-swiper', {
     speed: 500,
     navigation: {
       nextEl: '.swiper-button-next',
@@ -309,12 +307,18 @@ $(document).ready(function($) {
   });
   
   const heroSwiper = new Swiper('.hero-swiper', {
-    speed: 500,
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
-    autoHeight: true
+    effect: 'fade',
+    fadeEffect: {
+      crossFade: true
+    },
+    speed: 3000,
+    autoplay: {
+       delay: 4000,
+     },
   });
 
   const productSwiper = new Swiper('.product-swiper', {

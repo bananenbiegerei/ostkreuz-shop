@@ -103,6 +103,14 @@
       "oAP" : "\/dist\/functions.php",
       "oF" : 1
     },
+    "\/functions\/complianz-custom-banner.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dist\/functions\/complianz-custom-banner.php",
+      "oF" : 0
+    },
     "\/functions\/custom-posts.php" : {
       "cB" : 0,
       "ft" : 8192,
@@ -544,7 +552,7 @@
       "prP" : 0
     },
     "\/src\/js\/app.js" : {
-      "bF" : 4,
+      "bF" : 3,
       "ft" : 64,
       "ma" : 1,
       "mi" : 1,
@@ -952,21 +960,6 @@
       "pg" : 0,
       "sct" : 1
     },
-    "\/src\/scss\/components\/_hero-swiper.scss" : {
-      "aP" : 0,
-      "bl" : 0,
-      "co" : 0,
-      "dP" : 10,
-      "ec" : 1,
-      "ft" : 4,
-      "ma" : 0,
-      "oA" : 1,
-      "oAP" : "\/dist\/scss\/components\/_hero-swiper.css",
-      "oF" : 0,
-      "oS" : 0,
-      "pg" : 0,
-      "sct" : 1
-    },
     "\/src\/scss\/components\/_hero-teaser.scss" : {
       "aP" : 0,
       "bl" : 0,
@@ -1108,14 +1101,6 @@
       "oAP" : "\/dist\/template-parts\/blocks\/anchor-top.php",
       "oF" : 0
     },
-    "\/template-parts\/blocks\/hero-swiper.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 1,
-      "oAP" : "\/dist\/template-parts\/blocks\/hero-swiper.php",
-      "oF" : 0
-    },
     "\/template-parts\/blocks\/hero-teaser.php" : {
       "cB" : 0,
       "ft" : 8192,
@@ -1139,6 +1124,14 @@
       "oA" : 1,
       "oAP" : "\/dist\/template-parts\/page\/content-page.php",
       "oF" : 1
+    },
+    "\/template-parts\/partials\/complianz-cookie-banner.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dist\/template-parts\/partials\/complianz-cookie-banner.php",
+      "oF" : 0
     },
     "\/template-parts\/partials\/scroll-top.php" : {
       "cB" : 0,
@@ -1404,7 +1397,7 @@
     "displayValueWasSetByUser" : 0,
     "iconImageName" : "\/src\/img\/favicons\/apple-touch-icon.png",
     "iconImageWasSetByUser" : 0,
-    "lastBuiltDate" : 667465674.50044
+    "lastBuiltDate" : 674492499.29035103
   },
   "projectSettings" : {
     "abortBuildOnError" : 1,
@@ -2693,7 +2686,7 @@
       }
     },
     "esLintSourceType" : 0,
-    "externalServerAddress" : "https:\/\/ostkreuz.local\/",
+    "externalServerAddress" : "http:\/\/ost.local\/",
     "gitIgnoreBuildFolder" : 0,
     "hideConfigFile" : 0,
     "jsCheckerReservedNamesString" : "",

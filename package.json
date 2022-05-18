@@ -1,10 +1,42 @@
 {
-  "private": true,
+  "author": "ZURB <foundation@zurb.com>",
+  "main": "gulpfile.js",
+  "description": "Basic template for a new Foundation for Sites project.",
+  "name": "foundation-sites-template",
   "version": "1.0.0",
-  "license": "MIT",
   "bugs": {
     "url": "https://github.com/zurb/foundation-sites/issues",
     "email": "foundation@zurb.com"
+  },
+  "optionalDependencies": {},
+  "dependencies": {
+    "@hotwired/turbo": "^7.0.0-rc.4",
+    "form-request-submit-polyfill": "^2.0.0",
+    "foundation-sites": "^6.7.4",
+    "gsap": "^3.7.0",
+    "hotkeys-js": "^3.8.7",
+    "jquery": "^3.6.0",
+    "js-cookie": "^3.0.1",
+    "motion-ui": "~2.0.0",
+    "nouislider": "^15.2.0",
+    "select2": "^4.1.0-rc.0",
+    "stimulus": "^2.0.0",
+    "stimulus-use": "^0.25.3",
+    "swiper": "^8.1.5",
+    "what-input": "^5.2.10"
+  },
+  "devDependencies": {
+    "sass-loader": "^12.1.0",
+    "gulp-sass": "^4.0.1",
+    "browser-sync-webpack-plugin": "^2.3.0",
+    "browser-sync": "^2.18.13",
+    "gulp-postcss": "^8.0.0",
+    "gulp": "^4.0.0",
+    "@babel/plugin-proposal-class-properties": "^7.14.5",
+    "laravel-mix": "^6.0.25",
+    "autoprefixer": "^9.1.5",
+    "gulp-load-plugins": "^1.1.0",
+    "sass": "^1.35.1"
   },
   "repository": {
     "type": "git",
@@ -15,37 +47,6 @@
     "dev": "mix watch",
     "build": "gulp sass"
   },
-  "dependencies": {
-    "@hotwired/turbo": "^7.0.0-rc.4",
-    "form-request-submit-polyfill": "^2.0.0",
-    "foundation-sites": "^6.7.3",
-    "gsap": "^3.7.0",
-    "hotkeys-js": "^3.8.7",
-    "jquery": "^3.6.0",
-    "js-cookie": "^3.0.1",
-    "motion-ui": "~2.0.0",
-    "nouislider": "^15.2.0",
-    "select2": "^4.1.0-rc.0",
-    "stimulus": "^2.0.0",
-    "stimulus-use": "^0.25.3",
-    "swiper": "^7.0.8",
-    "what-input": "^5.2.10"
-  },
-  "main": "gulpfile.js",
-  "name": "foundation-sites-template",
-  "description": "Basic template for a new Foundation for Sites project.",
-  "author": "ZURB <foundation@zurb.com>",
-  "devDependencies": {
-    "@babel/plugin-proposal-class-properties": "^7.14.5",
-    "autoprefixer": "^9.1.5",
-    "browser-sync": "^2.18.13",
-    "browser-sync-webpack-plugin": "^2.3.0",
-    "gulp": "^4.0.0",
-    "gulp-load-plugins": "^1.1.0",
-    "gulp-postcss": "^8.0.0",
-    "gulp-sass": "^4.0.1",
-    "laravel-mix": "^6.0.25",
-    "sass": "^1.35.1",
-    "sass-loader": "^12.1.0"
-  }
+  "license": "MIT",
+  "private": true
 }

@@ -1,5 +1,6 @@
 </main><!-- .site-content -->
 <footer id="colophon" class="site-footer" role="contentinfo">
+	<?php //get_template_part('template-parts/partials/complianz-cookie-banner'); ?>
 	<?php get_template_part('template-parts/partials/scroll-top'); ?>
 	<div class="grid-container fluid">
 		<div class="grid-x grid-margin-x padding-top-medium">
