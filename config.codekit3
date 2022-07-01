@@ -57,6 +57,14 @@
       "oO" : 0,
       "oS" : 1
     },
+    "\/.nova\/Publishing\/STAGE BB.json" : {
+      "ft" : 524288,
+      "oA" : 0,
+      "oAP" : "\/dist\/.nova\/Publishing\/STAGE BB.json",
+      "oF" : 0,
+      "oO" : 0,
+      "oS" : 1
+    },
     "\/404.php" : {
       "cB" : 0,
       "ft" : 8192,
@@ -751,16 +759,16 @@
       "sct" : 1
     },
     "\/src\/scss\/_custom-complianz.scss" : {
-      "aP" : 0,
+      "aP" : 1,
       "bl" : 0,
       "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
-      "ma" : 0,
+      "ma" : 2,
       "oA" : 1,
-      "oAP" : "\/dist\/scss\/_custom-complianz.css",
-      "oF" : 0,
+      "oAP" : "\/Users\/ingoschmid\/Dropbox\/BB SERVER\/htdocs\/ostkreuz\/app\/public\/wp-content\/mu-plugins\/cookiebanner\/_custom-complianz.css",
+      "oF" : 7,
       "oS" : 0,
       "pg" : 0,
       "sct" : 1
@@ -1397,7 +1405,7 @@
     "displayValueWasSetByUser" : 0,
     "iconImageName" : "\/src\/img\/favicons\/apple-touch-icon.png",
     "iconImageWasSetByUser" : 0,
-    "lastBuiltDate" : 674492499.29035103
+    "lastBuiltDate" : 674982108.06652999
   },
   "projectSettings" : {
     "abortBuildOnError" : 1,
