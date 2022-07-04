@@ -272,3 +272,11 @@ li.product_cat-prints {
   }
 }
 
+/* No Shadow on single Product from ACF Field */
+.swiper.single-product-swiper.has-no-shadow,
+.card.has-no-shadow {
+  img {
+    box-shadow: none;
+  }
+}
+

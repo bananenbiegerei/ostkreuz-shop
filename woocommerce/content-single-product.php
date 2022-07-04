@@ -38,11 +38,11 @@ if ( post_password_required() ) {
 		<div class="product-header__photographers">
 			<?php $photographers = get_the_terms(get_the_id(), 'photographer');
 			if (!empty($photographers)) :
-		    $photographers = array_map(function($p) {
+			$photographers = array_map(function($p) {
 			return '<a href="' . get_term_link($p->term_id) . '">' . $p->name . '</a>';
-		    },$photographers);
-		    $photographers = implode(', ', $photographers);
-	  		?>
+			},$photographers);
+			$photographers = implode(', ', $photographers);
+			  ?>
 			<p class="lead margin-bottom-0"> von <?php echo $photographers; ?></p>
 			<?php endif; ?>
 		</div>
@@ -59,37 +59,41 @@ if ( post_password_required() ) {
 		</div>
 	</header>
 	
-	<div class="swiper single-product-swiper">
+	<div class="swiper single-product-swiper
+	<?php if( get_field('schatten_ausblenden') ): ?>
+		has-no-shadow
+	<?php endif; ?>
+	">
 		<!-- Additional required wrapper -->
 		<div class="swiper-wrapper">
-      <div <?php wc_product_class( 'swiper-slide', $product ); ?>">
-        <?php the_post_thumbnail('eight-columns', array('class' => 'product-image')); ?>
-      </div>
+	  <div <?php wc_product_class( 'swiper-slide', $product ); ?>">
+		<?php the_post_thumbnail('eight-columns', array('class' => 'product-image')); ?>
+	  </div>
 
 			<?php
-      $attachment_ids = $product->get_gallery_image_ids();
+	  $attachment_ids = $product->get_gallery_image_ids();
 			foreach( $attachment_ids as $attachment_id ) : ?>
-        <div <?php wc_product_class( 'swiper-slide', $product ); ?>>
-          <?php echo wp_get_attachment_image( $attachment_id, 'eight-columns', false, ["class" => "product-image"] ); ?>
-        </div>
+		<div <?php wc_product_class( 'swiper-slide', $product ); ?>>
+		  <?php echo wp_get_attachment_image( $attachment_id, 'eight-columns', false, ["class" => "product-image"] ); ?>
+		</div>
 			<?php endforeach; ?>
 
-      <?php
-      if ($product->get_type() === "variable") :
-        $variations = $product->get_available_variations();
-        
-        foreach ($variations as $v) :
-          $slug = array_values($v['attributes'])[0] ?? null;
-          if (null != $slug && array_key_exists('image_id', $v)) :
-            $variationImage['image_id'] = $v['image_id'];
-            $variationImage['variationslug'] = $slug; ?>
-            <div <?php wc_product_class( 'swiper-slide', $product ); ?> data-variant="<?php echo $variationImage['variationslug']; ?>">
-              <?php echo wp_get_attachment_image( $variationImage['image_id'], 'eight-columns', false, ["class" => "product-image"] ); ?>
-            </div>
-            <?php endif;
-        endforeach;
-      endif; ?>
-    
+	  <?php
+	  if ($product->get_type() === "variable") :
+		$variations = $product->get_available_variations();
+		
+		foreach ($variations as $v) :
+		  $slug = array_values($v['attributes'])[0] ?? null;
+		  if (null != $slug && array_key_exists('image_id', $v)) :
+			$variationImage['image_id'] = $v['image_id'];
+			$variationImage['variationslug'] = $slug; ?>
+			<div <?php wc_product_class( 'swiper-slide', $product ); ?> data-variant="<?php echo $variationImage['variationslug']; ?>">
+			  <?php echo wp_get_attachment_image( $variationImage['image_id'], 'eight-columns', false, ["class" => "product-image"] ); ?>
+			</div>
+			<?php endif;
+		endforeach;
+	  endif; ?>
+	
 		</div>
 
 		<!-- If we need navigation buttons -->
@@ -123,18 +127,18 @@ if ( post_password_required() ) {
 		 * @hooked woocommerce_template_single_sharing - 50
 		 * @hooked WC_Structured_Data::generate_product_data() - 60
 		 */
-    remove_action('woocommerce_after_single_product_summary', 'woocommerce_output_product_data_tabs', 10);
+	remove_action('woocommerce_after_single_product_summary', 'woocommerce_output_product_data_tabs', 10);
 		do_action( 'woocommerce_single_product_summary' );
 		?>
 	</div>
 	<hr>
 
   <div class="grid-x grid-margin-x padding-vertical-1">
-    <div class="cell medium-7 lead">
-      <?php the_content(); ?>
-    </div>
+	<div class="cell medium-7 lead">
+	  <?php the_content(); ?>
+	</div>
 
-    <div class="cell medium-5">
+	<div class="cell medium-5">
 		<h3>
 			Produkt Info
 		</h3>
@@ -195,19 +199,19 @@ if ( post_password_required() ) {
 				}
 			  ?>
 		</div>
-      <?php /* <ul class="tabs" data-responsive-accordion-tabs="accordion large-tabs" id="product-tabs">
-        <li class="tabs-title is-active">
+	  <?php /* <ul class="tabs" data-responsive-accordion-tabs="accordion large-tabs" id="product-tabs">
+		<li class="tabs-title is-active">
 					<a data-tabs-target="tab-product-info" href="#tab-product-info" aria-selected="true">Produkt Info</a>
 				</li>
-        <li class="tabs-title">
+		<li class="tabs-title">
 					<a data-tabs-target="tab-shipping-info" href="#tab-shipping-info">Versand</a>
 				</li>
-      </ul>
-      
-      <div class="tabs-content" data-tabs-content="product-tabs">
-        <div class="tabs-panel is-active" id="tab-product-info">
-          <?php
-            $attributes = $product->get_attributes();
+	  </ul>
+	  
+	  <div class="tabs-content" data-tabs-content="product-tabs">
+		<div class="tabs-panel is-active" id="tab-product-info">
+		  <?php
+			$attributes = $product->get_attributes();
 
 						$filtered_attributes = array();
 
@@ -240,10 +244,10 @@ if ( post_password_required() ) {
 							echo '<div>' . $attr['name'] . ': ' . $attr['value'] . '</div>';
 						}
 
-            foreach ($attributes as $key => $attr) {
-              if (!is_wp_error($attr)) {
-                $data = $attr->get_data();
-                $options = $data['options'];
+			foreach ($attributes as $key => $attr) {
+			  if (!is_wp_error($attr)) {
+				$data = $attr->get_data();
+				$options = $data['options'];
 								$options = array_map(function($t) {
 										if (is_int($t)) {
 											return get_term($t)->name;
@@ -256,13 +260,13 @@ if ( post_password_required() ) {
 								if (strpos($name, 'pa_') !== false)
 									$name = ucwords(substr($name, 3));
 
-                echo '<div>' . $name . ': ' . $options . '</div>';
-              }
-            }
-          ?>
-        </div>
+				echo '<div>' . $name . ': ' . $options . '</div>';
+			  }
+			}
+		  ?>
+		</div>
 
-        <div class="tabs-panel" id="tab-shipping-info">
+		<div class="tabs-panel" id="tab-shipping-info">
 					<?php
 					$shipping = array(
 						'tax_status' => $product->get_tax_status() == 'taxable' ? 'besteuerbar' : '',
@@ -287,9 +291,9 @@ if ( post_password_required() ) {
 					}
 					?>
 				</div>
-      </div>
+	  </div>
 	  */ ?>
-    </div>
+	</div>
   </div>
   <hr class="margin-top-4 margin-bottom-4">
 	<?php
