@@ -311,6 +311,11 @@ $(document).ready(function($) {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
+    draggable: true,
+    keyboard: {
+      enabled: true,
+      onlyInViewport: false,
+    },
     effect: 'fade',
     fadeEffect: {
       crossFade: true
