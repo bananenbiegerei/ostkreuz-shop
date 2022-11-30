@@ -355,9 +355,9 @@ $(document).ready(function($) {
   document.addEventListener('change', function(e) {
     if (e.srcElement.type === 'select-one') {
       const slug = e.srcElement.value
-      const slides = Array.from(swiper.slides)
+      const slides = Array.from(singleswiper.slides)
       const slideIndex = slides.findIndex(s => s.hasAttribute('data-variant') && s.dataset.variant == slug)
-      swiper.slideTo(slideIndex)
+      singleswiper.slideTo(slideIndex)
     }
   })
 });
