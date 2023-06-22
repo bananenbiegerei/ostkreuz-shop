@@ -1405,7 +1405,7 @@
     "displayValueWasSetByUser" : 0,
     "iconImageName" : "\/src\/img\/favicons\/apple-touch-icon.png",
     "iconImageWasSetByUser" : 0,
-    "lastBuiltDate" : 674982108.06652999
+    "lastBuiltDate" : 691500988.46396506
   },
   "projectSettings" : {
     "abortBuildOnError" : 1,
@@ -2694,7 +2694,7 @@
       }
     },
     "esLintSourceType" : 0,
-    "externalServerAddress" : "http:\/\/ost.local\/",
+    "externalServerAddress" : "https:\/\/ostshop.local\/",
     "gitIgnoreBuildFolder" : 0,
     "hideConfigFile" : 0,
     "jsCheckerReservedNamesString" : "",
