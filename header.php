@@ -35,7 +35,7 @@ data-darkmode-isdark-value="<?php echo isset($_COOKIE['isdark']) ? $_COOKIE['isd
                     </ul>
                 </div>
                 <div class="cell auto cart-container">
-                    <ul class="menu">
+                    <!-- <ul class="menu">
                         <li>
                             <button class="button clear" data-action="darkmode#toggle">
                                 <svg id="darkmode-moon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -47,7 +47,7 @@ data-darkmode-isdark-value="<?php echo isset($_COOKIE['isdark']) ? $_COOKIE['isd
                                 </svg>
                             </button>
                         </li>
-                    </ul>
+                    </ul> -->
                 </div>
                 <div class="cell shrink">
                     <a href="<?php echo home_url(); ?>">
@@ -99,7 +99,7 @@ data-darkmode-isdark-value="<?php echo isset($_COOKIE['isdark']) ? $_COOKIE['isd
                 </ul>
             </div>
             <div class="cell small-12 cart-container">
-                <ul class="menu align-center">
+                <!-- <ul class="menu align-center">
                     <li>
                         <button class="button clear" data-action="darkmode#toggle">
                             <svg id="darkmode-moon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -111,7 +111,7 @@ data-darkmode-isdark-value="<?php echo isset($_COOKIE['isdark']) ? $_COOKIE['isd
                             </svg>
                         </button>
                     </li>
-                </ul>
+                </ul> -->
             </div>
         </div>
     </header>
