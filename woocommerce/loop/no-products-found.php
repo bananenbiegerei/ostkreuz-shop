@@ -18,6 +18,6 @@
 defined( 'ABSPATH' ) || exit;
 
 ?>
-<turbo-frame id="products">
+<div id="products">
   <p class="woocommerce-info"><?php esc_html_e( 'No products were found matching your selection.', 'woocommerce' ); ?></p>
-</turbo-frame>
+</div>

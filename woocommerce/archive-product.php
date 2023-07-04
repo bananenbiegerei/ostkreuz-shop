@@ -53,10 +53,7 @@ do_action( 'woocommerce_before_main_content' );
 <?php if (is_tax('photographer')) : ?>
 	<div class="grid-container margin-bottom-2">
 		<form
-		method="get"
-		data-controller="form"
-		data-action="change->form#submit"
-		data-turbo-frame="products">
+		method="get">
 			<select
 			class="width-auto"
 			id="product_cat"

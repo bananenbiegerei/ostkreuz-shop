@@ -1,20 +1,20 @@
-import * as Turbo from '@hotwired/turbo';
-import { Application } from 'stimulus';
-import { definitionsFromContext } from 'stimulus/webpack-helpers';
+//import * as Turbo from '@hotwired/turbo';
+//import { Application } from 'stimulus';
+//import { definitionsFromContext } from 'stimulus/webpack-helpers';
 import Foundation from 'foundation-sites';
 import Swiper from 'swiper/bundle';
 //import { Darkmode } from "./darkmode";
 import $ from "jquery";
 
-import FormController from './controllers/form_controller';
-import DarkmodeController from './controllers/darkmode_controller';
+// import FormController from './controllers/form_controller';
+// import DarkmodeController from './controllers/darkmode_controller';
 
-Turbo.session.drive = false;
-const application = Application.start();
+// Turbo.session.drive = false;
+// const application = Application.start();
 //const context = require.context('./controllers', true, /\.js$/);
 //application.load(definitionsFromContext(context))
-application.register('form', FormController);
-application.register('darkmode', DarkmodeController);
+// application.register('form', FormController);
+// application.register('darkmode', DarkmodeController);
 
 $(document).ready(function($) {
   $(document).foundation();  

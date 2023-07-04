@@ -23,4 +23,4 @@ if ( ! defined( 'ABSPATH' ) ) {
   </div>
   </div>
 </div>
-</turbo-frame>
+</div>
