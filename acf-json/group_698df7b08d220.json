@@ -4,8 +4,8 @@
     "fields": [
         {
             "key": "field_698df7b1b8198",
-            "label": "Kategorie mit Schatten",
-            "name": "kategorie_mit_schatten",
+            "label": "Kategorie ohne Schatten",
+            "name": "kategorie_ohne_schatten",
             "aria-label": "",
             "type": "true_false",
             "instructions": "",

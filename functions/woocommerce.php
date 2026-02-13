@@ -101,3 +101,33 @@ function custom_add_to_cart_fragment( $fragments ) {
 
   return $fragments;
  }
+
+// Add shadow classes based on ACF fields
+add_filter( 'woocommerce_post_class', 'add_shadow_class_from_acf', 10, 2 );
+
+function add_shadow_class_from_acf( $classes, $product ) {
+    // Check product-level field first (schatten_ausblenden)
+    if ( get_field( 'schatten_ausblenden', $product->get_id() ) ) {
+        $classes[] = 'has-no-shadow';
+        return $classes;
+    }
+
+    // Check category-level field (kategorie_ohne_schatten)
+    // If checked = no shadow, if unchecked = has shadow
+    $terms = get_the_terms( $product->get_id(), 'product_cat' );
+
+    if ( $terms && ! is_wp_error( $terms ) ) {
+        foreach ( $terms as $term ) {
+            $no_shadow = get_field( 'kategorie_ohne_schatten', 'product_cat_' . $term->term_id );
+
+            if ( $no_shadow ) {
+                $classes[] = 'has-no-shadow';
+            } else {
+                $classes[] = 'has-shadow';
+            }
+            break; // Only check first category
+        }
+    }
+
+    return $classes;
+}

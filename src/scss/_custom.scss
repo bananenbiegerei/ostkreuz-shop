@@ -290,22 +290,22 @@ table {
 }
 
 /* Custom Styles for Categories */
-.product_cat-poster,
-.product_cat-online-portfoliosichtungen,
-.product_cat-spezial-editionen,
-.product_cat-print-editionen,
-.product_cat-sonderedition,
-.product_cat-prints,
-.product_cat-berlin-edition {
-
-  .card,
-  &.swiper-slide {
-
+[class*=" product_cat-"] {
+  &.has-shadow {
     .card,
     .swiper-slide {
       img {
         box-shadow: $shadow;
         background-color: $white;
+      }
+    }
+  }
+  &.has-no-shadow {
+    .card,
+    .swiper-slide {
+      img {
+        box-shadow: none;
+        background-color: transparent;
       }
     }
   }

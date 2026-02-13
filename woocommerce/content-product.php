@@ -29,11 +29,8 @@ $type_name = $type != null ? $type->name : '';
 $type_id = $type != null ? $type->term_id : '';
 
 ?>
-<?php if( get_field('schatten_ausblenden', get_the_ID()) ):
-	$shadow = 'has-no-shadow';
-endif; ?>
 <li <?php wc_product_class( 'position-relative', $product ); ?>>
-	<div class="card text-center clickable photographer-<?php echo $type_id; ?> <?php echo $shadow; ?>">
+	<div class="card text-center clickable photographer-<?php echo $type_id; ?>">
 	<?php
 	/**
 	 * Hook: woocommerce_before_shop_loop_item.
