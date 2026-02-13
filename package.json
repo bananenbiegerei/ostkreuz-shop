@@ -8,9 +8,9 @@
     "url": "https://github.com/zurb/foundation-sites/issues",
     "email": "foundation@zurb.com"
   },
-  "optionalDependencies": {},
   "dependencies": {
     "@hotwired/turbo": "^7.0.0-rc.4",
+    "alpinejs": "^3.14.7",
     "form-request-submit-polyfill": "^2.0.0",
     "foundation-sites": "^6.7.4",
     "gsap": "^3.7.0",
@@ -26,17 +26,17 @@
     "what-input": "^5.2.10"
   },
   "devDependencies": {
-    "sass-loader": "^12.1.0",
-    "gulp-sass": "^4.0.1",
-    "browser-sync-webpack-plugin": "^2.3.0",
-    "browser-sync": "^2.18.13",
-    "gulp-postcss": "^8.0.0",
-    "gulp": "^4.0.0",
     "@babel/plugin-proposal-class-properties": "^7.14.5",
-    "laravel-mix": "^6.0.25",
     "autoprefixer": "^9.1.5",
+    "browser-sync": "^2.18.13",
+    "browser-sync-webpack-plugin": "^2.3.0",
+    "gulp": "^4.0.0",
     "gulp-load-plugins": "^1.1.0",
-    "sass": "^1.35.1"
+    "gulp-postcss": "^8.0.0",
+    "gulp-sass": "^4.0.1",
+    "laravel-mix": "^6.0.25",
+    "sass": "^1.35.1",
+    "sass-loader": "^12.1.0"
   },
   "repository": {
     "type": "git",

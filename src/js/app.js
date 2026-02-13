@@ -5,6 +5,12 @@ import Foundation from 'foundation-sites';
 import Swiper from 'swiper/bundle';
 //import { Darkmode } from "./darkmode";
 import $ from "jquery";
+// Import Alpine.js
+import Alpine from 'alpinejs';
+
+// Initialize Alpine.js
+window.Alpine = Alpine;
+Alpine.start();
 
 // import FormController from './controllers/form_controller';
 // import DarkmodeController from './controllers/darkmode_controller';
@@ -17,13 +23,14 @@ import $ from "jquery";
 // application.register('darkmode', DarkmodeController);
 
 $(document).ready(function($) {
-  $(document).foundation();  
-  /* TOC 
+  $(document).foundation();
+
+  /* TOC
   part one - Swiper initialization
   part two - photoswipe initialization
   part three - photoswipe define options
   part four - extra code (update swiper index when image close and micro changes)
-  
+
   /* 1 of 4 : SWIPER ################################### */
   var mySwiper = new Swiper(".swiper-container", {
     // If swiper loop is true set photoswipe counterEl: false (line 175 her)
@@ -55,10 +62,10 @@ $(document).ready(function($) {
       enabled: true,
     }
   });
-  
+
   // 2 of 4 : PHOTOSWIPE #######################################
   // https://photoswipe.com/documentation/getting-started.html //
-  
+
   var initPhotoSwipeFromDOM = function(gallerySelector) {
     // parse slide data (url, title, size ...) from DOM elements
     // (children of gallerySelector)
@@ -70,64 +77,64 @@ $(document).ready(function($) {
           linkEl,
           size,
           item;
-  
+
       for (var i = 0; i < numNodes; i++) {
         figureEl = thumbElements[i]; // <figure> element
-  
+
         // include only element nodes
         if (figureEl.nodeType !== 1) {
           continue;
         }
-  
+
         linkEl = figureEl.children[0]; // <a> element
-  
+
         size = linkEl.getAttribute("data-size").split("x");
-  
+
         // create slide object
         item = {
           src: linkEl.getAttribute("href"),
           w: parseInt(size[0], 10),
           h: parseInt(size[1], 10)
         };
-  
+
         if (figureEl.children.length > 1) {
           // <figcaption> content
           item.title = figureEl.children[1].innerHTML;
         }
-  
+
         if (linkEl.children.length > 0) {
           // <img> thumbnail element, retrieving thumbnail url
           item.msrc = linkEl.children[0].getAttribute("src");
         }
-  
+
         item.el = figureEl; // save link to element for getThumbBoundsFn
         items.push(item);
       }
-  
+
       return items;
     };
-  
+
     // find nearest parent element
     var closest = function closest(el, fn) {
       return el && (fn(el) ? el : closest(el.parentNode, fn));
     };
-  
+
     // triggers when user clicks on thumbnail
     var onThumbnailsClick = function(e) {
       e = e || window.event;
       e.preventDefault ? e.preventDefault() : (e.returnValue = false);
-  
+
       var eTarget = e.target || e.srcElement;
-  
+
       // find root element of slide
       var clickedListItem = closest(eTarget, function(el) {
         return el.tagName && el.tagName.toUpperCase() === "LI";
       });
-  
+
       if (!clickedListItem) {
         return;
       }
-  
+
       // find index of clicked item by looping through all child nodes
       // alternatively, you may define index via data- attribute
       var clickedGallery = clickedListItem.parentNode,
@@ -135,35 +142,35 @@ $(document).ready(function($) {
           numChildNodes = childNodes.length,
           nodeIndex = 0,
           index;
-  
+
       for (var i = 0; i < numChildNodes; i++) {
         if (childNodes[i].nodeType !== 1) {
           continue;
         }
-  
+
         if (childNodes[i] === clickedListItem) {
           index = nodeIndex;
           break;
         }
         nodeIndex++;
       }
-  
+
       if (index >= 0) {
         // open PhotoSwipe if valid index found
         openPhotoSwipe(index, clickedGallery);
       }
       return false;
     };
-  
+
     // parse picture index and gallery index from URL (#&pid=1&gid=2)
     var photoswipeParseHash = function() {
       var hash = window.location.hash.substring(1),
           params = {};
-  
+
       if (hash.length < 5) {
         return params;
       }
-  
+
       var vars = hash.split("&");
       for (var i = 0; i < vars.length; i++) {
         if (!vars[i]) {
@@ -175,14 +182,14 @@ $(document).ready(function($) {
         }
         params[pair[0]] = pair[1];
       }
-  
+
       if (params.gid) {
         params.gid = parseInt(params.gid, 10);
       }
-  
+
       return params;
     };
-  
+
     var openPhotoSwipe = function(
     index,
      galleryElement,
@@ -193,15 +200,15 @@ $(document).ready(function($) {
           gallery,
           options,
           items;
-  
+
       items = parseThumbnailElements(galleryElement);
-  
-      // #################### 3/4 define photoswipe options (if needed) #################### 
+
+      // #################### 3/4 define photoswipe options (if needed) ####################
       // https://photoswipe.com/documentation/options.html //
       options = {
         /* "showHideOpacity" uncomment this If dimensions of your small thumbnail don't match dimensions of large image */
         //showHideOpacity:true,
-  
+
         // Buttons/elements
         closeEl: true,
         captionEl: true,
@@ -219,11 +226,11 @@ $(document).ready(function($) {
               pageYScroll =
               window.pageYOffset || document.documentElement.scrollTop,
               rect = thumbnail.getBoundingClientRect();
-  
+
           return { x: rect.left, y: rect.top + pageYScroll, w: rect.width };
         }
       };
-  
+
       // PhotoSwipe opened from URL
       if (fromURL) {
         if (options.galleryPIDs) {
@@ -242,22 +249,22 @@ $(document).ready(function($) {
       } else {
         options.index = parseInt(index, 10);
       }
-  
+
       // exit if index not found
       if (isNaN(options.index)) {
         return;
       }
-  
+
       if (disableAnimation) {
         options.showAnimationDuration = 0;
       }
-  
+
       // Pass data to PhotoSwipe and initialize it
       gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, options);
       gallery.init();
-  
+
       /* ########### PART 4 - EXTRA CODE  ########### */
-      /* EXTRA CODE (NOT FROM photoswipe CORE) - 
+      /* EXTRA CODE (NOT FROM photoswipe CORE) -
       1/2. UPDATE SWIPER POSITION TO THE "CURRENT" ZOOM_IN IMAGE (BETTER UI) */
       // photoswipe event: Gallery unbinds events
       // (triggers before closing animation)
@@ -276,22 +283,22 @@ $(document).ready(function($) {
         }
       });
     };
-  
+
     // loop through all gallery elements and bind events
     var galleryElements = document.querySelectorAll(gallerySelector);
-  
+
     for (var i = 0, l = galleryElements.length; i < l; i++) {
       galleryElements[i].setAttribute("data-pswp-uid", i + 1);
       galleryElements[i].onclick = onThumbnailsClick;
     }
-  
+
     // Parse URL and open gallery if it contains #&pid=3&gid=1
     var hashData = photoswipeParseHash();
     if (hashData.pid && hashData.gid) {
       openPhotoSwipe(hashData.pid, galleryElements[hashData.gid - 1], true, true);
     }
   };
-  
+
   // execute above function
   initPhotoSwipeFromDOM(".my-gallery");
   //console.log(application, context);
@@ -305,7 +312,7 @@ $(document).ready(function($) {
     },
     autoHeight: true
   });
-  
+
   const heroSwiper = new Swiper('.hero-swiper', {
     navigation: {
       nextEl: '.swiper-button-next',
@@ -361,6 +368,9 @@ $(document).ready(function($) {
     }
   })
 });
+
+
+
 
 // Modernizr
 /*! modernizr 3.6.0 (Custom Build) | MIT *
